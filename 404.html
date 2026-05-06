@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — CyberWiseDaily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fraunces:opsz,wght@9..144,300;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e0a;
+    --ink: #d4e8d4;
+    --ink-dim: #7a9080;
+    --accent: #4ade80;
+    --grid-line: #1a2a1a;
+    --border: #1f2e1f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    z-index: -1;
+  }
+  .wrap { text-align: center; max-width: 540px; }
+  .code {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(6rem, 18vw, 12rem);
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .code::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  p {
+    color: var(--ink-dim);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .term {
+    background: #111611;
+    border: 1px solid var(--border);
+    padding: 1rem 1.25rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+  }
+  .prompt { color: var(--accent); }
+  .out { color: var(--ink-dim); }
+  a {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--accent);
+    transition: all 0.2s;
+  }
+  a:hover {
+    background: transparent;
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>Resource <em>not found</em></h1>
+    <div class="term">
+      <div><span class="prompt">$</span> cyberwise --locate /requested-page</div>
+      <div class="out">> traversing routes...</div>
+      <div class="out">> 0 matches in index</div>
+      <div class="out">> recommendation: return to base</div>
+    </div>
+    <p>The page you're looking for doesn't exist, has moved, or was never indexed in our system.</p>
+    <a href="/">← Back to safety</a>
+  </div>
+</body>
+</html>

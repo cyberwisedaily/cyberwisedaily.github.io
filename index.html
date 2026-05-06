@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberWiseDaily — Daily Intelligence for the Defender's Mind</title>
+<meta name="description" content="CyberWiseDaily delivers daily cybersecurity intelligence, threat analysis, and defensive insights for security professionals.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0a0e0a;
+    --bg-elevated: #111611;
+    --ink: #d4e8d4;
+    --ink-dim: #7a9080;
+    --ink-muted: #4a5a4a;
+    --accent: #4ade80;
+    --accent-glow: #4ade8033;
+    --warn: #fbbf24;
+    --danger: #f87171;
+    --grid-line: #1a2a1a;
+    --border: #1f2e1f;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    z-index: -2;
+    pointer-events: none;
+  }
+
+  /* Scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 2px,
+      rgba(74, 222, 128, 0.015) 2px,
+      rgba(74, 222, 128, 0.015) 4px
+    );
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* === NAV === */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(10, 14, 10, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+
+  .logo-mark {
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 0.85rem;
+    position: relative;
+  }
+
+  .logo-mark::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border: 1px solid var(--accent);
+    opacity: 0.3;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0; transform: scale(1.15); }
+  }
+
+  .logo-text { color: var(--ink); }
+  .logo-text span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    color: var(--ink-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a::before { content: '> '; opacity: 0; transition: opacity 0.2s; }
+  .nav-links a:hover::before { opacity: 1; }
+
+  .nav-cta {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 0.5rem 1.25rem;
+    border: none;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  .nav-cta:hover {
+    background: transparent;
+    color: var(--accent);
+    box-shadow: inset 0 0 0 1.5px var(--accent);
+  }
+
+  /* === HERO === */
+  .hero {
+    min-height: 100vh;
+    padding: 8rem 2.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.75rem;
+    color: var(--ink-dim);
+    margin-bottom: 2rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    width: fit-content;
+    animation: fade-up 0.8s ease-out;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    animation: blink 1.5s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+    animation: fade-up 0.9s ease-out 0.1s both;
+  }
+
+  h1 .highlight {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--accent);
+    position: relative;
+  }
+
+  h1 .highlight::after {
+    content: '_';
+    color: var(--accent);
+    animation: cursor-blink 1s step-end infinite;
+  }
+
+  @keyframes cursor-blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-dim);
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    animation: fade-up 0.9s ease-out 0.2s both;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fade-up 0.9s ease-out 0.3s both;
+  }
+
+  .btn-primary, .btn-ghost {
+    padding: 0.95rem 1.75rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1.5px solid;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--border);
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* Terminal panel */
+  .terminal {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 0.82rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px var(--accent-glow);
+    animation: fade-up 1s ease-out 0.4s both;
+  }
+
+  .terminal-header {
+    background: #0d120d;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .terminal-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+  .terminal-dot.r { background: #ff5f56; }
+  .terminal-dot.y { background: #ffbd2e; }
+  .terminal-dot.g { background: #27c93f; }
+
+  .terminal-title {
+    margin-left: 0.75rem;
+    color: var(--ink-muted);
+    font-size: 0.75rem;
+  }
+
+  .terminal-body {
+    padding: 1.25rem;
+    line-height: 1.9;
+  }
+
+  .term-line { white-space: pre-wrap; }
+  .prompt { color: var(--accent); }
+  .cmd { color: var(--ink); }
+  .output { color: var(--ink-dim); }
+  .label-warn { color: var(--warn); }
+  .label-crit { color: var(--danger); }
+  .label-ok { color: var(--accent); }
+
+  .typed-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: var(--accent);
+    vertical-align: text-bottom;
+    animation: cursor-blink 0.8s step-end infinite;
+  }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* === SECTION GENERIC === */
+  section {
+    padding: 6rem 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .section-intro {
+    color: var(--ink-dim);
+    max-width: 600px;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+
+  /* === FEATURES === */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .feature {
+    background: var(--bg);
+    padding: 2.25rem 2rem;
+    transition: background 0.3s;
+    position: relative;
+  }
+
+  .feature:hover {
+    background: var(--bg-elevated);
+  }
+
+  .feature-num {
+    color: var(--ink-muted);
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .feature-icon {
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+  }
+
+  .feature h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+    color: var(--ink-dim);
+    line-height: 1.7;
+  }
+
+  /* === STATS === */
+  .stats-section {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-top: 4rem;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3rem;
+    text-align: left;
+  }
+
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--ink-dim);
+    letter-spacing: 0.05em;
+  }
+
+  /* === BRIEFING SAMPLES === */
+  .briefings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .briefing-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 1.75rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .briefing-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s;
+  }
+
+  .briefing-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .briefing-card:hover::before {
+    transform: scaleY(1);
+  }
+
+  .briefing-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .briefing-tag {
+    color: var(--accent);
+  }
+
+  .briefing-tag.crit { color: var(--danger); }
+  .briefing-tag.warn { color: var(--warn); }
+
+  .briefing-date { color: var(--ink-muted); }
+
+  .briefing-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+  }
+
+  .briefing-excerpt {
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+    line-height: 1.65;
+  }
+
+  /* === SUBSCRIBE === */
+  .subscribe {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 4rem 3rem;
+    margin: 4rem 2.5rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .subscribe::before {
+    content: '01001000 01000101 01001100 01001100 01001111';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+    opacity: 0.4;
+  }
+
+  .subscribe::after {
+    content: '> END_OF_TRANSMISSION';
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+    opacity: 0.4;
+  }
+
+  .subscribe h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .subscribe h2 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .subscribe p {
+    color: var(--ink-dim);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 460px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subscribe-form input {
+    flex: 1;
+    min-width: 240px;
+    padding: 0.95rem 1.25rem;
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+  }
+
+  .subscribe-form input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .subscribe-form input::placeholder {
+    color: var(--ink-muted);
+  }
+
+  /* === FOOTER === */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 3rem 2.5rem 2rem;
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-brand p {
+    color: var(--ink-dim);
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    max-width: 320px;
+  }
+
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .footer-col ul {
+    list-style: none;
+  }
+
+  .footer-col li {
+    margin-bottom: 0.6rem;
+  }
+
+  .footer-col a {
+    color: var(--ink-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { display: none; }
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 7rem 1.25rem 3rem;
+      gap: 2.5rem;
+    }
+    section { padding: 4rem 1.25rem; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .subscribe { padding: 3rem 1.5rem; margin: 3rem 1.25rem; }
+  }
+
+  @media (max-width: 500px) {
+    .footer-inner { grid-template-columns: 1fr; }
+    .stats { gap: 2rem; }
+    .stat-num { font-size: 2.75rem; }
+  }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s, transform 0.8s;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-mark">⌬</div>
+    <div class="logo-text">cyberwise<span>.daily</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#briefings">Briefings</a></li>
+    <li><a href="#features">Intel</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#archive">Archive</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('subscribe').scrollIntoView({behavior:'smooth'})">Subscribe</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-status">
+      <span class="status-dot"></span>
+      <span>SYSTEM OPERATIONAL — 247 THREATS TRACKED TODAY</span>
+    </div>
+    <h1>
+      Daily intelligence<br>
+      for the <span class="highlight">defender's mind</span>
+    </h1>
+    <p class="hero-subtitle">
+      CyberWiseDaily distills the noise of global cybersecurity into a single, sharp briefing. Threat intel, breach analysis, and defensive playbooks — delivered at 06:00 sharp, every day.
+    </p>
+    <div class="hero-actions">
+      <a href="#subscribe" class="btn-primary">Get the Briefing →</a>
+      <a href="#briefings" class="btn-ghost">Read Sample</a>
+    </div>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-header">
+      <div class="terminal-dot r"></div>
+      <div class="terminal-dot y"></div>
+      <div class="terminal-dot g"></div>
+      <div class="terminal-title">~/cyberwise/daily-brief — 80x24</div>
+    </div>
+    <div class="terminal-body">
+      <div class="term-line"><span class="prompt">$</span> <span class="cmd">cyberwise --brief today</span></div>
+      <div class="term-line"><span class="output">┌─ BRIEFING 2026.05.06 ────────────┐</span></div>
+      <div class="term-line"><span class="output">│ </span><span class="label-crit">CRIT</span><span class="output">  3 active CVE exploits</span></div>
+      <div class="term-line"><span class="output">│ </span><span class="label-warn">WARN</span><span class="output">  Phishing wave: financial</span></div>
+      <div class="term-line"><span class="output">│ </span><span class="label-ok">INFO</span><span class="output">  Ransomware group dismantled</span></div>
+      <div class="term-line"><span class="output">│ </span><span class="label-ok">INFO</span><span class="output">  New patches: 14 vendors</span></div>
+      <div class="term-line"><span class="output">└──────────────────────────────────┘</span></div>
+      <div class="term-line"><span class="prompt">$</span> <span class="cmd">_<span class="typed-cursor"></span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-label">What we deliver</div>
+  <h2 class="section-title">Signal, not <em>noise</em>.</h2>
+  <p class="section-intro">Every briefing is hand-curated by analysts who've worked the SOC floor. No regurgitated press releases. No fluff.</p>
+
+  <div class="features">
+    <div class="feature reveal">
+      <div class="feature-num">// 01</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg>
+      </div>
+      <h3>Threat Intelligence</h3>
+      <p>Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-num">// 02</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h3>06:00 Daily Brief</h3>
+      <p>One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-num">// 03</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2 4 4 8-8 2 2-10 10z"/></svg>
+      </div>
+      <h3>Defensive Playbooks</h3>
+      <p>Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-num">// 04</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.5 0 4.74 1 6.36 2.64L21 3"/><path d="M21 3v6h-6"/></svg>
+      </div>
+      <h3>Breach Post-Mortems</h3>
+      <p>When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-num">// 05</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+      </div>
+      <h3>Vendor & CVE Watch</h3>
+      <p>Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-num">// 06</div>
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+      </div>
+      <h3>Career & Community</h3>
+      <p>Curated job board, conference signal-boost, and analyst notes from the field. The defender community, in one place.</p>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-section">
+    <section style="padding: 3rem 0;">
+      <div class="stats">
+        <div class="reveal">
+          <div class="stat-num">12.4K</div>
+          <div class="stat-label">Daily readers</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">06:00</div>
+          <div class="stat-label">Hits your inbox</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">730+</div>
+          <div class="stat-label">Briefings published</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Tracking pixels</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- BRIEFINGS -->
+<section id="briefings">
+  <div class="section-label">Latest briefings</div>
+  <h2 class="section-title">Today's <em>intel</em>.</h2>
+  <p class="section-intro">A glimpse of what subscribers received this week. Free archive after 30 days.</p>
+
+  <div class="briefings">
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag crit">⬢ CRITICAL</span>
+        <span class="briefing-date">2026.05.06</span>
+      </div>
+      <h3 class="briefing-title">Zero-day in popular VPN appliance under active exploitation</h3>
+      <p class="briefing-excerpt">Threat actors are chaining a recent authentication bypass with an RCE primitive. Detection logic, IOCs, and mitigations inside.</p>
+    </article>
+
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag warn">⬢ ANALYSIS</span>
+        <span class="briefing-date">2026.05.05</span>
+      </div>
+      <h3 class="briefing-title">The phishing kit economy: why MFA fatigue keeps winning</h3>
+      <p class="briefing-excerpt">A breakdown of the latest commodity adversary-in-the-middle kits, why traditional 2FA fails, and what passkey rollouts actually look like.</p>
+    </article>
+
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag">⬢ PLAYBOOK</span>
+        <span class="briefing-date">2026.05.03</span>
+      </div>
+      <h3 class="briefing-title">Detection engineering: writing rules that don't burn the SOC</h3>
+      <p class="briefing-excerpt">Field-tested patterns for high-fidelity Sigma rules. From baselining to tuning, with real false-positive case studies.</p>
+    </article>
+
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag warn">⬢ POST-MORTEM</span>
+        <span class="briefing-date">2026.05.01</span>
+      </div>
+      <h3 class="briefing-title">Anatomy of a supply-chain compromise: lessons from a recent npm incident</h3>
+      <p class="briefing-excerpt">Timeline, attack chain, and a checklist of preventative controls that would have caught this one before package install.</p>
+    </article>
+
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag">⬢ DEEP-DIVE</span>
+        <span class="briefing-date">2026.04.29</span>
+      </div>
+      <h3 class="briefing-title">Cloud IAM: the seven misconfigurations attackers love most</h3>
+      <p class="briefing-excerpt">From wildcard policies to forgotten service accounts — the privilege paths that show up in breach reports again and again.</p>
+    </article>
+
+    <article class="briefing-card reveal">
+      <div class="briefing-meta">
+        <span class="briefing-tag">⬢ CAREER</span>
+        <span class="briefing-date">2026.04.27</span>
+      </div>
+      <h3 class="briefing-title">Breaking into threat intel: a roadmap that doesn't require a CISSP</h3>
+      <p class="briefing-excerpt">The skills, projects, and communities that will get you taken seriously — written by analysts who actually hire.</p>
+    </article>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="subscribe">
+  <div class="section-label" style="justify-content: center; display: inline-flex;">Join the briefing</div>
+  <h2>One email. <em>Zero noise.</em></h2>
+  <p>Free. Daily at 06:00 your local time. Unsubscribe with a single click — we don't make it weird.</p>
+  <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+    <input type="email" placeholder="analyst@yourcompany.com" required>
+    <button type="submit" class="btn-primary">Subscribe →</button>
+  </form>
+  <p style="margin-top: 1.5rem; font-size: 0.75rem; color: var(--ink-muted);">
+    No tracking. No ads. No selling your data. We mean it.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-mark">⌬</div>
+        <div class="logo-text">cyberwise<span>.daily</span></div>
+      </div>
+      <p>Daily intelligence for the defender's mind. Independent. Practitioner-led. Reader-funded.</p>
+    </div>
+    <div class="footer-col">
+      <h4>// Product</h4>
+      <ul>
+        <li><a href="#briefings">Daily Brief</a></li>
+        <li><a href="#archive">Archive</a></li>
+        <li><a href="#">RSS Feed</a></li>
+        <li><a href="#">Sponsor</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>// Company</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Editorial Standards</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Tip Line</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>// Connect</h4>
+      <ul>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Mastodon</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Signal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 CyberWiseDaily. Built for defenders.</span>
+    <span>v2.4.1 — last deploy: 2026.05.06</span>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Subscribe handler
+  function handleSubscribe(e) {
+    e.preventDefault();
+    const input = e.target.querySelector('input');
+    const button = e.target.querySelector('button');
+    const original = button.innerHTML;
+    button.innerHTML = '✓ Subscribed';
+    button.style.background = 'var(--accent)';
+    button.disabled = true;
+    setTimeout(() => {
+      input.value = '';
+      button.innerHTML = original;
+      button.disabled = false;
+    }, 2500);
+  }
+
+  // Update threat counter
+  const dot = document.querySelector('.status-dot');
+  let count = 247;
+  setInterval(() => {
+    count += Math.floor(Math.random() * 3);
+    const status = document.querySelector('.hero-status span:last-child');
+    if (status) status.textContent = `SYSTEM OPERATIONAL — ${count} THREATS TRACKED TODAY`;
+  }, 8000);
+</script>
+
+</body>
+</html>
