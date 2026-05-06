@@ -408,7 +408,7 @@
   /* === FEATURES === */
   .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
@@ -714,11 +714,13 @@
       gap: 2.5rem;
     }
     section { padding: 4rem 1.25rem; }
+    .features { grid-template-columns: repeat(2, 1fr); }
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
     .subscribe { padding: 3rem 1.5rem; margin: 3rem 1.25rem; }
   }
 
   @media (max-width: 500px) {
+    .features { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; }
     .stats { gap: 2rem; }
     .stat-num { font-size: 2.75rem; }
@@ -733,6 +735,196 @@
   .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* === INTEL MODAL === */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    max-width: 780px;
+    width: 100%;
+    max-height: 88vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(24px);
+    transition: transform 0.35s cubic-bezier(.16,1,.3,1);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .modal-overlay.open .modal {
+    transform: translateY(0);
+  }
+
+  .modal::-webkit-scrollbar { width: 4px; }
+  .modal::-webkit-scrollbar-thumb { background: var(--border); }
+
+  .modal-header {
+    position: sticky;
+    top: 0;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .modal-header-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .modal-close {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--ink-dim);
+    font-family: inherit;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+  }
+
+  .modal-close:hover {
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+
+  .modal-body {
+    padding: 2rem 1.75rem;
+  }
+
+  .modal-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1.5rem 0;
+  }
+
+  .modal-section-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .modal-section-label::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .modal-text {
+    color: var(--ink-dim);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-ioc-block {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+  }
+
+  .modal-ioc-block .ioc-label {
+    color: var(--ink-muted);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-ioc-block code {
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    display: block;
+  }
+
+  .modal-ioc-block code.warn { color: var(--warn); }
+  .modal-ioc-block code.danger { color: var(--danger); }
+
+  .modal-mitigations {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-mitigations li {
+    color: var(--ink-dim);
+    font-size: 0.88rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .modal-mitigations li::before {
+    content: '→';
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .modal-footer-note {
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .briefing-card { cursor: pointer; }
+
+  @media (max-width: 500px) {
+    .modal-body { padding: 1.5rem 1.25rem; }
+    .modal-header { padding: 1rem 1.25rem; }
   }
 </style>
 </head>
@@ -799,7 +991,7 @@
   <p class="section-intro">Every briefing is hand-curated by analysts who've worked the SOC floor. No regurgitated press releases. No fluff.</p>
 
   <div class="features">
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="0" style="cursor:pointer">
       <div class="feature-num">// 01</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg>
@@ -808,7 +1000,7 @@
       <p>Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.</p>
     </div>
 
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="1" style="cursor:pointer">
       <div class="feature-num">// 02</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -817,7 +1009,7 @@
       <p>One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.</p>
     </div>
 
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="2" style="cursor:pointer">
       <div class="feature-num">// 03</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2 4 4 8-8 2 2-10 10z"/></svg>
@@ -826,7 +1018,7 @@
       <p>Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.</p>
     </div>
 
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="3" style="cursor:pointer">
       <div class="feature-num">// 04</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.5 0 4.74 1 6.36 2.64L21 3"/><path d="M21 3v6h-6"/></svg>
@@ -835,7 +1027,7 @@
       <p>When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.</p>
     </div>
 
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="4" style="cursor:pointer">
       <div class="feature-num">// 05</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
@@ -844,7 +1036,7 @@
       <p>Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.</p>
     </div>
 
-    <div class="feature reveal">
+    <div class="feature reveal" data-feature="5" style="cursor:pointer">
       <div class="feature-num">// 06</div>
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
@@ -1000,19 +1192,491 @@
   </div>
 </footer>
 
+<!-- INTEL MODAL -->
+<div class="modal-overlay" id="intelModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal" id="modalBox">
+    <div class="modal-header">
+      <div class="modal-header-meta" id="modalMeta"></div>
+      <button class="modal-close" onclick="closeModal()">[ ESC ] Close</button>
+    </div>
+    <div class="modal-body" id="modalContent"></div>
+  </div>
+</div>
+
 <script>
-  // Reveal on scroll
+  // ── Feature card data ──────────────────────────────────────────────
+  const features = [
+    {
+      tag: 'INTEL FEED', tagClass: '', num: '// 01',
+      title: 'Threat Intelligence',
+      body: `
+        <p class="modal-text">Every morning our analysts process hundreds of signals from OSINT feeds, ISACs, dark web monitoring, and vetted partner sources. What lands in your inbox is the 5% that actually matters — ranked by exploitability, relevance to common enterprise stacks, and attacker momentum.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">What we track daily</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">Active campaigns</strong> — threat actor activity with observed TTPs mapped to MITRE ATT&amp;CK. Named groups and unattributed clusters both covered.</li>
+          <li><strong style="color:var(--ink)">IOC packages</strong> — IPs, domains, file hashes, and YARA rules formatted for direct import into your SIEM, EDR, or MISP instance.</li>
+          <li><strong style="color:var(--ink)">Vulnerability exploitation in the wild</strong> — not just published CVEs, but confirmed exploitation with PoC status and EPSS scoring.</li>
+          <li><strong style="color:var(--ink)">Geopolitical context</strong> — when nation-state activity spikes around real-world events, we flag it early so your leadership can brief up.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Sample IOC block (today)</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Cobalt Strike C2 infrastructure — UNC3569</div>
+          <code class="danger">91.215.153[.]72:443  — active beacon</code>
+          <code class="danger">5.252.176[.]14:8080   — active beacon</code>
+          <code class="warn">JA3: a0e9f5d64349fb13191bc781f81f42e1</code>
+          <code>YARA: CobaltStrike_Beacon_v4_watermark_0x1234ABCD</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Sources we aggregate</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Feed sources (partial list)</div>
+          <code>AlienVault OTX · Feodo Tracker · Abuse.ch · URLhaus</code>
+          <code class="warn">MS-ISAC · FS-ISAC · H-ISAC (partner feeds)</code>
+          <code>Shadowserver · Shodan · CIRCL Luxembourg</code>
+          <code>Analyst community tips via encrypted tip line</code>
+        </div>
+
+        <div class="modal-footer-note">Intel is enriched with context before publication — raw feeds are never passed through unvalidated. False positives reported by readers are triaged within 4 hours.</div>
+      `
+    },
+    {
+      tag: 'DAILY BRIEF', tagClass: '', num: '// 02',
+      title: '06:00 Daily Brief',
+      body: `
+        <p class="modal-text">One email. Delivered at 06:00 in your local timezone. Designed to be read in under five minutes with your first coffee — so you walk into standup already knowing what your team needs to know.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">What's inside every issue</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Standard brief structure</div>
+          <code class="danger">[ CRITICAL ]  Active exploitation — patch or mitigate now</code>
+          <code class="warn">[ WATCH     ]  Emerging threats requiring monitoring</code>
+          <code>[ INTEL     ]  Campaign and actor updates</code>
+          <code>[ PATCHES   ]  Vendor advisories worth your attention</code>
+          <code>[ READ      ]  One long-read worth your weekend time</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Our editorial principles</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">Plain text first</strong> — the brief renders cleanly in any email client, terminal mail reader, or RSS aggregator. No images required to understand the content.</li>
+          <li><strong style="color:var(--ink)">Zero tracking pixels</strong> — we don't know if you opened it. We don't want to. Your read behaviour is yours.</li>
+          <li><strong style="color:var(--ink)">No press release laundering</strong> — vendor "research" that's really a product pitch gets ignored. We cite primary sources or original analysis only.</li>
+          <li><strong style="color:var(--ink)">Confidence levels on every claim</strong> — HIGH / MEDIUM / LOW, with reasoning. We'd rather say "we're not sure" than overstate.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Sample issue excerpt — 2026.05.06</div>
+        <p class="modal-text" style="border-left: 2px solid var(--border); padding-left: 1rem; font-style: italic;">
+          "FortiGate CVE-2026-21377 is being actively chained with an RCE primitive. If you run FortiOS &lt; 7.4.5 and your management interface is internet-accessible, treat this as incident response, not patching. IOCs and Sigma rule below. Patch deadline for most environments: 48 hours."
+        </p>
+
+        <div class="modal-footer-note">Delivered 365 days a year. No holidays. Frequency: once daily. Archive available to subscribers after 30 days.</div>
+      `
+    },
+    {
+      tag: 'PLAYBOOK', tagClass: '', num: '// 03',
+      title: 'Defensive Playbooks',
+      body: `
+        <p class="modal-text">Every Friday, subscribers receive a deep-dive written by practitioners who've spent time in SOCs, IR teams, and red team engagements. Not theoretical — every playbook has been tested against real environments and includes failure modes, not just happy paths.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Recent playbooks</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">Detection Engineering 101</strong> — writing Sigma rules that don't burn your SOC. Baseline methodology, tuning workflow, false-positive classification.</li>
+          <li><strong style="color:var(--ink)">IR First 24 Hours</strong> — what to do in the first day of a confirmed breach. Containment decisions, evidence preservation, comms templates.</li>
+          <li><strong style="color:var(--ink)">Cloud IAM Hardening</strong> — the seven misconfigurations that show up in every breach. AWS, GCP, and Azure specific controls with CLI one-liners.</li>
+          <li><strong style="color:var(--ink)">Phishing-Resistant MFA Rollout</strong> — deploying FIDO2/passkeys in an enterprise with legacy apps. The friction points, user training, and fallback handling.</li>
+          <li><strong style="color:var(--ink)">Ransomware Resilience Audit</strong> — a self-assessment framework covering backup architecture, network segmentation, and recovery time objectives.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Playbook format</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Standard sections in every playbook</div>
+          <code>01. Threat context — why this matters right now</code>
+          <code class="warn">02. Prerequisites — what you need before starting</code>
+          <code>03. Step-by-step procedure with commands/configs</code>
+          <code class="warn">04. Failure modes — what can go wrong and why</code>
+          <code>05. Validation — how to confirm it worked</code>
+          <code>06. References — primary sources, not SEO farms</code>
+        </div>
+
+        <div class="modal-footer-note">Playbooks are platform-specific where relevant. Each tags the applicable environments: AWS / Azure / GCP / On-prem / Windows / Linux.</div>
+      `
+    },
+    {
+      tag: 'POST-MORTEM', tagClass: 'warn', num: '// 04',
+      title: 'Breach Post-Mortems',
+      body: `
+        <p class="modal-text">When a significant breach becomes public, we go deep. Not the vendor press release version — the actual attack chain, reconstructed from incident reports, court filings, researcher disclosures, and affected organisation communications. Then we tell you what your programme can learn from it.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">What a post-mortem covers</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">Full timeline</strong> — from initial access to detection, with dwell time highlighted. Most breaches linger weeks before discovery.</li>
+          <li><strong style="color:var(--ink)">Attack chain mapped to ATT&amp;CK</strong> — every technique with the tactic phase, so your detection team knows exactly where to add coverage.</li>
+          <li><strong style="color:var(--ink)">What failed</strong> — the specific controls that were absent, misconfigured, or bypassed. No blame, just facts.</li>
+          <li><strong style="color:var(--ink)">What would have helped</strong> — a prioritised list of controls that would have interrupted the chain at each stage, with implementation complexity noted.</li>
+          <li><strong style="color:var(--ink)">Industry applicability</strong> — if you're in a different sector than the victim, we flag which lessons still apply and which are context-specific.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Recent post-mortems</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Published in the last 60 days</div>
+          <code class="danger">npm supply-chain: react-pdf-viewer maintainer takeover</code>
+          <code class="warn">Telecoms breach: SIM-swap at scale via insider threat</code>
+          <code class="warn">Healthcare ransomware: ALPHV affiliate, 3-week dwell time</code>
+          <code>Cloud data exposure: misconfigured S3 + no DLP = 4.2M records</code>
+        </div>
+
+        <div class="modal-footer-note">Post-mortems are published only when sufficient public information exists to reconstruct the chain accurately. We don't speculate and clearly label attribution confidence levels.</div>
+      `
+    },
+    {
+      tag: 'CVE WATCH', tagClass: '', num: '// 05',
+      title: 'Vendor & CVE Watch',
+      body: `
+        <p class="modal-text">Patch Tuesday shouldn't be a surprise. We track advisories from 60+ vendors on a rolling basis and surface only the ones that matter — with exploitability context that CVSS scores alone can't give you.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">How we triage CVEs</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">EPSS score</strong> — Exploit Prediction Scoring System probability, not just CVSS severity. A CVSS 9.8 with 0.1% EPSS is less urgent than a CVSS 7.2 at 94% EPSS.</li>
+          <li><strong style="color:var(--ink)">PoC availability</strong> — whether a public proof-of-concept exists and where, so your team can assess reproducibility.</li>
+          <li><strong style="color:var(--ink)">Active exploitation status</strong> — CISA KEV inclusion, threat intel confirmation, or honeypot telemetry showing active scanning.</li>
+          <li><strong style="color:var(--ink)">Patch complexity</strong> — some patches require reboots, downtime, or config changes. We flag this so you can plan your maintenance window.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">This week's critical CVEs</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Actively exploited — patch immediately</div>
+          <code class="danger">CVE-2026-21377  FortiOS SSLVPN RCE         CVSS 9.8 / EPSS 96%</code>
+          <code class="danger">CVE-2026-19842  Ivanti Connect Secure RCE  CVSS 9.6 / EPSS 91%</code>
+          <code class="warn">CVE-2026-20015  Windows LDAP Heap OOB       CVSS 8.1 / EPSS 78%</code>
+          <code>CVE-2026-18334  Chrome V8 type confusion      CVSS 7.5 / EPSS 65%</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Vendors we track</div>
+        <p class="modal-text">Microsoft · Fortinet · Ivanti · Palo Alto · Cisco · VMware · Citrix · F5 · SolarWinds · MOVEit · Progress · Atlassian · GitLab · GitHub · Apache · nginx · OpenSSL · Linux kernel · Android · Apple · plus 40 more on rotation.</p>
+
+        <div class="modal-footer-note">CVE data sourced from NVD, vendor advisories, CISA KEV, and Greynoise exploitation telemetry. Updated daily by 06:00.</div>
+      `
+    },
+    {
+      tag: 'COMMUNITY', tagClass: '', num: '// 06',
+      title: 'Career & Community',
+      body: `
+        <p class="modal-text">Security is a people problem as much as a technical one. CyberWiseDaily maintains a curated corner of the defender community — jobs worth applying for, events worth attending, and voices worth following.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Weekly job board</div>
+        <ul class="modal-mitigations">
+          <li>Hand-curated roles from companies with real security programmes — not recruiters copy-pasting JDs with 47 required skills.</li>
+          <li>Salary ranges included where disclosed. Remote status always flagged.</li>
+          <li>Each listing includes a brief note on why we think it's worth your time — team size, tech stack, culture signal.</li>
+          <li>Roles across all levels: analyst, engineer, architect, leadership. No entry-level gatekeeping on certs.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Conference signal-boost</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Upcoming events we're watching</div>
+          <code>DEF CON 34          Las Vegas   Aug 2026   CFP open</code>
+          <code class="warn">Black Hat USA 2026  Las Vegas   Aug 2026   Early bird open</code>
+          <code>BSides London       London      Jun 2026   Free tickets live</code>
+          <code>mWISE 2026          Atlanta     Sep 2026   CFP closes May 30</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Analyst notes from the field</div>
+        <p class="modal-text">Every two weeks we feature a short dispatch from a practitioner in the community — an IR analyst, a detection engineer, a CISO at a mid-market company. Real observations from real environments, not think-piece hot takes.</p>
+
+        <ul class="modal-mitigations">
+          <li>Want to contribute a note? Tip line is always open — anonymous submissions welcome.</li>
+          <li>Community Slack channel for subscribers: peer Q&amp;A, tool recommendations, and job referrals.</li>
+          <li>Monthly "ask the analyst" thread — submit questions, get answers from practitioners, not vendors.</li>
+        </ul>
+
+        <div class="modal-footer-note">Job listings updated every Monday. Community Slack available to all active subscribers. Anonymous tip line encrypted with Signal protocol.</div>
+      `
+    }
+  ];
+
+  // ── Wire up feature cards ──────────────────────────────────────────
+  document.querySelectorAll('.feature[data-feature]').forEach(card => {
+    card.addEventListener('click', () => {
+      const i = parseInt(card.dataset.feature);
+      const f = features[i];
+      document.getElementById('modalMeta').innerHTML =
+        `<span class="briefing-tag ${f.tagClass}">⬢ ${f.tag}</span>
+         <span style="color:var(--ink-muted)">${f.num}</span>`;
+      document.getElementById('modalContent').innerHTML =
+        `<h2 class="modal-title" id="modalTitle">${f.title}</h2>` + f.body;
+      const overlay = document.getElementById('intelModal');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modalBox').scrollTop = 0;
+    });
+  });
+
+  // ── Briefing data ──────────────────────────────────────────────────
+  const briefings = [
+    {
+      tag: 'CRITICAL', tagClass: 'crit', date: '2026.05.06',
+      title: 'Zero-day in popular VPN appliance under active exploitation',
+      summary: 'Threat actors are chaining a recent authentication bypass with an RCE primitive. Detection logic, IOCs, and mitigations inside.',
+      body: `
+        <p class="modal-text">A zero-day vulnerability tracked as <strong style="color:var(--danger)">CVE-2026-21377</strong> in Fortinet FortiGate (versions 7.4.x &lt; 7.4.5) is being actively exploited by at least two threat clusters. The bug is an authentication bypass in the SSLVPN portal that, when chained with a heap buffer overflow in the web management interface, results in unauthenticated remote code execution as root.</p>
+        <p class="modal-text">First observed in the wild on 2026.05.03. Mandiant attributes activity to <span style="color:var(--warn)">UNC4841</span> (suspected China-nexus). Targets to date include government networks in Southeast Asia and financial sector orgs in Europe.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">IOCs &amp; Detection</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Observed C2 infrastructure</div>
+          <code class="danger">45.134.26[.]183:4443</code>
+          <code class="danger">194.165.16[.]89:8080</code>
+          <code class="warn">User-Agent: python-httpx/0.26.0</code>
+          <code>URI pattern: /api/v2/cmdb/system/admin?access_token=</code>
+        </div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Sigma detection rule (condensed)</div>
+          <code>title: FortiGate Auth Bypass Exploit Attempt</code>
+          <code>logsource: product: fortigate, category: webserver</code>
+          <code class="warn">condition: uri contains '/api/v2/cmdb' AND method = 'PUT'</code>
+          <code>           AND NOT src_ip in (admin_allowlist)</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Mitigations</div>
+        <ul class="modal-mitigations">
+          <li>Patch immediately to FortiOS 7.4.5 or 7.2.9 — patches released 2026.05.05.</li>
+          <li>If patching is not immediate, disable SSLVPN portal and restrict management interface to known IPs.</li>
+          <li>Review admin audit logs for unexpected PUT requests to <code style="color:var(--accent)">/api/v2/cmdb/</code> endpoints.</li>
+          <li>Block identified C2 IPs at perimeter and check for outbound connections to port 4443 from VPN appliances.</li>
+          <li>Reset all admin credentials and revoke API tokens as a precaution if appliance was internet-exposed.</li>
+        </ul>
+
+        <div class="modal-footer-note">Source: Fortinet PSIRT advisory FG-IR-26-021, Mandiant threat intel, GreyNoise telemetry. Confidence: HIGH.</div>
+      `
+    },
+    {
+      tag: 'ANALYSIS', tagClass: 'warn', date: '2026.05.05',
+      title: 'The phishing kit economy: why MFA fatigue keeps winning',
+      summary: 'A breakdown of the latest commodity adversary-in-the-middle kits, why traditional 2FA fails, and what passkey rollouts actually look like.',
+      body: `
+        <p class="modal-text">AiTM (adversary-in-the-middle) phishing kits have become the dominant retail threat vector against MFA-protected accounts. Kits like <strong style="color:var(--warn)">EvilProxy</strong>, <strong style="color:var(--warn)">Tycoon 2FA</strong>, and the newer <strong style="color:var(--warn)">FlowerStorm</strong> cluster are available for as little as $200/month and require no technical skill to operate. They proxy authentication sessions in real-time, stealing session cookies post-MFA — rendering TOTP and SMS OTP effectively worthless against targeted attacks.</p>
+        <p class="modal-text">Our analysis of 1,400+ phishing incidents over Q1 2026 shows that 68% used an AiTM framework. The most impersonated brands: Microsoft 365 (41%), DocuSign (18%), and internal SSO portals (22%). The average time from credential capture to first mailbox access was under 4 minutes.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">What actually stops AiTM</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">FIDO2 / Passkeys</strong> — phishing-resistant by design. The credential is bound to the origin domain; a proxy can't relay it. This is the correct long-term answer.</li>
+          <li><strong style="color:var(--ink)">Conditional Access with token binding</strong> — Entra ID's Continuous Access Evaluation (CAE) can invalidate stolen tokens within minutes on anomalous context change.</li>
+          <li><strong style="color:var(--ink)">Device compliance checks</strong> — require managed, compliant devices for sensitive resource access. AiTM kits cannot satisfy device certificate requirements.</li>
+          <li><strong style="color:var(--ink)">Session anomaly detection</strong> — flag sessions where ASN, country, or device fingerprint changes mid-session after MFA. High signal, low noise.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Passkey rollout reality</div>
+        <p class="modal-text">Passkey adoption is growing but slow. Enterprise blockers: legacy apps that can't support FIDO2, help-desk friction for recovery, and user resistance to hardware keys. The pragmatic path for most orgs in 2026 is hybrid — enforce passkeys for privileged accounts and Entra ID-joined devices now, while running parallel TOTP for the long tail. Don't let perfect be the enemy of good.</p>
+
+        <div class="modal-footer-note">Analysis based on internal incident data, Microsoft Threat Intelligence, and Sekoia.io AiTM kit research. Confidence: HIGH.</div>
+      `
+    },
+    {
+      tag: 'PLAYBOOK', tagClass: '', date: '2026.05.03',
+      title: 'Detection engineering: writing rules that don\'t burn the SOC',
+      summary: 'Field-tested patterns for high-fidelity Sigma rules. From baselining to tuning, with real false-positive case studies.',
+      body: `
+        <p class="modal-text">Alert fatigue is a detection problem masquerading as a volume problem. The root cause is almost always the same: rules written against threat behavior without accounting for the environment's baseline. This playbook walks the methodology we use to build Sigma rules with a sustained false-positive rate under 2%.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">The baseline-first principle</div>
+        <p class="modal-text">Before writing a single detection, answer three questions: (1) What does legitimate execution of this binary/process look like in our environment? (2) What parent process is normal vs. anomalous? (3) What time-of-day and volume patterns are expected? Build a 30-day baseline. Only then write the exception logic into the rule.</p>
+
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Sigma rule pattern — anomalous PowerShell parent</div>
+          <code>detection:</code>
+          <code class="warn">  selection:</code>
+          <code>    Image|endswith: '\powershell.exe'</code>
+          <code class="warn">    ParentImage|endswith:</code>
+          <code>      - '\winword.exe'</code>
+          <code>      - '\excel.exe'</code>
+          <code>      - '\outlook.exe'</code>
+          <code>  filter_legitimate:</code>
+          <code>    CommandLine|contains: '-NonInteractive -NoProfile'</code>
+          <code class="warn">  condition: selection and not filter_legitimate</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Tuning workflow</div>
+        <ul class="modal-mitigations">
+          <li>Deploy new rules in <strong style="color:var(--ink)">observe mode</strong> for 5 business days before enabling alerting. Log all would-fire events.</li>
+          <li>Classify each false positive by root cause: legitimate tooling, misconfigured baseline, or rule logic error. Fix at the source.</li>
+          <li>Add environment-specific allow-lists as named filter conditions, not inline. This makes future audits readable.</li>
+          <li>Track MTTD (mean time to detect) per rule category quarterly. Rules that never fire in 90 days are candidates for deprecation or broadening.</li>
+          <li>Version-control your rule library in Git. Every change needs a commit message explaining the tuning rationale.</li>
+        </ul>
+
+        <div class="modal-footer-note">Playbook authored by the CyberWiseDaily detection engineering team. Tested across Splunk, Elastic, and Microsoft Sentinel environments.</div>
+      `
+    },
+    {
+      tag: 'POST-MORTEM', tagClass: 'warn', date: '2026.05.01',
+      title: 'Anatomy of a supply-chain compromise: lessons from a recent npm incident',
+      summary: 'Timeline, attack chain, and a checklist of preventative controls that would have caught this one before package install.',
+      body: `
+        <p class="modal-text">In late April 2026, the npm package <strong style="color:var(--warn)">react-pdf-viewer</strong> (2.3M weekly downloads) was compromised via a maintainer account takeover. The attacker published versions 3.12.1 and 3.12.2 containing an obfuscated script that exfiltrated <code style="color:var(--accent)">process.env</code> to an attacker-controlled endpoint on first import. The malicious versions were live for 14 hours before detection and removal.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Attack timeline</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Reconstructed from npm audit logs and GitHub history</div>
+          <code>2026.04.28 02:14 UTC — Maintainer account compromised (credential stuffing)</code>
+          <code class="warn">2026.04.28 02:31 UTC — Malicious 3.12.1 published to npm registry</code>
+          <code class="warn">2026.04.28 03.05 UTC — 3.12.2 published (anti-sandbox evasion added)</code>
+          <code>2026.04.28 16:42 UTC — Snyk researcher flags anomalous outbound in CI logs</code>
+          <code class="danger">2026.04.28 17:18 UTC — Versions unpublished, npm security team notified</code>
+        </div>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Controls that would have caught this</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">Pin exact versions with lockfiles</strong> — <code style="color:var(--accent)">package-lock.json</code> or <code style="color:var(--accent)">yarn.lock</code> committed and enforced in CI. New installs compare hashes, not semver ranges.</li>
+          <li><strong style="color:var(--ink)">Verify package integrity hashes</strong> — npm's <code style="color:var(--accent)">--audit</code> and tools like Socket.dev scan for behavior changes between versions before install.</li>
+          <li><strong style="color:var(--ink)">Restrict outbound network in CI</strong> — Build pipelines should not be able to make arbitrary outbound connections. An egress allowlist would have blocked exfiltration.</li>
+          <li><strong style="color:var(--ink)">SBOM generation in pipeline</strong> — A software bill of materials lets you quickly identify exposure when a package is flagged post-incident.</li>
+          <li><strong style="color:var(--ink)">Maintainer MFA enforcement</strong> — npm now requires MFA for packages with &gt;1M weekly downloads. This case involved a package just under that threshold.</li>
+        </ul>
+
+        <div class="modal-footer-note">Post-mortem based on public npm security advisory, GitHub incident report, and Snyk researcher disclosure. Package name anonymised pending full disclosure window.</div>
+      `
+    },
+    {
+      tag: 'DEEP-DIVE', tagClass: '', date: '2026.04.29',
+      title: 'Cloud IAM: the seven misconfigurations attackers love most',
+      summary: 'From wildcard policies to forgotten service accounts — the privilege paths that show up in breach reports again and again.',
+      body: `
+        <p class="modal-text">IAM misconfigurations account for the initial access or privilege escalation vector in over 70% of cloud breach investigations we reviewed from 2025–2026. They're quiet, persistent, and often invisible until it's too late. Here are the seven we see most in post-incident reviews — with detection queries for each.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">The seven</div>
+        <ul class="modal-mitigations">
+          <li><strong style="color:var(--ink)">1. Wildcard action policies</strong> — <code style="color:var(--accent)">Action: "*"</code> in any policy is almost never justified. Attackers who land on a principal with this can enumerate, pivot, and exfiltrate without restriction.</li>
+          <li><strong style="color:var(--ink)">2. Stale service account keys</strong> — GCP and AWS service account keys older than 90 days with no rotation policy are a persistent target. Keys don't expire; people forget them.</li>
+          <li><strong style="color:var(--ink)">3. Over-permissive trust relationships</strong> — IAM roles that trust <code style="color:var(--accent)">*</code> in the principal element, or trust an entire AWS account rather than a specific role, allow any identity in that account to assume the role.</li>
+          <li><strong style="color:var(--ink)">4. Privilege escalation via PassRole</strong> — An identity with <code style="color:var(--accent)">iam:PassRole</code> and <code style="color:var(--accent)">ec2:RunInstances</code> can escalate to any role they can pass to a new instance. Common, and commonly missed.</li>
+          <li><strong style="color:var(--ink)">5. Unused admin roles</strong> — Roles created for one-off tasks and never deleted. If the underlying credentials are compromised, attackers inherit full admin. Audit monthly.</li>
+          <li><strong style="color:var(--ink)">6. Public S3 buckets via IAM policy</strong> — Bucket ACLs are not the only path to public access. Resource-based policies with <code style="color:var(--accent)">Principal: "*"</code> bypass bucket-level block public access settings.</li>
+          <li><strong style="color:var(--ink)">7. Long-lived access keys for CI/CD</strong> — GitHub Actions, Jenkins, and similar tools still commonly authenticate with long-lived IAM access keys. Use OIDC federation and short-lived tokens instead.</li>
+        </ul>
+
+        <div class="modal-ioc-block">
+          <div class="ioc-label">AWS CLI — find roles with wildcard actions</div>
+          <code>aws iam list-roles --query 'Roles[*].RoleName' | \</code>
+          <code class="warn">  xargs -I{} aws iam list-role-policies --role-name {} | \</code>
+          <code>  grep -i '"Action": "\*"'</code>
+        </div>
+
+        <div class="modal-footer-note">Based on analysis of 340 cloud incident reports, Datadog State of Cloud Security 2026, and AWS re:Inforce session data.</div>
+      `
+    },
+    {
+      tag: 'CAREER', tagClass: '', date: '2026.04.27',
+      title: 'Breaking into threat intel: a roadmap that doesn\'t require a CISSP',
+      summary: 'The skills, projects, and communities that will get you taken seriously — written by analysts who actually hire.',
+      body: `
+        <p class="modal-text">Threat intelligence is one of the fastest-growing specialisms in security, and one of the most misunderstood from a hiring perspective. You don't need a CISSP. You need demonstrated analytical skill, structured thinking, and the ability to turn raw data into a decision. Here's the practical roadmap.</p>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Foundations (months 1–3)</div>
+        <ul class="modal-mitigations">
+          <li>Learn the <strong style="color:var(--ink)">Diamond Model</strong> and <strong style="color:var(--ink)">MITRE ATT&CK</strong> framework until they're second nature. Every real TI job uses these daily.</li>
+          <li>Get comfortable with <strong style="color:var(--ink)">OSINT tooling</strong>: Maltego Community, Shodan, VirusTotal, URLScan.io, and MISP. Build workflows, not just one-off lookups.</li>
+          <li>Set up a home lab — run a MISP instance and populate it with data from public feeds (AlienVault OTX, Feodo Tracker, Abuse.ch).</li>
+          <li>Start reading threat reports: Mandiant M-Trends, CrowdStrike Global Threat Report, Recorded Future Annual Report. Take notes using the Diamond Model.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Build a portfolio (months 3–6)</div>
+        <ul class="modal-mitigations">
+          <li>Publish a threat actor profile on GitHub using structured intelligence: capabilities, infrastructure, targeting, and TTPs mapped to ATT&CK.</li>
+          <li>Write a malware analysis report on a public sample from MalwareBazaar. Beginner-friendly: start with Python stealers, not packed PE files.</li>
+          <li>Contribute to open-source threat intel projects: MISP taxonomies, Sigma rules, or OpenCTI connectors. Public pull requests are better than any cert.</li>
+          <li>Start a public blog or substack. Explaining complex topics clearly is a core analyst skill — demonstrate it before your interview.</li>
+        </ul>
+
+        <hr class="modal-divider">
+        <div class="modal-section-label">Communities worth joining</div>
+        <div class="modal-ioc-block">
+          <div class="ioc-label">Where real analysts hang out</div>
+          <code>Threat Intel Slack (SANS community)</code>
+          <code class="warn">CTI League Discord</code>
+          <code>Mastodon: infosec.exchange</code>
+          <code>FIRST.org working groups (free membership)</code>
+        </div>
+
+        <div class="modal-footer-note">Written by the CyberWiseDaily editorial team in consultation with hiring managers at three Tier 1 MSSPs and two in-house CTI teams. Updated May 2026.</div>
+      `
+    }
+  ];
+
+  // ── Modal logic ────────────────────────────────────────────────────
+  function openModal(index) {
+    const b = briefings[index];
+    const overlay = document.getElementById('intelModal');
+
+    document.getElementById('modalMeta').innerHTML =
+      `<span class="briefing-tag ${b.tagClass}">⬢ ${b.tag}</span>
+       <span style="color:var(--ink-muted)">${b.date}</span>`;
+
+    document.getElementById('modalContent').innerHTML =
+      `<h2 class="modal-title" id="modalTitle">${b.title}</h2>` + b.body;
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('modalBox').scrollTop = 0;
+  }
+
+  function closeModal() {
+    document.getElementById('intelModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Wire up briefing cards
+  document.querySelectorAll('.briefing-card').forEach((card, i) => {
+    card.addEventListener('click', () => openModal(i));
+  });
+
+  // Close on overlay click
+  document.getElementById('intelModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // ── Reveal on scroll ───────────────────────────────────────────────
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Subscribe handler
+  // ── Subscribe handler ──────────────────────────────────────────────
   function handleSubscribe(e) {
     e.preventDefault();
     const input = e.target.querySelector('input');
@@ -1028,8 +1692,7 @@
     }, 2500);
   }
 
-  // Update threat counter
-  const dot = document.querySelector('.status-dot');
+  // ── Threat counter ─────────────────────────────────────────────────
   let count = 247;
   setInterval(() => {
     count += Math.floor(Math.random() * 3);
