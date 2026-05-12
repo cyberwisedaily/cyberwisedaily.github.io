@@ -1,0 +1,67 @@
+name: Daily Intel Refresh
+
+# 06:00 UTC every day (= about when subscribers get their morning email).
+# You can also trigger it manually from the Actions tab.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+# Allow the job to push commits back to the repo and to read it.
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch latest intel and write data/intel.json
+        run: python scripts/fetch_intel.py
+
+      - name: Commit refreshed intel.json (if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain data/intel.json)" ]]; then
+            git add data/intel.json
+            git commit -m "chore(intel): daily refresh $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No change to data/intel.json — skipping commit."
+          fi
+
+      # Broadcast to subscribers via the Google Apps Script web app.
+      # Skipped automatically if the BROADCAST_URL secret isn't configured.
+      - name: Broadcast daily brief to subscribers
+        env:
+          BROADCAST_URL: ${{ secrets.BROADCAST_URL }}
+          BROADCAST_SECRET: ${{ secrets.BROADCAST_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${BROADCAST_URL:-}" ]; then
+            echo "BROADCAST_URL secret not set — skipping broadcast (site will still update)."
+            exit 0
+          fi
+          # Apps Script web apps accept form-urlencoded posts without CORS preflight.
+          DATA_JSON=$(cat data/intel.json)
+          curl --fail --silent --show-error \
+            -X POST "$BROADCAST_URL" \
+            --data-urlencode "action=broadcast" \
+            --data-urlencode "secret=${BROADCAST_SECRET:-}" \
+            --data-urlencode "data=$DATA_JSON" \
+          | tee /tmp/broadcast_response.txt
+          echo
+          grep -q '"ok":true' /tmp/broadcast_response.txt || {
+            echo "::error::Broadcast endpoint did not return ok:true"; exit 1;
+          }
