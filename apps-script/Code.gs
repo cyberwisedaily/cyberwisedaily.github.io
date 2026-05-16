@@ -35,9 +35,9 @@
 // ---------------------------------------------------------------------------
 // Configuration — edit SHEET_ID. Everything else can stay as-is.
 // ---------------------------------------------------------------------------
-const SHEET_ID = "PASTE_YOUR_GOOGLE_SHEET_ID_HERE";
-const SHEET_NAME = "Subscribers";
-const SITE_URL = "https://YOUR-GITHUB-USERNAME.github.io/cyberwisedaily/";
+const SHEET_ID = "";           // Leave empty if deployed from Extensions → Apps Script inside your Sheet
+const SHEET_NAME = "Subscribers";                        // must match your tab name exactly
+const SITE_URL = "https://YOUR-GITHUB-USERNAME.github.io/cyberwisedaily/"; // ← replace this
 const FROM_NAME = "CyberWiseDaily";
 
 // ---------------------------------------------------------------------------
@@ -206,7 +206,11 @@ function renderDigest_(intel) {
 }
 
 function getSheet_() {
-  const ss = SpreadsheetApp.openById(SHEET_ID);
+  // If opened via Extensions → Apps Script, the script is bound to the sheet
+  // and getActiveSpreadsheet() works without needing SHEET_ID.
+  const ss = SHEET_ID
+    ? SpreadsheetApp.openById(SHEET_ID)
+    : SpreadsheetApp.getActiveSpreadsheet();
   let sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME);

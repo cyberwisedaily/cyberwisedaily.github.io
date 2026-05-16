@@ -29,16 +29,22 @@ jobs:
       - name: Fetch latest intel and write data/intel.json
         run: python scripts/fetch_intel.py
 
-      - name: Commit refreshed intel.json (if changed)
+      - name: Inject subscribe URL into index.html
+        env:
+          SUBSCRIBE_URL: ${{ secrets.SUBSCRIBE_URL }}
+        run: |
+          sed -i "s|__SUBSCRIBE_URL__|${SUBSCRIBE_URL}|g" index.html
+
+      - name: Commit refreshed files (if changed)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain data/intel.json)" ]]; then
-            git add data/intel.json
+          git add data/intel.json index.html
+          if [[ -n "$(git status --porcelain)" ]]; then
             git commit -m "chore(intel): daily refresh $(date -u +%Y-%m-%d)"
             git push
           else
-            echo "No change to data/intel.json — skipping commit."
+            echo "No changes — skipping commit."
           fi
 
       # Broadcast to subscribers via the Google Apps Script web app.
