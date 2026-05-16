@@ -399,6 +399,12 @@
 
   .feature:hover { background: var(--bg-elevated); }
 
+  /* Dynamically injected feature cards are always visible */
+  #features-grid .feature {
+    opacity: 1;
+    transform: none;
+  }
+
   .feature-num {
     color: var(--ink-muted);
     font-size: 0.75rem;
@@ -932,7 +938,7 @@
     const grid = $("#features-grid");
     if (!grid || !Array.isArray(categories)) return;
     grid.innerHTML = categories.map((c) => `
-      <div class="feature reveal">
+      <div class="feature">
         <div class="feature-num">// ${escapeHTML(c.num)}</div>
         <div class="feature-icon">${FEATURE_ICONS[c.id] || DEFAULT_ICON}</div>
         <h3>${escapeHTML(c.title)}</h3>
@@ -940,15 +946,6 @@
         ${c.today_metric ? `<span class="feature-today">▸ ${escapeHTML(c.today_metric)}</span>` : ""}
       </div>
     `).join("");
-    // Re-arm the reveal observer for newly injected cards
-    $$(".feature.reveal").forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        el.classList.add("visible");
-      } else {
-        revealObserver.observe(el);
-      }
-    });
   }
 
   // ---------- render briefings ----------
