@@ -384,7 +384,7 @@
 
   .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
@@ -400,7 +400,8 @@
   .feature:hover { background: var(--bg-elevated); }
 
   /* Dynamically injected feature cards are always visible */
-  #features-grid .feature {
+  #features-grid-1 .feature,
+  #features-grid-2 .feature {
     opacity: 1;
     transform: none;
   }
@@ -722,6 +723,7 @@
     section { padding: 4rem 1.25rem; }
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
     .subscribe { padding: 3rem 1.5rem; margin: 3rem 1.25rem; }
+    .features { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 500px) {
@@ -802,8 +804,11 @@
   <h2 class="section-title">Signal, not <em>noise</em>.</h2>
   <p class="section-intro">Every briefing is hand-curated by analysts who've worked the SOC floor. No regurgitated press releases. No fluff.</p>
 
-  <div class="features" id="features-grid">
-    <!-- Populated from data/intel.json. Static fallback shown until JSON loads. -->
+  <div class="features" id="features-grid-1">
+    <!-- First row: cards 1-3 -->
+  </div>
+  <div class="features" style="margin-top: 1px;" id="features-grid-2">
+    <!-- Second row: cards 4-6 -->
   </div>
 
   <!-- STATS -->
@@ -935,9 +940,11 @@
 
   // ---------- render features ----------
   function renderFeatures(categories) {
-    const grid = $("#features-grid");
-    if (!grid || !Array.isArray(categories)) return;
-    grid.innerHTML = categories.map((c) => `
+    const grid1 = $("#features-grid-1");
+    const grid2 = $("#features-grid-2");
+    if (!grid1 || !grid2 || !Array.isArray(categories)) return;
+
+    const toCard = (c) => `
       <div class="feature">
         <div class="feature-num">// ${escapeHTML(c.num)}</div>
         <div class="feature-icon">${FEATURE_ICONS[c.id] || DEFAULT_ICON}</div>
@@ -945,7 +952,10 @@
         <p>${escapeHTML(c.description)}</p>
         ${c.today_metric ? `<span class="feature-today">▸ ${escapeHTML(c.today_metric)}</span>` : ""}
       </div>
-    `).join("");
+    `;
+
+    grid1.innerHTML = categories.slice(0, 3).map(toCard).join("");
+    grid2.innerHTML = categories.slice(3, 6).map(toCard).join("");
   }
 
   // ---------- render briefings ----------
