@@ -45,24 +45,64 @@ const FROM_NAME = "CyberWiseDaily";
 // ---------------------------------------------------------------------------
 
 function doGet(e) {
+  // Handle one-click unsubscribe via GET link in emails
+  const action = (e && e.parameter && e.parameter.action) || "";
+  if (action === "unsubscribe") return unsubscribe_(e.parameter);
+
   // Browsing to the web-app URL just returns a friendly status page.
-  return jsonOut({
-    ok: true,
-    service: "cyberwisedaily-backend",
-    actions: ["subscribe", "broadcast"],
-    note: "POST application/x-www-form-urlencoded with action=subscribe&email=...",
-  });
+  return HtmlService.createHtmlOutput(`
+    <!DOCTYPE html><html><head><meta charset="UTF-8">
+    <title>CyberWiseDaily</title>
+    <style>body{font-family:monospace;background:#0a0e0a;color:#d4e8d4;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;}
+    .box{border:1px solid #1f2e1f;padding:2rem 3rem;text-align:center;max-width:480px;}
+    h2{color:#4ade80;margin-bottom:1rem;}a{color:#4ade80;}</style></head>
+    <body><div class="box">
+      <h2>⌬ CyberWiseDaily</h2>
+      <p>Backend is running.</p>
+      <p><a href="${SITE_URL}">← Back to site</a></p>
+    </div></body></html>
+  `);
 }
 
 function doPost(e) {
   try {
     const action = (e && e.parameter && e.parameter.action) || "";
-    if (action === "subscribe") return subscribe_(e.parameter);
-    if (action === "broadcast") return broadcast_(e.parameter);
-    return jsonOut({ ok: false, error: "Unknown action. Use action=subscribe or action=broadcast." });
+    if (action === "subscribe")   return subscribe_(e.parameter);
+    if (action === "unsubscribe") return unsubscribe_(e.parameter);
+    if (action === "broadcast")   return broadcast_(e.parameter);
+    return jsonOut({ ok: false, error: "Unknown action. Use action=subscribe, unsubscribe, or broadcast." });
   } catch (err) {
     return jsonOut({ ok: false, error: String(err && err.message || err) });
   }
+}
+
+// ---------------------------------------------------------------------------
+// Unsubscribe (one-click link in every email)
+// ---------------------------------------------------------------------------
+
+function unsubscribe_(params) {
+  const email = String(params.email || "").trim().toLowerCase();
+  if (!isValidEmail_(email)) {
+    return htmlOut_("Invalid link", "That unsubscribe link doesn't look right. Please reply to any CyberWiseDaily email to unsubscribe manually.");
+  }
+
+  const sheet = getSheet_();
+  const data = sheet.getDataRange().getValues();
+
+  let found = false;
+  for (let i = 1; i < data.length; i++) {
+    if (String(data[i][0]).trim().toLowerCase() === email) {
+      sheet.getRange(i + 1, 3).setValue("inactive");
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    return htmlOut_("Not found", `${email} wasn't found in our list — you may already be unsubscribed.`);
+  }
+
+  return htmlOut_("Unsubscribed", `${email} has been removed. You won't receive any more emails from CyberWiseDaily.<br><br><a href="${SITE_URL}">← Back to site</a>`);
 }
 
 // ---------------------------------------------------------------------------
@@ -97,6 +137,7 @@ function subscribe_(params) {
 
   // Welcome email — keep it short and plain-text.
   try {
+    const unsubUrl = unsubscribeUrl_(email);
     MailApp.sendEmail({
       to: email,
       name: FROM_NAME,
@@ -107,10 +148,11 @@ function subscribe_(params) {
         "You'll start receiving the CyberWiseDaily brief at 06:00 UTC each day.",
         "Plain text, five-minute read, zero tracking.",
         "",
-        "If this wasn't you, just reply with 'unsubscribe' and we'll remove the address.",
-        "",
         "— CyberWiseDaily",
         SITE_URL,
+        "",
+        "--",
+        "To unsubscribe: " + unsubUrl,
       ].join("\n"),
     });
   } catch (err) {
@@ -149,12 +191,12 @@ function broadcast_(params) {
 
   const subscribers = getActiveSubscribers_();
   const subject = `CyberWiseDaily — ${intel.generated_date_display || todayString_()}`;
-  const body = renderDigest_(intel);
 
   let sent = 0;
   const errors = [];
   for (const email of subscribers) {
     try {
+      const body = renderDigest_(intel, email);
       MailApp.sendEmail({ to: email, name: FROM_NAME, subject, body });
       sent++;
     } catch (err) {
@@ -176,7 +218,7 @@ function broadcast_(params) {
 // Helpers
 // ---------------------------------------------------------------------------
 
-function renderDigest_(intel) {
+function renderDigest_(intel, email) {
   const lines = [];
   lines.push(`CyberWiseDaily — ${intel.generated_date_display || todayString_()}`);
   lines.push("=".repeat(48));
@@ -201,8 +243,27 @@ function renderDigest_(intel) {
   }
   lines.push("--");
   lines.push(`Read on the web: ${SITE_URL}`);
-  lines.push("Reply 'unsubscribe' to stop receiving these.");
+  if (email) {
+    lines.push(`Unsubscribe: ${unsubscribeUrl_(email)}`);
+  }
   return lines.join("\n");
+}
+
+// Build a one-click unsubscribe GET URL for a given email address.
+function unsubscribeUrl_(email) {
+  const scriptUrl = ScriptApp.getService().getUrl();
+  return `${scriptUrl}?action=unsubscribe&email=${encodeURIComponent(email)}`;
+}
+
+// Return a simple HTML page (used for unsubscribe confirmation).
+function htmlOut_(title, bodyHtml) {
+  return HtmlService.createHtmlOutput(`
+    <!DOCTYPE html><html><head><meta charset="UTF-8"><title>${title} — CyberWiseDaily</title>
+    <style>body{font-family:monospace;background:#0a0e0a;color:#d4e8d4;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;}
+    .box{border:1px solid #1f2e1f;padding:2rem 3rem;text-align:center;max-width:480px;}
+    h2{color:#4ade80;margin-bottom:1rem;}a{color:#4ade80;}</style></head>
+    <body><div class="box"><h2>⌬ ${title}</h2><p>${bodyHtml}</p></div></body></html>
+  `);
 }
 
 function getSheet_() {
