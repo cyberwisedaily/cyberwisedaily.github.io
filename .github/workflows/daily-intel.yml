@@ -68,7 +68,7 @@ jobs:
           # Apps Script web apps accept form-urlencoded posts without CORS preflight.
           DATA_JSON=$(cat data/intel.json)
           curl --fail --silent --show-error \
-            -X POST "$BROADCAST_URL" \
+            --location --request POST "$BROADCAST_URL" \
             --data-urlencode "action=broadcast" \
             --data-urlencode "secret=${BROADCAST_SECRET:-}" \
             --data-urlencode "data=$DATA_JSON" \
