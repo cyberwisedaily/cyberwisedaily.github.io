@@ -940,8 +940,15 @@
         ${c.today_metric ? `<span class="feature-today">▸ ${escapeHTML(c.today_metric)}</span>` : ""}
       </div>
     `).join("");
-    // Re-arm the reveal observer for new cards
-    $$(".feature.reveal").forEach((el) => revealObserver.observe(el));
+    // Re-arm the reveal observer for newly injected cards
+    $$(".feature.reveal").forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add("visible");
+      } else {
+        revealObserver.observe(el);
+      }
+    });
   }
 
   // ---------- render briefings ----------
@@ -966,7 +973,14 @@
         ? `<a class="briefing-card reveal" href="${escapeHTML(b.source_url)}" target="_blank" rel="noopener noreferrer">${inner}</a>`
         : `<article class="briefing-card reveal">${inner}</article>`;
     }).join("");
-    $$(".briefing-card.reveal").forEach((el) => revealObserver.observe(el));
+    $$(".briefing-card.reveal").forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add("visible");
+      } else {
+        revealObserver.observe(el);
+      }
+    });
   }
 
   // ---------- render terminal ----------

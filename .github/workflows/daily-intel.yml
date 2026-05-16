@@ -14,6 +14,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    environment: Prod
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -33,7 +34,12 @@ jobs:
         env:
           SUBSCRIBE_URL: ${{ secrets.SUBSCRIBE_URL }}
         run: |
-          sed -i "s|__SUBSCRIBE_URL__|${SUBSCRIBE_URL}|g" index.html
+          if [ -z "${SUBSCRIBE_URL:-}" ]; then
+            echo "SUBSCRIBE_URL secret not set — skipping URL injection."
+          else
+            sed -i "s|__SUBSCRIBE_URL__|${SUBSCRIBE_URL}|g" index.html
+            echo "Injected SUBSCRIBE_URL into index.html"
+          fi
 
       - name: Commit refreshed files (if changed)
         run: |
