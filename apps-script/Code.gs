@@ -102,7 +102,35 @@ function unsubscribe_(params) {
     return htmlOut_("Not found", `${email} wasn't found in our list — you may already be unsubscribed.`);
   }
 
-  return htmlOut_("Unsubscribed", `${email} has been removed. You won't receive any more emails from CyberWiseDaily.<br><br><a href="${SITE_URL}">← Back to site</a>`);
+  // Send a confirmation email so the user has proof they were removed.
+  try {
+    MailApp.sendEmail({
+      to: email,
+      name: FROM_NAME,
+      subject: "You've been unsubscribed from CyberWiseDaily",
+      body: [
+        "Hi,",
+        "",
+        "This is a confirmation that " + email + " has been removed from CyberWiseDaily.",
+        "You will not receive any further emails from us.",
+        "",
+        "Changed your mind? You can re-subscribe any time at:",
+        SITE_URL,
+        "",
+        "— CyberWiseDaily",
+      ].join("\n"),
+    });
+  } catch (_) {
+    // Confirmation email failure is non-critical — unsubscribe already succeeded.
+  }
+
+  return htmlOut_("Unsubscribed", `
+    <p><strong>${email}</strong> has been removed from CyberWiseDaily.</p>
+    <p>You will not receive any more emails from us.</p>
+    <p>A confirmation has been sent to your inbox.</p>
+    <br>
+    <p><a href="${SITE_URL}">← Back to site</a></p>
+  `);
 }
 
 // ---------------------------------------------------------------------------
@@ -135,25 +163,19 @@ function subscribe_(params) {
 
   sheet.appendRow([email, new Date().toISOString(), "active"]);
 
-  // Welcome email — keep it short and plain-text.
+  // Welcome email — HTML with unsubscribe button.
   try {
     const unsubUrl = unsubscribeUrl_(email);
     MailApp.sendEmail({
       to: email,
       name: FROM_NAME,
       subject: "Welcome to CyberWiseDaily",
-      body: [
-        "Welcome.",
-        "",
-        "You'll start receiving the CyberWiseDaily brief at 06:00 UTC each day.",
-        "Plain text, five-minute read, zero tracking.",
-        "",
-        "— CyberWiseDaily",
-        SITE_URL,
-        "",
-        "--",
-        "To unsubscribe: " + unsubUrl,
-      ].join("\n"),
+      htmlBody: htmlEmail_("Welcome to CyberWiseDaily", `
+        <p>Welcome.</p>
+        <p>You'll start receiving the CyberWiseDaily brief at <strong>06:00 UTC</strong> each day.<br>
+        Plain text, five-minute read, zero tracking.</p>
+        <p><a href="${SITE_URL}" style="color:#4ade80;">Visit CyberWiseDaily →</a></p>
+      `, email, unsubUrl),
     });
   } catch (err) {
     // Mail send can fail if quota is exhausted. Still treat subscribe as success
@@ -196,12 +218,16 @@ function broadcast_(params) {
   const errors = [];
   for (const email of subscribers) {
     try {
-      const body = renderDigest_(intel, email);
-      MailApp.sendEmail({ to: email, name: FROM_NAME, subject, body });
+      const unsubUrl = unsubscribeUrl_(email);
+      MailApp.sendEmail({
+        to: email,
+        name: FROM_NAME,
+        subject,
+        htmlBody: renderDigest_(intel, email),
+      });
       sent++;
     } catch (err) {
       errors.push({ email, error: String(err && err.message || err) });
-      // Most common cause: daily quota exceeded. Stop early to avoid noise.
       if (/quota/i.test(String(err))) break;
     }
   }
@@ -219,34 +245,123 @@ function broadcast_(params) {
 // ---------------------------------------------------------------------------
 
 function renderDigest_(intel, email) {
-  const lines = [];
-  lines.push(`CyberWiseDaily — ${intel.generated_date_display || todayString_()}`);
-  lines.push("=".repeat(48));
-  lines.push("");
-  lines.push(`Threats tracked today: ${intel.threats_tracked ?? "?"}`);
-  lines.push("");
+  const unsubUrl = unsubscribeUrl_(email);
+  const date = intel.generated_date_display || todayString_();
+
+  // Terminal status lines
+  let statusRows = "";
   if (intel.terminal && Array.isArray(intel.terminal.lines)) {
-    lines.push("STATUS");
-    lines.push("------");
-    intel.terminal.lines.forEach((l) => lines.push(`  [${l.level}] ${l.text}`));
-    lines.push("");
+    statusRows = intel.terminal.lines.map((l) => {
+      const color = l.level === "CRIT" ? "#f87171" : l.level === "WARN" ? "#fbbf24" : "#4ade80";
+      return `<tr>
+        <td style="padding:4px 12px 4px 0;color:${color};font-family:monospace;white-space:nowrap;">[${l.level}]</td>
+        <td style="padding:4px 0;color:#7a9080;font-family:monospace;">${escapeHtml_(l.text)}</td>
+      </tr>`;
+    }).join("");
   }
+
+  // Briefing cards
+  let briefingCards = "";
   if (Array.isArray(intel.briefings) && intel.briefings.length) {
-    lines.push("TODAY'S BRIEFINGS");
-    lines.push("-----------------");
-    intel.briefings.forEach((b, i) => {
-      lines.push(`${i + 1}. [${b.tag}] ${b.title}`);
-      if (b.excerpt) lines.push(`   ${b.excerpt}`);
-      if (b.source_url) lines.push(`   → ${b.source_url}`);
-      lines.push("");
-    });
+    briefingCards = intel.briefings.map((b) => {
+      const tagColor = b.tag_class === "crit" ? "#f87171" : b.tag_class === "warn" ? "#fbbf24" : "#4ade80";
+      const link = b.source_url
+        ? `<a href="${b.source_url}" style="color:#4ade80;text-decoration:none;font-size:12px;">Read more →</a>`
+        : "";
+      return `
+        <div style="border:1px solid #1f2e1f;border-left:3px solid ${tagColor};padding:16px 20px;margin-bottom:12px;background:#111611;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+            <span style="color:${tagColor};font-family:monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;">⬢ ${escapeHtml_(b.tag || "INTEL")}</span>
+            <span style="color:#4a5a4a;font-family:monospace;font-size:11px;">${escapeHtml_(b.date || "")}</span>
+          </div>
+          <div style="font-family:Georgia,serif;font-size:16px;color:#d4e8d4;margin-bottom:8px;line-height:1.4;">${escapeHtml_(b.title || "")}</div>
+          <div style="font-family:monospace;font-size:13px;color:#7a9080;line-height:1.6;margin-bottom:10px;">${escapeHtml_(b.excerpt || "")}</div>
+          ${link}
+        </div>`;
+    }).join("");
   }
-  lines.push("--");
-  lines.push(`Read on the web: ${SITE_URL}`);
-  if (email) {
-    lines.push(`Unsubscribe: ${unsubscribeUrl_(email)}`);
-  }
-  return lines.join("\n");
+
+  const content = `
+    <p style="font-family:monospace;font-size:13px;color:#7a9080;margin:0 0 24px;">
+      Threats tracked today: <strong style="color:#4ade80;">${intel.threats_tracked ?? "?"}</strong>
+    </p>
+
+    ${statusRows ? `
+    <div style="background:#0d120d;border:1px solid #1f2e1f;padding:16px 20px;margin-bottom:28px;">
+      <div style="font-family:monospace;font-size:11px;color:#4a5a4a;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.1em;">// Status — ${date}</div>
+      <table style="border-collapse:collapse;">${statusRows}</table>
+    </div>` : ""}
+
+    <div style="font-family:monospace;font-size:11px;color:#4ade80;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:14px;">// Today's Briefings</div>
+    ${briefingCards}
+
+    <div style="margin-top:28px;">
+      <a href="${SITE_URL}" style="display:inline-block;background:#4ade80;color:#0a0e0a;font-family:monospace;font-size:13px;font-weight:700;text-decoration:none;padding:12px 24px;text-transform:uppercase;letter-spacing:0.05em;">Read on the web →</a>
+    </div>
+  `;
+
+  return htmlEmail_(`CyberWiseDaily — ${date}`, content, email, unsubUrl);
+}
+
+// Escape HTML special characters for safe insertion into email body.
+function escapeHtml_(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+// Shared HTML email shell with header, content, and unsubscribe button footer.
+function htmlEmail_(title, contentHtml, email, unsubUrl) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#0a0e0a;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#0a0e0a;padding:32px 16px;">
+  <tr><td align="center">
+    <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#0a0e0a;border:1px solid #1f2e1f;">
+
+      <!-- Header -->
+      <tr>
+        <td style="background:#0d120d;border-bottom:1px solid #1f2e1f;padding:20px 28px;">
+          <span style="font-family:monospace;font-size:16px;font-weight:700;color:#d4e8d4;">⌬ cyberwise<span style="color:#4ade80;">.daily</span></span>
+        </td>
+      </tr>
+
+      <!-- Title -->
+      <tr>
+        <td style="padding:28px 28px 8px;">
+          <h1 style="margin:0;font-family:Georgia,serif;font-weight:300;font-size:22px;color:#d4e8d4;letter-spacing:-0.01em;">${escapeHtml_(title)}</h1>
+        </td>
+      </tr>
+
+      <!-- Body -->
+      <tr>
+        <td style="padding:16px 28px 28px;">
+          ${contentHtml}
+        </td>
+      </tr>
+
+      <!-- Footer with unsubscribe button -->
+      <tr>
+        <td style="border-top:1px solid #1f2e1f;padding:20px 28px;text-align:center;">
+          <p style="font-family:monospace;font-size:11px;color:#4a5a4a;margin:0 0 14px;">
+            You're receiving this because you subscribed at <a href="${SITE_URL}" style="color:#4a5a4a;">${SITE_URL}</a>
+          </p>
+          <a href="${unsubUrl}"
+             style="display:inline-block;background:transparent;color:#f87171;font-family:monospace;font-size:12px;font-weight:600;text-decoration:none;padding:8px 20px;border:1px solid #f87171;text-transform:uppercase;letter-spacing:0.05em;">
+            Unsubscribe
+          </a>
+          <p style="font-family:monospace;font-size:10px;color:#4a5a4a;margin:12px 0 0;">
+            Clicking unsubscribe removes ${escapeHtml_(email)} immediately. No confirmation required.
+          </p>
+        </td>
+      </tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>`;
 }
 
 // Build a one-click unsubscribe GET URL for a given email address.
