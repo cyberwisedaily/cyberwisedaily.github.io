@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-16T14:13:12+00:00",
-  "generated_date_display": "2026.05.16",
-  "threats_tracked": 74,
+  "generated_at": "2026-05-17T05:45:56+00:00",
+  "generated_date_display": "2026.05.17",
+  "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.05.16",
+    "header_date": "2026.05.17",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "27 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.16"
+      "today_metric": "Brief sent: 2026.05.17"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "24 active exploits in last 30d"
+      "today_metric": "23 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208"
     },
     {
-      "id": "CVE-2026-44717",
+      "id": "CVE-2020-37228",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.15",
-      "title": "CVE-2026-44717 — CRITICAL (CVSS 9.8)",
-      "excerpt": "MCP Calculate Server is a mathematical calculation service based on MCP protocol and SymPy library. Prior to 0.1.1, the use of eval() to evaluate mathematical expressions without proper input sanitization leads to remote code execution.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44717"
+      "date": "2026.05.16",
+      "title": "CVE-2020-37228 — CRITICAL (CVSS 9.8)",
+      "excerpt": "iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability that allows attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes via the login…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-37228"
     },
     {
-      "id": "CVE-2021-47965",
+      "id": "CVE-2020-37239",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.15",
-      "title": "CVE-2021-47965 — CRITICAL (CVSS 9.8)",
-      "excerpt": "WordPress Plugin WP Super Edit 2.5.4 and earlier contains an unrestricted file upload vulnerability in the FCKeditor component that allows attackers to upload dangerous file types without validation. Attackers can upload arbitrary files…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-47965"
+      "date": "2026.05.16",
+      "title": "CVE-2020-37239 — CRITICAL (CVSS 9.8)",
+      "excerpt": "libbabl 0.1.62 contains a broken double free detection vulnerability that allows attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. Attackers can call babl_free() twice on the same pointer…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-37239"
     },
     {
-      "id": "CVE-2026-41258",
+      "id": "CVE-2021-47952",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.15",
-      "title": "CVE-2026-41258 — CRITICAL (CVSS 9.1)",
-      "excerpt": "OpenMRS is an open source electronic medical record system platform. From 2.7.0 to before 2.7.9 and 2.8.6, the ConceptReferenceRangeUtility.evaluateCriteria() method in OpenMRS Core evaluates database-stored criteria strings as Apache…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41258"
+      "date": "2026.05.16",
+      "title": "CVE-2021-47952 — CRITICAL (CVSS 9.8)",
+      "excerpt": "python jsonpickle 2.0.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary Python commands by deserializing malicious JSON payloads containing py/repr objects. Attackers can craft JSON strings with…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-47952"
     }
   ]
 }
