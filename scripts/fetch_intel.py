@@ -19,9 +19,23 @@ from __future__ import annotations
 
 import json
 import os
-import sys
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Load .env when running locally (no-op in GitHub Actions where secrets are
+# injected as real environment variables).
+# ---------------------------------------------------------------------------
+_env_file = Path(__file__).resolve().parent.parent / ".env"
+if _env_file.exists():
+    with open(_env_file) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _key, _, _val = _line.partition("=")
+                os.environ.setdefault(_key.strip(), _val.strip())
+
+import sys  # noqa: E402
+from datetime import datetime, timedelta, timezone  # noqa: E402
 from typing import Any
 
 import requests

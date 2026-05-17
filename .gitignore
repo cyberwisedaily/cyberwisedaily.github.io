@@ -1,0 +1,19 @@
+# Environment secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node (if ever added)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
