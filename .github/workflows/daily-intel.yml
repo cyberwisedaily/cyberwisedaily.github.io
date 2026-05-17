@@ -64,13 +64,13 @@ jobs:
             echo "BROADCAST_URL secret not set — skipping broadcast (site will still update)."
             exit 0
           fi
-          # Apps Script web apps accept form-urlencoded posts without CORS preflight.
+          # Apps Script /exec redirects to googleusercontent.com — follow with GET on redirect.
           DATA_JSON=$(cat data/intel.json)
-          curl --fail --silent --show-error \
-            --location --request POST "$BROADCAST_URL" \
+          curl --fail --silent --show-error --location \
             --data-urlencode "action=broadcast" \
             --data-urlencode "secret=${BROADCAST_SECRET:-}" \
             --data-urlencode "data=$DATA_JSON" \
+            "$BROADCAST_URL" \
           | tee /tmp/broadcast_response.txt
           echo
           grep -q '"ok":true' /tmp/broadcast_response.txt || {
