@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-18T16:43:04+00:00",
-  "generated_date_display": "2026.05.18",
+  "generated_at": "2026-05-19T17:24:36+00:00",
+  "generated_date_display": "2026.05.19",
   "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.05.18",
+    "header_date": "2026.05.19",
     "lines": [
       {
         "level": "CRIT",
-        "text": "2 critical CVEs published"
+        "text": "7 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "11 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.18"
+      "today_metric": "Brief sent: 2026.05.19"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "7 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208"
     },
     {
-      "id": "CVE-2026-8507",
+      "id": "CVE-2026-42822",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.17",
-      "title": "CVE-2026-8507 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl have out-of-bounds (OOB) write flaws. When parsing a PKCS12 file, with a >= 1 GiB OCTET STRING (or BIT STRING) attribute on a SAFEBAG, via info() or info_as_hash(), a heap…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8507"
-    },
-    {
-      "id": "CVE-2026-8721",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.05.17",
-      "title": "CVE-2026-8721 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl truncates passwords with embedded NULLs. Password parameters in PKCS12.xs are declared char *, which routes through Perl's default typemap to SvPV_nolen. The Perl length is discarded.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8721"
-    },
-    {
-      "id": "CVE-2026-8775",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
       "date": "2026.05.18",
-      "title": "CVE-2026-8775 — HIGH (CVSS 8.8)",
-      "excerpt": "A flaw has been found in Edimax BR-6428NS 1.10. This affects the function formL2TPSetup of the file /goform/formL2TPSetup of the component POST Request Handler. This manipulation of the argument L2TPUserName causes buffer overflow. It is…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8775"
+      "title": "CVE-2026-42822 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42822"
+    },
+    {
+      "id": "CVE-2026-27130",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.05.18",
+      "title": "CVE-2026-27130 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input sanitization, lack of schema…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27130"
+    },
+    {
+      "id": "CVE-2026-8836",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.05.18",
+      "title": "CVE-2026-8836 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A vulnerability was found in lwIP up to 2.2.1. Affected is the function snmp_parse_inbound_frame of the file src/apps/snmp/snmp_msg.c of the component snmpv3 USM Handler. Performing a manipulation of the argument…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8836"
     }
   ]
 }
