@@ -55,6 +55,7 @@ jobs:
       # Broadcast to subscribers via the Google Apps Script web app.
       # Skipped automatically if the BROADCAST_URL secret isn't configured.
       - name: Broadcast daily brief to subscribers
+        continue-on-error: true
         env:
           BROADCAST_URL: ${{ secrets.BROADCAST_URL }}
           BROADCAST_SECRET: ${{ secrets.BROADCAST_SECRET }}
