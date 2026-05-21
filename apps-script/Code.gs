@@ -90,6 +90,11 @@ function subscribe_(params) {
           <a href="${SITE_URL}" style="color:#4ade80;">Visit CyberWiseDaily →</a>
         </p>
       `, email, unsubUrl),
+      headers: {
+        "List-Unsubscribe":      `<${unsubUrl}>`,
+        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        "X-Mailer":              "CyberWiseDaily/1.0",
+      },
     });
   } catch (err) {
     return jsonOut({
@@ -185,11 +190,19 @@ function broadcast_(params) {
   const errors = [];
   for (const email of subscribers) {
     try {
+      const unsubUrl = unsubscribeUrl_(email);
       MailApp.sendEmail({
         to:       email,
         name:     FROM_NAME,
         subject,
         htmlBody: renderDigest_(intel, email),
+        body:     renderDigestPlainText_(intel, email),  // plain-text fallback
+        headers: {
+          "List-Unsubscribe":       `<${unsubUrl}>`,
+          "List-Unsubscribe-Post":  "List-Unsubscribe=One-Click",
+          "Precedence":             "bulk",
+          "X-Mailer":               "CyberWiseDaily/1.0",
+        },
       });
       sent++;
     } catch (err) {
@@ -260,6 +273,34 @@ function renderDigest_(intel, email) {
   `;
 
   return htmlEmail_(`CyberWiseDaily — ${date}`, content, email, unsubUrl);
+}
+
+// Plain-text fallback — improves spam score (multipart/alternative signals legit sender).
+function renderDigestPlainText_(intel, email) {
+  const lines = [];
+  const date  = intel.generated_date_display || todayString_();
+  lines.push(`CyberWiseDaily — ${date}`);
+  lines.push("=".repeat(48));
+  lines.push(`Threats tracked today: ${intel.threats_tracked ?? "?"}`);
+  lines.push("");
+  if (intel.terminal && Array.isArray(intel.terminal.lines)) {
+    lines.push("STATUS");
+    intel.terminal.lines.forEach((l) => lines.push(`  [${l.level}] ${l.text}`));
+    lines.push("");
+  }
+  if (Array.isArray(intel.briefings) && intel.briefings.length) {
+    lines.push("TODAY'S BRIEFINGS");
+    lines.push("-".repeat(32));
+    intel.briefings.forEach((b, i) => {
+      lines.push(`${i + 1}. [${b.tag}] ${b.title}`);
+      if (b.excerpt)    lines.push(`   ${b.excerpt}`);
+      if (b.source_url) lines.push(`   ${b.source_url}`);
+      lines.push("");
+    });
+  }
+  lines.push(`Read on the web: ${SITE_URL}`);
+  lines.push(`Unsubscribe: ${unsubscribeUrl_(email)}`);
+  return lines.join("\n");
 }
 
 // ---------------------------------------------------------------------------
