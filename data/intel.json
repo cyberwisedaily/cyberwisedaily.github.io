@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T06:37:30+00:00",
-  "generated_date_display": "2026.05.17",
+  "generated_at": "2026-05-20T16:45:19+00:00",
+  "generated_date_display": "2026.05.20",
   "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.05.17",
+    "header_date": "2026.05.20",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "27 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.17"
+      "today_metric": "Brief sent: 2026.05.20"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208"
     },
     {
-      "id": "CVE-2020-37228",
+      "id": "CVE-2026-34234",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.16",
-      "title": "CVE-2020-37228 — CRITICAL (CVSS 9.8)",
-      "excerpt": "iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability that allows attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes via the login…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-37228"
+      "date": "2026.05.19",
+      "title": "CVE-2026-34234 — CRITICAL (CVSS 10.0)",
+      "excerpt": "CtrlPanel is open-source billing software for hosting providers. In versions 1.1.1 and prior, the web-based installer (public/installer/index.php) is vulnerable to unauthenticated Remote Code Execution (RCE) because it performs the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34234"
     },
     {
-      "id": "CVE-2020-37239",
+      "id": "CVE-2026-33642",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.16",
-      "title": "CVE-2020-37239 — CRITICAL (CVSS 9.8)",
-      "excerpt": "libbabl 0.1.62 contains a broken double free detection vulnerability that allows attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. Attackers can call babl_free() twice on the same pointer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-37239"
+      "date": "2026.05.19",
+      "title": "CVE-2026-33642 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Kitty is a cross-platform GPU based terminal. In versions 0.46.2 and below, the handle_compose_command() function in kitty/graphics.c performs bounds validation on composition offsets using unsigned 32-bit arithmetic that is subject to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33642"
     },
     {
-      "id": "CVE-2021-47952",
+      "id": "CVE-2026-36829",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.16",
-      "title": "CVE-2021-47952 — CRITICAL (CVSS 9.8)",
-      "excerpt": "python jsonpickle 2.0.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary Python commands by deserializing malicious JSON payloads containing py/repr objects. Attackers can craft JSON strings with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-47952"
+      "date": "2026.05.19",
+      "title": "CVE-2026-36829 — CRITICAL (CVSS 9.8)",
+      "excerpt": "An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up to and including v7.7. The server validates session cookies using a filesystem existence check based on a user-controlled cookie value…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-36829"
     }
   ]
 }
