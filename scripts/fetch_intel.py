@@ -212,7 +212,7 @@ def build_payload() -> dict[str, Any]:
             "id": "daily_brief",
             "num": "02",
             "title": "06:00 Daily Brief",
-            "description": "One email. Five minutes. Read with your first coffee — be ahead of standup. Plain text. No tracking pixels. No marketing.",
+            "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
             "today_metric": f"Brief sent: {date_display}",
         },
         {

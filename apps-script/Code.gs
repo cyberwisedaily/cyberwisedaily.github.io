@@ -84,7 +84,7 @@ function subscribe_(params) {
       subject:  "Welcome to CyberWiseDaily",
       htmlBody: htmlEmail_("Welcome to CyberWiseDaily", `
         <p>Welcome.</p>
-        <p>You'll start receiving the CyberWiseDaily brief at <strong>06:00 UTC</strong> each day.<br>
+        <p>You'll start receiving the CyberWiseDaily brief at <strong>6:00 PM IST</strong> each day.<br>
            Plain text, five-minute read, zero tracking.</p>
         <p style="margin-top:24px;">
           <a href="${SITE_URL}" style="color:#4ade80;">Visit CyberWiseDaily →</a>

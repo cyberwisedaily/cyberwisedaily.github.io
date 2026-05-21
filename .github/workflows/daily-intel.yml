@@ -1,10 +1,10 @@
 name: Daily Intel Refresh
 
-# 06:00 UTC every day (= about when subscribers get their morning email).
+# 12:30 UTC every day (= 6:00 PM IST).
 # You can also trigger it manually from the Actions tab.
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "30 12 * * *"
   workflow_dispatch: {}
 
 # Allow the job to push commits back to the repo and to read it.
