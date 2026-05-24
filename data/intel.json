@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-23T16:10:51+00:00",
-  "generated_date_display": "2026.05.23",
-  "threats_tracked": 24,
+  "generated_at": "2026-05-24T16:13:04+00:00",
+  "generated_date_display": "2026.05.24",
+  "threats_tracked": 23,
   "terminal": {
-    "header_date": "2026.05.23",
+    "header_date": "2026.05.24",
     "lines": [
       {
         "level": "INFO",
@@ -28,7 +28,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.23"
+      "today_metric": "Brief sent: 2026.05.24"
     },
     {
       "id": "playbooks",
@@ -42,7 +42,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "24 active exploits in last 30d"
+      "today_metric": "23 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
