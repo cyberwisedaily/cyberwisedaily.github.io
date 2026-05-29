@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-05-28T20:59:21+00:00",
-  "generated_date_display": "2026.05.28",
+  "generated_at": "2026-05-29T21:03:23+00:00",
+  "generated_date_display": "2026.05.29",
   "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.05.28",
+    "header_date": "2026.05.29",
     "lines": [
       {
         "level": "CRIT",
-        "text": "2 critical CVEs published"
+        "text": "11 critical CVEs published"
+      },
+      {
+        "level": "CRIT",
+        "text": "1 new KEV entry today"
       },
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1606"
+        "text": "KEV catalog size: 1607"
       }
     ]
   },
@@ -29,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "1 new KEV entry today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.28"
+      "today_metric": "Brief sent: 2026.05.29"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "11 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "22 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +72,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-0257",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.05.29",
+      "title": "CVE-2026-0257: Palo Alto Networks PAN-OS actively exploited",
+      "excerpt": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257"
+    },
     {
       "id": "CVE-2026-48027",
       "tag": "CRITICAL",
@@ -87,40 +100,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321"
     },
     {
-      "id": "CVE-2026-8398",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.05.27",
-      "title": "CVE-2026-8398: Daemon Daemon Tools Lite actively exploited",
-      "excerpt": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8398"
-    },
-    {
-      "id": "CVE-2026-45083",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.05.27",
-      "title": "CVE-2026-45083 — CRITICAL (CVSS 9.8)",
-      "excerpt": "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From 4.8.0 to before 26.04.1, the Goobi viewer REST endpoint POST /api/v1/index/stream accepted an arbitrary Solr streaming expression…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45083"
-    },
-    {
-      "id": "CVE-2026-32999",
+      "id": "CVE-2026-46840",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.05.28",
-      "title": "CVE-2026-32999 — CRITICAL (CVSS 9.0)",
-      "excerpt": "Insufficient character filtering in backup agent signing module on Comet Backup server allows authenticated tenant administrator to execute an arbitrary code on behalf of a privileged user on the affected server and connected devices.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32999"
+      "title": "CVE-2026-46840 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Vulnerability in Oracle REST Data Services (component: Backend-as-a-Service). Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46840"
     },
     {
-      "id": "CVE-2026-44713",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.05.27",
-      "title": "CVE-2026-44713 — HIGH (CVSS 8.8)",
-      "excerpt": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.8.7, src/tmux.c reads the user's $TMUX environment variable, splits it on commas, and interpolates the socket-path component directly into a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44713"
+      "id": "CVE-2026-46775",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.05.28",
+      "title": "CVE-2026-46775 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Vulnerability in Oracle REST Data Services (component: Core). Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle REST…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46775"
+    },
+    {
+      "id": "CVE-2026-46822",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.05.28",
+      "title": "CVE-2026-46822 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Vulnerability in the Oracle iAssets product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46822"
     }
   ]
 }
