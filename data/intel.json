@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-05-29T21:03:23+00:00",
-  "generated_date_display": "2026.05.29",
-  "threats_tracked": 73,
+  "generated_at": "2026-05-30T16:14:59+00:00",
+  "generated_date_display": "2026.05.30",
+  "threats_tracked": 72,
   "terminal": {
-    "header_date": "2026.05.29",
+    "header_date": "2026.05.30",
     "lines": [
       {
         "level": "CRIT",
-        "text": "11 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "1 new KEV entry today"
+        "text": "2 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "18 high-severity advisories"
+        "text": "32 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,21 +29,21 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "1 new KEV entry today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.29"
+      "today_metric": "Brief sent: 2026.05.30"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "11 critical-severity playbooks queued"
+      "today_metric": "2 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321"
     },
     {
-      "id": "CVE-2026-46840",
+      "id": "CVE-2026-44962",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.28",
-      "title": "CVE-2026-46840 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Vulnerability in Oracle REST Data Services (component: Backend-as-a-Service). Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46840"
+      "date": "2026.05.29",
+      "title": "CVE-2026-44962 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Plesk contains an XPath injection vulnerability in the APS Application Catalog search functionality, where user-supplied input is interpolated into XPath queries without proper sanitization. This allows an authenticated, low-privileged…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44962"
     },
     {
-      "id": "CVE-2026-46775",
+      "id": "CVE-2026-45663",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.28",
-      "title": "CVE-2026-46775 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Vulnerability in Oracle REST Data Services (component: Core). Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle REST…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46775"
+      "date": "2026.05.29",
+      "title": "CVE-2026-45663 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.1 and earlier, a command injection vulnerability exists in the Docker file upload functionality. When an authenticated user uploads a file to a container, the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45663"
     },
     {
-      "id": "CVE-2026-46822",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.05.28",
-      "title": "CVE-2026-46822 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Vulnerability in the Oracle iAssets product of Oracle E-Business Suite (component: Internal Operations). Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46822"
+      "id": "CVE-2018-25388",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.05.29",
+      "title": "CVE-2018-25388 — HIGH (CVSS 8.8)",
+      "excerpt": "HaPe PKH 1.1 contains an arbitrary file upload vulnerability that allows authenticated attackers to upload malicious files by bypassing file type validation. Attackers can upload PHP files through multiple endpoints including…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-25388"
     }
   ]
 }
