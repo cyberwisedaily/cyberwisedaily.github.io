@@ -1,25 +1,29 @@
 {
-  "generated_at": "2026-05-31T16:42:15+00:00",
-  "generated_date_display": "2026.05.31",
-  "threats_tracked": 66,
+  "generated_at": "2026-06-01T22:26:37+00:00",
+  "generated_date_display": "2026.06.01",
+  "threats_tracked": 72,
   "terminal": {
-    "header_date": "2026.05.31",
+    "header_date": "2026.06.01",
     "lines": [
       {
         "level": "CRIT",
         "text": "1 critical CVE published"
       },
       {
+        "level": "CRIT",
+        "text": "1 new KEV entry today"
+      },
+      {
         "level": "WARN",
-        "text": "23 high-severity advisories"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
-        "text": "45 CVEs ingested in 24h"
+        "text": "50 CVEs ingested in 24h"
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1607"
+        "text": "KEV catalog size: 1608"
       }
     ]
   },
@@ -29,14 +33,14 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "1 new KEV entry today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.05.31"
+      "today_metric": "Brief sent: 2026.06.01"
     },
     {
       "id": "playbooks",
@@ -57,7 +61,7 @@
       "num": "05",
       "title": "Vendor & CVE Watch",
       "description": "Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.",
-      "today_metric": "45 new CVEs in last 24h"
+      "today_metric": "50 new CVEs in last 24h"
     },
     {
       "id": "career",
@@ -68,6 +72,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2024-21182",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.01",
+      "title": "CVE-2024-21182: Oracle WebLogic Server actively exploited",
+      "excerpt": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21182"
+    },
     {
       "id": "CVE-2026-0257",
       "tag": "CRITICAL",
@@ -87,40 +100,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027"
     },
     {
-      "id": "CVE-2026-45321",
+      "id": "CVE-2026-48188",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.05.27",
-      "title": "CVE-2026-45321: TanStack TanStack actively exploited",
-      "excerpt": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321"
+      "date": "2026.06.01",
+      "title": "CVE-2026-48188 — CRITICAL (CVSS 9.1)",
+      "excerpt": "An improper Input Validation vulnerability in OTRS or ((OTRS)) Community Edition database layer module allows an unauthenticated SQL injection which can lead to an authentication bypass. This issue only affects the system if the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48188"
     },
     {
-      "id": "CVE-2026-10187",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.05.31",
-      "title": "CVE-2026-10187 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability was detected in Totolink N300RH 6.1c.1353_B20190305. Affected by this issue is the function setWiFiBasicConfig of the file wireless.so of the component Web Management Interface. Performing a manipulation of the argument…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10187"
-    },
-    {
-      "id": "CVE-2026-10126",
+      "id": "CVE-2026-10206",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.05.30",
-      "title": "CVE-2026-10126 — HIGH (CVSS 8.8)",
-      "excerpt": "A security flaw has been discovered in Edimax BR-6478AC 1.23. Affected by this issue is the function formQoS of the file /goform/formQoS of the component POST Request Handler. The manipulation of the argument selSSID results in buffer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10126"
+      "date": "2026.06.01",
+      "title": "CVE-2026-10206 — HIGH (CVSS 8.8)",
+      "excerpt": "A vulnerability was detected in D-Link DI-8400 up to 16.07.26A1. This affects an unknown function of the file /dbsrv.asp. Performing a manipulation of the argument str results in stack-based buffer overflow. Remote exploitation of the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10206"
     },
     {
-      "id": "CVE-2026-10158",
+      "id": "CVE-2026-20452",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.05.31",
-      "title": "CVE-2026-10158 — HIGH (CVSS 8.8)",
-      "excerpt": "A security flaw has been discovered in TRENDnet TEW-432BRP 3.10B20. Affected is the function formPortFw of the file /goform/formPortFw. The manipulation of the argument server_name results in stack-based buffer overflow. It is possible to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10158"
+      "date": "2026.06.01",
+      "title": "CVE-2026-20452 — HIGH (CVSS 8.0)",
+      "excerpt": "In wlan AP driver, there is a possible memory corruption due to a heap buffer overflow. This could lead to remote (proximal/adjacent) code execution with User execution privileges needed. User interaction is not needed for exploitation.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20452"
     }
   ]
 }
