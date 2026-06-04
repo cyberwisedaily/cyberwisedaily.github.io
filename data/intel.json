@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-06-03T22:15:54+00:00",
-  "generated_date_display": "2026.06.03",
-  "threats_tracked": 75,
+  "generated_at": "2026-06-04T19:49:54+00:00",
+  "generated_date_display": "2026.06.04",
+  "threats_tracked": 74,
   "terminal": {
-    "header_date": "2026.06.03",
+    "header_date": "2026.06.04",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "1 new KEV entry today"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "22 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,21 +29,21 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "1 new KEV entry today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.03"
+      "today_metric": "Brief sent: 2026.06.04"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595"
     },
     {
-      "id": "CVE-2025-14771",
+      "id": "CVE-2026-41283",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.03",
-      "title": "CVE-2025-14771 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Files or directories accessible to external parties vulnerability in ABB T-MAC Plus. This issue affects T-MAC Plus: 4.0-24.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14771"
+      "date": "2026.06.04",
+      "title": "CVE-2026-41283 — CRITICAL (CVSS 9.9)",
+      "excerpt": "OpenStack Mistral through 22.0.0 allows Arbitrary Remote Code Execution when the API is exposed. There are endpoints that allow code execution, which can lead to exfiltration of service credentials.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41283"
     },
     {
-      "id": "CVE-2026-32625",
+      "id": "CVE-2026-49185",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.02",
-      "title": "CVE-2026-32625 — CRITICAL (CVSS 9.6)",
-      "excerpt": "LibreChat is an enhanced ChatGPT clone that supports multiple AI providers. In versions up to and including 0.8.3, the Model Context Protocol (MCP) server integration resolves ${VAR} placeholders against the server's process.env during…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32625"
+      "date": "2026.06.04",
+      "title": "CVE-2026-49185 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The FieldX MDM adb messaging topic passes unverified payloads directly into Runtime.exec(), allowing command/instruction injection.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49185"
     },
     {
-      "id": "CVE-2026-4035",
+      "id": "CVE-2026-49186",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.03",
-      "title": "CVE-2026-4035 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A vulnerability in mlflow/mlflow versions prior to 3.11.0 allows for the resolution of environment variables in AI Gateway secrets, which can be exploited to exfiltrate sensitive server-side environment credentials to an…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4035"
+      "date": "2026.06.04",
+      "title": "CVE-2026-49186 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The local MQTT broker does not enforce topic-level Access Control Lists (ACLs). This allows any client to subscribe using wildcard characters (# or +) to enumerate hidden network devices or publish rogue control commands.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49186"
     }
   ]
 }
