@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-06-05T19:13:49+00:00",
-  "generated_date_display": "2026.06.05",
-  "threats_tracked": 76,
+  "generated_at": "2026-06-06T14:14:27+00:00",
+  "generated_date_display": "2026.06.06",
+  "threats_tracked": 74,
   "terminal": {
-    "header_date": "2026.06.05",
+    "header_date": "2026.06.06",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "1 new KEV entry today"
+        "text": "2 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "22 high-severity advisories"
+        "text": "11 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,28 +29,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "1 new KEV entry today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.05"
+      "today_metric": "Brief sent: 2026.06.06"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "2 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "25 active exploits in last 30d"
+      "today_metric": "24 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492"
     },
     {
-      "id": "CVE-2025-71316",
+      "id": "CVE-2025-71317",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.04",
-      "title": "CVE-2025-71316 — CRITICAL (CVSS 9.8)",
-      "excerpt": "SQLite 'sqldiff.exe' does not securely handle the way the Microsoft Windows C runtime converts Unicode characters to ANSI codepages. An attacker could use the '-L' option to load an arbitrary DLL with a crafted command line argument…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71316"
+      "date": "2026.06.05",
+      "title": "CVE-2025-71317 — CRITICAL (CVSS 9.8)",
+      "excerpt": "NetMan 204 contains a hard-coded backdoor account with the username and password 'eurek' that grants administrative access. A remote, unauthenticated attacker can authenticate through the cgi-bin/login.cgi endpoint (for example…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71317"
     },
     {
-      "id": "CVE-2024-27890",
+      "id": "CVE-2025-71318",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.04",
-      "title": "CVE-2024-27890 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Affected platforms running Arista EOS with OpenConfig configured, a gNMI Set request can be run when it should have been rejected. This can result in unexpected configuration being applied to the switch.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27890"
+      "date": "2026.06.05",
+      "title": "CVE-2025-71318 — CRITICAL (CVSS 9.8)",
+      "excerpt": "NetMan 204 fails to enforce authentication on its administrative pages and command endpoints. A remote, unauthenticated attacker can directly request administrative pages (such as administration.html, administration-commands.html, and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71318"
     },
     {
-      "id": "CVE-2024-27892",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.04",
-      "title": "CVE-2024-27892 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Affected platforms running Arista EOS with OpenConfig configured, a gNMI Set request can be run when it should have been rejected. This can result in unexpected configuration being applied to the switch.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27892"
+      "id": "CVE-2026-48095",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.06.05",
+      "title": "CVE-2026-48095 — HIGH (CVSS 8.8)",
+      "excerpt": "7-Zip is a file archiver with a high compression ratio. Versions 26.00 and prior contain a heap buffer overflow vulnerability caused by an under-allocation in the NTFS compressed stream buffer (GetCuSize shift UB), potentially allowing…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48095"
     }
   ]
 }
