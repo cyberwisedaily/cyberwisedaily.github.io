@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-06-07T14:25:04+00:00",
-  "generated_date_display": "2026.06.07",
-  "threats_tracked": 46,
+  "generated_at": "2026-06-08T16:32:54+00:00",
+  "generated_date_display": "2026.06.08",
+  "threats_tracked": 72,
   "terminal": {
-    "header_date": "2026.06.07",
+    "header_date": "2026.06.08",
     "lines": [
       {
+        "level": "CRIT",
+        "text": "4 critical CVEs published"
+      },
+      {
         "level": "WARN",
-        "text": "9 high-severity advisories"
+        "text": "19 high-severity advisories"
       },
       {
         "level": "INFO",
-        "text": "23 CVEs ingested in 24h"
+        "text": "50 CVEs ingested in 24h"
       },
       {
         "level": "INFO",
@@ -32,28 +36,28 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.07"
+      "today_metric": "Brief sent: 2026.06.08"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "0 critical-severity playbooks queued"
+      "today_metric": "4 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "22 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
       "num": "05",
       "title": "Vendor & CVE Watch",
       "description": "Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.",
-      "today_metric": "23 new CVEs in last 24h"
+      "today_metric": "50 new CVEs in last 24h"
     },
     {
       "id": "career",
@@ -92,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492"
     },
     {
-      "id": "CVE-2026-26422",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.06",
-      "title": "CVE-2026-26422 — HIGH (CVSS 8.4)",
-      "excerpt": "clash-verge-service-ipc before 2.3.0 has a world-reachable IPC endpoint, leading to local privilege escalation.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-26422"
+      "id": "CVE-2023-54352",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.08",
+      "title": "CVE-2023-54352 — CRITICAL (CVSS 9.8)",
+      "excerpt": "WordPress Seotheme contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary PHP code by uploading malicious files to the theme directory. Attackers can access the uploaded PHP shell at…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54352"
     },
     {
-      "id": "CVE-2026-49494",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.07",
-      "title": "CVE-2026-49494 — HIGH (CVSS 7.5)",
-      "excerpt": "Comodo Internet Security's firewall driver Inspect.sys contains an integer underflow in its IPv6 packet parser. The parser decrements an unsigned 64-bit payload-length value (taken from the IPv6 fixed header's payload length field) by the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49494"
+      "id": "CVE-2024-58348",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.08",
+      "title": "CVE-2024-58348 — CRITICAL (CVSS 9.8)",
+      "excerpt": "WordPress Background Image Cropper version 1.2 contains a remote code execution vulnerability that allows unauthenticated attackers to upload arbitrary files by accessing the ups.php endpoint. Attackers can upload PHP files through the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58348"
     },
     {
-      "id": "CVE-2026-11435",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.06",
-      "title": "CVE-2026-11435 — HIGH (CVSS 7.3)",
-      "excerpt": "A security vulnerability has been detected in Jinher OA 1.0. This affects an unknown function of the file nextselectplan.aspx. Such manipulation of the argument httpOID leads to sql injection. The attack may be launched remotely. The…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11435"
+      "id": "CVE-2024-58349",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.08",
+      "title": "CVE-2024-58349 — CRITICAL (CVSS 9.8)",
+      "excerpt": "WordPress Theme Travelscape 1.0.3 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by exploiting insufficient validation in the theme's upload functionality. Attackers can…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58349"
     }
   ]
 }
