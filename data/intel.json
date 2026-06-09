@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-08T16:32:54+00:00",
-  "generated_date_display": "2026.06.08",
-  "threats_tracked": 72,
+  "generated_at": "2026-06-09T15:32:34+00:00",
+  "generated_date_display": "2026.06.09",
+  "threats_tracked": 74,
   "terminal": {
-    "header_date": "2026.06.08",
+    "header_date": "2026.06.09",
     "lines": [
       {
         "level": "CRIT",
-        "text": "4 critical CVEs published"
+        "text": "3 critical CVEs published"
       },
       {
         "level": "WARN",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1612"
+        "text": "KEV catalog size: 1614"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.08"
+      "today_metric": "Brief sent: 2026.06.09"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "4 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "22 active exploits in last 30d"
+      "today_metric": "24 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,6 +69,24 @@
   ],
   "briefings": [
     {
+      "id": "CVE-2026-42271",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.08",
+      "title": "CVE-2026-42271: BerriAI LiteLLM actively exploited",
+      "excerpt": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42271"
+    },
+    {
+      "id": "CVE-2026-50751",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.08",
+      "title": "CVE-2026-50751: Check Point Security Gateway actively exploited",
+      "excerpt": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50751"
+    },
+    {
       "id": "CVE-2026-28318",
       "tag": "CRITICAL",
       "tag_class": "crit",
@@ -78,49 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318"
     },
     {
-      "id": "CVE-2026-45247",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.03",
-      "title": "CVE-2026-45247: Mirasvit Mirasvit Full Page Cache Warmer actively exploited",
-      "excerpt": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45247"
-    },
-    {
-      "id": "CVE-2022-0492",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.02",
-      "title": "CVE-2022-0492: Linux Kernel actively exploited",
-      "excerpt": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492"
-    },
-    {
-      "id": "CVE-2023-54352",
+      "id": "CVE-2026-29167",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.06.08",
-      "title": "CVE-2023-54352 — CRITICAL (CVSS 9.8)",
-      "excerpt": "WordPress Seotheme contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary PHP code by uploading malicious files to the theme directory. Attackers can access the uploaded PHP shell at…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54352"
+      "title": "CVE-2026-29167 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Use After Free vulnerability in Apache HTTP Server with mod_ldap in per-directory configuration This issue affects Apache HTTP Server: from 2.4.0 through 2.4.67. Users are recommended to upgrade to version 2.4.68, which fixes the issue.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29167"
     },
     {
-      "id": "CVE-2024-58348",
+      "id": "CVE-2026-44631",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.06.08",
-      "title": "CVE-2024-58348 — CRITICAL (CVSS 9.8)",
-      "excerpt": "WordPress Background Image Cropper version 1.2 contains a remote code execution vulnerability that allows unauthenticated attackers to upload arbitrary files by accessing the ups.php endpoint. Attackers can upload PHP files through the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58348"
+      "title": "CVE-2026-44631 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Buffer Underwrite vulnerability in Apache HTTP Server on crafted regular expressions in the configuration. This issue affects Apache HTTP Server: from 2.4.0 through 2.4.67. Users are recommended to upgrade to version 2.4.68, which fixes…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44631"
     },
     {
-      "id": "CVE-2024-58349",
+      "id": "CVE-2026-42535",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.06.08",
-      "title": "CVE-2024-58349 — CRITICAL (CVSS 9.8)",
-      "excerpt": "WordPress Theme Travelscape 1.0.3 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by exploiting insufficient validation in the theme's upload functionality. Attackers can…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58349"
+      "title": "CVE-2026-42535 — CRITICAL (CVSS 9.1)",
+      "excerpt": "A path handling issue in mod_dav_fs in Apache 2.4.67 and earlier allows a WebDAV content author to directly manipulate trusted DAV property databases, potentially causing child process crashes. Users are recommended to upgrade to version…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42535"
     }
   ]
 }
