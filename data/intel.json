@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-09T15:32:34+00:00",
-  "generated_date_display": "2026.06.09",
-  "threats_tracked": 74,
+  "generated_at": "2026-06-10T16:12:26+00:00",
+  "generated_date_display": "2026.06.10",
+  "threats_tracked": 77,
   "terminal": {
-    "header_date": "2026.06.09",
+    "header_date": "2026.06.10",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "6 critical CVEs published"
       },
       {
         "level": "WARN",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1614"
+        "text": "KEV catalog size: 1617"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.09"
+      "today_metric": "Brief sent: 2026.06.10"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "6 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "24 active exploits in last 30d"
+      "today_metric": "27 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-42271",
+      "id": "CVE-2026-11645",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.08",
-      "title": "CVE-2026-42271: BerriAI LiteLLM actively exploited",
-      "excerpt": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42271"
+      "date": "2026.06.09",
+      "title": "CVE-2026-11645: Google Chromium V8 actively exploited",
+      "excerpt": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645"
     },
     {
-      "id": "CVE-2026-50751",
+      "id": "CVE-2026-7473",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.08",
-      "title": "CVE-2026-50751: Check Point Security Gateway actively exploited",
-      "excerpt": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50751"
+      "date": "2026.06.09",
+      "title": "CVE-2026-7473: Arista Extensible Operating System actively exploited",
+      "excerpt": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with a destination IP…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473"
     },
     {
-      "id": "CVE-2026-28318",
+      "id": "CVE-2026-20245",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.05",
-      "title": "CVE-2026-28318: SolarWinds Serv-U actively exploited",
-      "excerpt": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318"
+      "date": "2026.06.09",
+      "title": "CVE-2026-20245: Cisco Catalyst SD-WAN Manager actively exploited",
+      "excerpt": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245"
     },
     {
-      "id": "CVE-2026-29167",
+      "id": "CVE-2026-10520",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.08",
-      "title": "CVE-2026-29167 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Use After Free vulnerability in Apache HTTP Server with mod_ldap in per-directory configuration This issue affects Apache HTTP Server: from 2.4.0 through 2.4.67. Users are recommended to upgrade to version 2.4.68, which fixes the issue.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29167"
+      "date": "2026.06.09",
+      "title": "CVE-2026-10520 — CRITICAL (CVSS 10.0)",
+      "excerpt": "An OS Command Injection vulnerability in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated user to achieve root-level remote code execution",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520"
     },
     {
-      "id": "CVE-2026-44631",
+      "id": "CVE-2026-10523",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.08",
-      "title": "CVE-2026-44631 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Buffer Underwrite vulnerability in Apache HTTP Server on crafted regular expressions in the configuration. This issue affects Apache HTTP Server: from 2.4.0 through 2.4.67. Users are recommended to upgrade to version 2.4.68, which fixes…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44631"
+      "date": "2026.06.09",
+      "title": "CVE-2026-10523 — CRITICAL (CVSS 9.9)",
+      "excerpt": "An Authentication Bypass vulnerability (CWE-288) in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated attacker to create arbitrary administrative accounts and obtain full administrative access",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10523"
     },
     {
-      "id": "CVE-2026-42535",
+      "id": "CVE-2026-25089",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.08",
-      "title": "CVE-2026-42535 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A path handling issue in mod_dav_fs in Apache 2.4.67 and earlier allows a WebDAV content author to directly manipulate trusted DAV property databases, potentially causing child process crashes. Users are recommended to upgrade to version…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42535"
+      "date": "2026.06.09",
+      "title": "CVE-2026-25089 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
     }
   ]
 }
