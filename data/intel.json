@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T16:12:26+00:00",
-  "generated_date_display": "2026.06.10",
+  "generated_at": "2026-06-11T16:33:09+00:00",
+  "generated_date_display": "2026.06.11",
   "threats_tracked": 77,
   "terminal": {
-    "header_date": "2026.06.10",
+    "header_date": "2026.06.11",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.10"
+      "today_metric": "Brief sent: 2026.06.11"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245"
     },
     {
-      "id": "CVE-2026-10520",
+      "id": "CVE-2026-50545",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.09",
-      "title": "CVE-2026-10520 — CRITICAL (CVSS 10.0)",
-      "excerpt": "An OS Command Injection vulnerability in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated user to achieve root-level remote code execution",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520"
+      "date": "2026.06.10",
+      "title": "CVE-2026-50545 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, the Environment.spec.runtime.podSpec / spec.builder.podSpec passthrough…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50545"
     },
     {
-      "id": "CVE-2026-10523",
+      "id": "CVE-2026-50563",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.09",
-      "title": "CVE-2026-10523 — CRITICAL (CVSS 9.9)",
-      "excerpt": "An Authentication Bypass vulnerability (CWE-288) in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated attacker to create arbitrary administrative accounts and obtain full administrative access",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10523"
+      "date": "2026.06.10",
+      "title": "CVE-2026-50563 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, Fission's Container Executor path lets a tenant supply…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50563"
     },
     {
-      "id": "CVE-2026-25089",
+      "id": "CVE-2026-50564",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.09",
-      "title": "CVE-2026-25089 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
+      "date": "2026.06.10",
+      "title": "CVE-2026-50564 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, Fission's Environment CRD exposes spec.runtime.podSpec and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50564"
     }
   ]
 }
