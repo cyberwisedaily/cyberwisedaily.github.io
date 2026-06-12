@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-11T16:33:09+00:00",
-  "generated_date_display": "2026.06.11",
-  "threats_tracked": 77,
+  "generated_at": "2026-06-12T15:44:31+00:00",
+  "generated_date_display": "2026.06.12",
+  "threats_tracked": 78,
   "terminal": {
-    "header_date": "2026.06.11",
+    "header_date": "2026.06.12",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
+        "text": "3 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "15 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1617"
+        "text": "KEV catalog size: 1618"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.11"
+      "today_metric": "Brief sent: 2026.06.12"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "27 active exploits in last 30d"
+      "today_metric": "28 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-10520",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.11",
+      "title": "CVE-2026-10520: Ivanti Sentry actively exploited",
+      "excerpt": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vulnerability can be…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520"
+    },
     {
       "id": "CVE-2026-11645",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473"
     },
     {
-      "id": "CVE-2026-20245",
+      "id": "CVE-2026-49261",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.09",
-      "title": "CVE-2026-20245: Cisco Catalyst SD-WAN Manager actively exploited",
-      "excerpt": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245"
+      "date": "2026.06.11",
+      "title": "CVE-2026-49261 — CRITICAL (CVSS 10.0)",
+      "excerpt": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with `wsrep_notify_cmd` enabled would execute shell…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49261"
     },
     {
-      "id": "CVE-2026-50545",
+      "id": "CVE-2026-11839",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.10",
-      "title": "CVE-2026-50545 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, the Environment.spec.runtime.podSpec / spec.builder.podSpec passthrough…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50545"
+      "date": "2026.06.11",
+      "title": "CVE-2026-11839 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Unrestricted upload of file with dangerous type vulnerability in Başarsoft Information Technologies Inc. Rotaban allows Upload a Web Shell to a Web Server. This issue affects Rotaban: from V2026.06.002 before V2026.06.003.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11839"
     },
     {
-      "id": "CVE-2026-50563",
+      "id": "CVE-2026-9648",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.10",
-      "title": "CVE-2026-50563 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, Fission's Container Executor path lets a tenant supply…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50563"
-    },
-    {
-      "id": "CVE-2026-50564",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.10",
-      "title": "CVE-2026-50564 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.24.0, Fission's Environment CRD exposes spec.runtime.podSpec and…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50564"
+      "date": "2026.06.11",
+      "title": "CVE-2026-9648 — CRITICAL (CVSS 9.1)",
+      "excerpt": "The crypton-x509-validation Haskell library fails to enforce X.509 NameConstraints, allowing TLS clients to accept certificates whose Subject Alternative Names fall outside the issuing CA’s permitted subtrees. This oversight enables an…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9648"
     }
   ]
 }
