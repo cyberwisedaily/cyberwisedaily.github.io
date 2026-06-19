@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-18T15:57:38+00:00",
-  "generated_date_display": "2026.06.18",
-  "threats_tracked": 80,
+  "generated_at": "2026-06-19T15:46:06+00:00",
+  "generated_date_display": "2026.06.19",
+  "threats_tracked": 81,
   "terminal": {
-    "header_date": "2026.06.18",
+    "header_date": "2026.06.19",
     "lines": [
       {
         "level": "CRIT",
-        "text": "12 critical CVEs published"
+        "text": "7 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "13 high-severity advisories"
+        "text": "11 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1622"
+        "text": "KEV catalog size: 1623"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.18"
+      "today_metric": "Brief sent: 2026.06.19"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "12 critical-severity playbooks queued"
+      "today_metric": "7 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "30 active exploits in last 30d"
+      "today_metric": "31 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-20253",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.18",
+      "title": "CVE-2026-20253: Splunk Enterprise actively exploited",
+      "excerpt": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20253"
+    },
     {
       "id": "CVE-2026-48907",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420"
     },
     {
-      "id": "CVE-2026-20262",
+      "id": "CVE-2026-38714",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.15",
-      "title": "CVE-2026-20262: Cisco Catalyst SD-WAN Manager actively exploited",
-      "excerpt": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20262"
+      "date": "2026.06.18",
+      "title": "CVE-2026-38714 — CRITICAL (CVSS 9.8)",
+      "excerpt": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the Python configuration function. This vulnerability allows remote attackers to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-38714"
     },
     {
-      "id": "CVE-2026-3490",
+      "id": "CVE-2026-38715",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.17",
-      "title": "CVE-2026-3490 — CRITICAL (CVSS 10.0)",
-      "excerpt": "picklescan before 1.0.4 fails to block pkgutil.resolve_name, allowing attackers to bypass the entire blocklist by resolving any dangerous function through indirect REDUCE calls. Remote attackers can invoke any blocked function such as…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3490"
+      "date": "2026.06.18",
+      "title": "CVE-2026-38715 — CRITICAL (CVSS 9.8)",
+      "excerpt": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the log viewing function. This vulnerability allows remote attackers to execute…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-38715"
     },
     {
-      "id": "CVE-2025-71320",
+      "id": "CVE-2026-38716",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.17",
-      "title": "CVE-2025-71320 — CRITICAL (CVSS 9.8)",
-      "excerpt": "picklescan before 0.0.33 contains an incomplete deny-list that fails to block pydoc.locate and operator.methodcaller functions, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle files using these…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71320"
-    },
-    {
-      "id": "CVE-2025-71321",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.17",
-      "title": "CVE-2025-71321 — CRITICAL (CVSS 9.8)",
-      "excerpt": "picklescan before 0.0.33 contains an arbitrary file writing vulnerability that allows attackers to bypass the dangerous blocklist by using distutils.file_util.write_file. Attackers can construct malicious pickle objects to overwrite…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71321"
+      "date": "2026.06.18",
+      "title": "CVE-2026-38716 — CRITICAL (CVSS 9.8)",
+      "excerpt": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the Python application export function. This vulnerability allows remote attackers to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-38716"
     }
   ]
 }
