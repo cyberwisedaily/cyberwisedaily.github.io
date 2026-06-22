@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-21T14:38:40+00:00",
-  "generated_date_display": "2026.06.21",
-  "threats_tracked": 72,
+  "generated_at": "2026-06-22T17:14:18+00:00",
+  "generated_date_display": "2026.06.22",
+  "threats_tracked": 71,
   "terminal": {
-    "header_date": "2026.06.21",
+    "header_date": "2026.06.22",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "13 high-severity advisories"
+        "text": "7 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.21"
+      "today_metric": "Brief sent: 2026.06.22"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "22 active exploits in last 30d"
+      "today_metric": "21 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420"
     },
     {
-      "id": "CVE-2026-5366",
+      "id": "CVE-2026-10561",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.20",
-      "title": "CVE-2026-5366 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Prefect version 3.6.23 is vulnerable to remote code execution due to improper handling of user-controlled input in the `GitRepository` storage class. The `commit_sha` parameter, which is passed to git commands, lacks validation and does…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5366"
+      "date": "2026.06.22",
+      "title": "CVE-2026-10561 — CRITICAL (CVSS 10.0)",
+      "excerpt": "IBM Langflow OSS 1.0.0 through 1.9.3 has an vulnerability due to an improper isolation of Python execution combined with an authentication bypass that allows an unauthenticated attacker to execute arbitrary code on the host system,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10561"
     },
     {
-      "id": "CVE-2024-58351",
+      "id": "CVE-2026-11373",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.20",
-      "title": "CVE-2024-58351 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Flowise before 2.1.4 allows configuration to be injected into the Chainflow during execution via the overrideConfig option, supported in both the frontend web integration and the backend Prediction API. Because this feature is enabled by…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58351"
+      "date": "2026.06.22",
+      "title": "CVE-2026-11373 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Net::Statsite::Client versions through 1.1.0 for Perl allow metric injections. Net::Statsite::Client is a client for the statsite protocol, which is a variant of statsd. Newlines are not removed from metric names, allowing metric…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11373"
     },
     {
-      "id": "CVE-2026-56340",
+      "id": "CVE-2026-12806",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.06.20",
-      "title": "CVE-2026-56340 — HIGH (CVSS 8.8)",
-      "excerpt": "vLLM versions >= 0.10.2 and < 0.13.0 are missing sparse tensor validation in multimodal embeddings processing. Because PyTorch disables sparse tensor invariant checks by default, an attacker can submit crafted embedding requests with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56340"
+      "date": "2026.06.21",
+      "title": "CVE-2026-12806 — HIGH (CVSS 8.8)",
+      "excerpt": "A vulnerability has been found in Edimax BR-6478AC V2 1.23. The impacted element is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey of the component POST Request Handler. The manipulation of the argument selSSID leads…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12806"
     }
   ]
 }
