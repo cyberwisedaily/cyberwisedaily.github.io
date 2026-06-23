@@ -1,21 +1,13 @@
 {
-  "generated_at": "2026-06-22T17:14:18+00:00",
-  "generated_date_display": "2026.06.22",
-  "threats_tracked": 71,
+  "generated_at": "2026-06-23T15:28:46+00:00",
+  "generated_date_display": "2026.06.23",
+  "threats_tracked": 21,
   "terminal": {
-    "header_date": "2026.06.22",
+    "header_date": "2026.06.23",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "2 critical CVEs published"
-      },
-      {
-        "level": "WARN",
-        "text": "7 high-severity advisories"
-      },
-      {
         "level": "INFO",
-        "text": "50 CVEs ingested in 24h"
+        "text": "0 CVEs ingested in 24h"
       },
       {
         "level": "INFO",
@@ -36,14 +28,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.22"
+      "today_metric": "Brief sent: 2026.06.23"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -57,7 +49,7 @@
       "num": "05",
       "title": "Vendor & CVE Watch",
       "description": "Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.",
-      "today_metric": "50 new CVEs in last 24h"
+      "today_metric": "0 new CVEs in last 24h"
     },
     {
       "id": "career",
@@ -94,33 +86,6 @@
       "title": "CVE-2026-54420: LiteSpeed cPanel Plugin actively exploited",
       "excerpt": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420"
-    },
-    {
-      "id": "CVE-2026-10561",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.22",
-      "title": "CVE-2026-10561 — CRITICAL (CVSS 10.0)",
-      "excerpt": "IBM Langflow OSS 1.0.0 through 1.9.3 has an vulnerability due to an improper isolation of Python execution combined with an authentication bypass that allows an unauthenticated attacker to execute arbitrary code on the host system,…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10561"
-    },
-    {
-      "id": "CVE-2026-11373",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.22",
-      "title": "CVE-2026-11373 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Net::Statsite::Client versions through 1.1.0 for Perl allow metric injections. Net::Statsite::Client is a client for the statsite protocol, which is a variant of statsd. Newlines are not removed from metric names, allowing metric…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11373"
-    },
-    {
-      "id": "CVE-2026-12806",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.21",
-      "title": "CVE-2026-12806 — HIGH (CVSS 8.8)",
-      "excerpt": "A vulnerability has been found in Edimax BR-6478AC V2 1.23. The impacted element is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey of the component POST Request Handler. The manipulation of the argument selSSID leads…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12806"
     }
   ]
 }
