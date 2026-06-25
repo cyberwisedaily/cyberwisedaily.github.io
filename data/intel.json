@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-24T15:14:57+00:00",
-  "generated_date_display": "2026.06.24",
+  "generated_at": "2026-06-25T15:21:24+00:00",
+  "generated_date_display": "2026.06.25",
   "threats_tracked": 75,
   "terminal": {
-    "header_date": "2026.06.24",
+    "header_date": "2026.06.25",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "1 high-severity advisory"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.24"
+      "today_metric": "Brief sent: 2026.06.25"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34909"
     },
     {
-      "id": "CVE-2026-44789",
+      "id": "CVE-2026-56121",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.23",
-      "title": "CVE-2026-44789 — CRITICAL (CVSS 9.9)",
-      "excerpt": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via an unvalidated pagination…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44789"
+      "date": "2026.06.24",
+      "title": "CVE-2026-56121 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized attackers to achieve remote code execution by sending a crafted gRPC request to the registry server. The…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56121"
     },
     {
-      "id": "CVE-2026-44791",
+      "id": "CVE-2026-56111",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.23",
-      "title": "CVE-2026-44791 — CRITICAL (CVSS 9.9)",
-      "excerpt": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could bypass the patch for CVE-2026-42232 in the XML node. When combined with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44791"
+      "date": "2026.06.24",
+      "title": "CVE-2026-56111 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Marlin Firmware through 2.1.2.7, fixed in commit 1f255d1, when built with MESH_BED_LEVELING enabled, contains an out-of-bounds write vulnerability in the M421 G-code handler that allows attackers to corrupt firmware memory by supplying…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56111"
     },
     {
-      "id": "CVE-2026-35018",
+      "id": "CVE-2026-49269",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.06.23",
-      "title": "CVE-2026-35018 — HIGH (CVSS 8.8)",
-      "excerpt": "NetComm NF20MESH routers running firmware R6B031 and earlier contain an authenticated remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands as root by injecting shell metacharacters into the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35018"
+      "date": "2026.06.24",
+      "title": "CVE-2026-49269 — HIGH (CVSS 8.6)",
+      "excerpt": "Apple M1 GPUs retain register file data between compute shader dispatches from different processes. A sandboxed Metal attacker app can run a GPU reader shader that reads stale register values left by a separate sandboxed victim app. In…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49269"
     }
   ]
 }
