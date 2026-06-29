@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-28T14:19:52+00:00",
-  "generated_date_display": "2026.06.28",
-  "threats_tracked": 54,
+  "generated_at": "2026-06-29T16:15:02+00:00",
+  "generated_date_display": "2026.06.29",
+  "threats_tracked": 72,
   "terminal": {
-    "header_date": "2026.06.28",
+    "header_date": "2026.06.29",
     "lines": [
       {
         "level": "CRIT",
@@ -11,11 +11,11 @@
       },
       {
         "level": "WARN",
-        "text": "12 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
-        "text": "31 CVEs ingested in 24h"
+        "text": "50 CVEs ingested in 24h"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.28"
+      "today_metric": "Brief sent: 2026.06.29"
     },
     {
       "id": "playbooks",
@@ -50,14 +50,14 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "22 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
       "num": "05",
       "title": "Vendor & CVE Watch",
       "description": "Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.",
-      "today_metric": "31 new CVEs in last 24h"
+      "today_metric": "50 new CVEs in last 24h"
     },
     {
       "id": "career",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-67038"
     },
     {
-      "id": "CVE-2026-58053",
+      "id": "CVE-2026-49048",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.06.28",
-      "title": "CVE-2026-58053 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces only the Privileged flag off while…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58053"
+      "title": "CVE-2026-49048 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The Joomla extension JoomCCK exposes a front-end controller task, that builds two SQL statements by directly concatenating a user-supplied request parameter into the query string without escaping or parameterisation.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49048"
     },
     {
-      "id": "CVE-2026-10643",
+      "id": "CVE-2026-13515",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.06.28",
-      "title": "CVE-2026-10643 — HIGH (CVSS 8.7)",
-      "excerpt": "Zephyr's IP socket recvmsg() implementation (subsys/net/lib/sockets/sockets_inet.c, insert_pktinfo()) validated the user-supplied ancillary (msg_control) buffer using only the payload length (msg-msg_controllen < pktinfo_len) before…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10643"
+      "date": "2026.06.29",
+      "title": "CVE-2026-13515 — HIGH (CVSS 8.8)",
+      "excerpt": "A security vulnerability has been detected in Tenda JD12L 16.03.53.23. Impacted is the function formSetPPTPServer of the file /goform/SetPptpServerCfg. Such manipulation of the argument startIp leads to stack-based buffer overflow. The…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13515"
     },
     {
-      "id": "CVE-2026-58049",
+      "id": "CVE-2026-13516",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.06.28",
-      "title": "CVE-2026-58049 — HIGH (CVSS 8.6)",
-      "excerpt": "FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather than byte units, so a DLTA run on a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58049"
+      "date": "2026.06.29",
+      "title": "CVE-2026-13516 — HIGH (CVSS 8.8)",
+      "excerpt": "A vulnerability was detected in Tenda JD12L 16.03.53.23. The affected element is the function fromSetWifiGusetBasic of the file /goform/WifiGuestSet. Performing a manipulation of the argument shareSpeed results in stack-based buffer…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13516"
     }
   ]
 }
