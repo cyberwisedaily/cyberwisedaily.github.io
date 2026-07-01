@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-30T15:05:34+00:00",
-  "generated_date_display": "2026.06.30",
+  "generated_at": "2026-07-01T15:16:51+00:00",
+  "generated_date_display": "2026.07.01",
   "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.06.30",
+    "header_date": "2026.07.01",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "10 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "15 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.06.30"
+      "today_metric": "Brief sent: 2026.07.01"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "10 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230"
     },
     {
-      "id": "CVE-2026-57331",
+      "id": "CVE-2026-48276",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.06.29",
-      "title": "CVE-2026-57331 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Performer Arbitrary File Deletion in Paid Videochat Turnkey Site <= 7.4.8 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57331"
+      "date": "2026.06.30",
+      "title": "CVE-2026-48276 — CRITICAL (CVSS 10.0)",
+      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48276"
     },
     {
-      "id": "CVE-2026-13580",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.29",
-      "title": "CVE-2026-13580 — HIGH (CVSS 8.8)",
-      "excerpt": "A security vulnerability has been detected in Edimax EW-7478APC 1.04. This affects the function formQoS of the file /goform/formQoS of the component POST Request Handler. The manipulation of the argument selSSID leads to buffer overflow.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13580"
+      "id": "CVE-2026-48277",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.30",
+      "title": "CVE-2026-48277 — CRITICAL (CVSS 10.0)",
+      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48277"
     },
     {
-      "id": "CVE-2026-13582",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.06.29",
-      "title": "CVE-2026-13582 — HIGH (CVSS 8.8)",
-      "excerpt": "A flaw has been found in Edimax EW-7478APC 1.04. This issue affects the function formUSBAccount of the file /goform/formUSBAccount of the component POST Request Handler. This manipulation of the argument UserName/Password causes buffer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13582"
+      "id": "CVE-2026-48281",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.06.30",
+      "title": "CVE-2026-48281 — CRITICAL (CVSS 10.0)",
+      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48281"
     }
   ]
 }
