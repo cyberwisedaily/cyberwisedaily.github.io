@@ -1,25 +1,17 @@
 {
-  "generated_at": "2026-07-01T15:16:51+00:00",
-  "generated_date_display": "2026.07.01",
-  "threats_tracked": 73,
+  "generated_at": "2026-07-02T14:34:13+00:00",
+  "generated_date_display": "2026.07.02",
+  "threats_tracked": 23,
   "terminal": {
-    "header_date": "2026.07.01",
+    "header_date": "2026.07.02",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "10 critical CVEs published"
-      },
-      {
-        "level": "WARN",
-        "text": "14 high-severity advisories"
+        "level": "INFO",
+        "text": "0 CVEs ingested in 24h"
       },
       {
         "level": "INFO",
-        "text": "50 CVEs ingested in 24h"
-      },
-      {
-        "level": "INFO",
-        "text": "KEV catalog size: 1630"
+        "text": "KEV catalog size: 1631"
       }
     ]
   },
@@ -36,14 +28,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.01"
+      "today_metric": "Brief sent: 2026.07.02"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "10 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -57,7 +49,7 @@
       "num": "05",
       "title": "Vendor & CVE Watch",
       "description": "Track patches and advisories from major vendors. Critical CVEs flagged with exploitability context — not just CVSS scores.",
-      "today_metric": "50 new CVEs in last 24h"
+      "today_metric": "0 new CVEs in last 24h"
     },
     {
       "id": "career",
@@ -68,6 +60,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-45659",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.01",
+      "title": "CVE-2026-45659: Microsoft SharePoint Server actively exploited",
+      "excerpt": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659"
+    },
     {
       "id": "CVE-2026-48558",
       "tag": "CRITICAL",
@@ -85,42 +86,6 @@
       "title": "CVE-2026-12569: PTC Windchill and FlexPLM actively exploited",
       "excerpt": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569"
-    },
-    {
-      "id": "CVE-2026-20230",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.25",
-      "title": "CVE-2026-20230: Cisco Unified Communications Manager actively exploited",
-      "excerpt": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230"
-    },
-    {
-      "id": "CVE-2026-48276",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.30",
-      "title": "CVE-2026-48276 — CRITICAL (CVSS 10.0)",
-      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48276"
-    },
-    {
-      "id": "CVE-2026-48277",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.30",
-      "title": "CVE-2026-48277 — CRITICAL (CVSS 10.0)",
-      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48277"
-    },
-    {
-      "id": "CVE-2026-48281",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.06.30",
-      "title": "CVE-2026-48281 — CRITICAL (CVSS 10.0)",
-      "excerpt": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48281"
     }
   ]
 }
