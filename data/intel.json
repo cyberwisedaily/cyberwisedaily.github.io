@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-05T14:13:55+00:00",
-  "generated_date_display": "2026.07.05",
-  "threats_tracked": 70,
+  "generated_at": "2026-07-06T15:57:40+00:00",
+  "generated_date_display": "2026.07.06",
+  "threats_tracked": 69,
   "terminal": {
-    "header_date": "2026.07.05",
+    "header_date": "2026.07.06",
     "lines": [
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -32,7 +32,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.05"
+      "today_metric": "Brief sent: 2026.07.06"
     },
     {
       "id": "playbooks",
@@ -46,7 +46,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "20 active exploits in last 30d"
+      "today_metric": "19 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -92,31 +92,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569"
     },
     {
-      "id": "CVE-2026-14534",
+      "id": "CVE-2026-10830",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.07.04",
-      "title": "CVE-2026-14534 — HIGH (CVSS 8.8)",
-      "excerpt": "Trail of Bits fickling versions up to and including 0.1.10 do not include the Python standard library modules _posixsubprocess, site, and atexit in the UNSAFE_IMPORTS denylist (fickle.py). Because these modules are absent from the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14534"
+      "date": "2026.07.06",
+      "title": "CVE-2026-10830 — HIGH (CVSS 8.8)",
+      "excerpt": "The AllCoach WordPress plugin before 1.0.2 does not verify that an email address submitted to a public account-registration endpoint is not already associated with an existing user before overwriting that user's password, allowing…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10830"
     },
     {
-      "id": "CVE-2026-14535",
+      "id": "CVE-2026-11855",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.07.04",
-      "title": "CVE-2026-14535 — HIGH (CVSS 8.8)",
-      "excerpt": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally calls AnalysisContext.shorten_code(node) on every import node it inspects, regardless of whether the import is flagged as…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14535"
+      "date": "2026.07.06",
+      "title": "CVE-2026-11855 — HIGH (CVSS 8.8)",
+      "excerpt": "The Simple Membership WordPress plugin before 4.7.5 does not verify the authenticity of Stripe webhook requests when no signing secret is configured, nor escape a value taken from them before outputting it in an administrator notice,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11855"
     },
     {
-      "id": "CVE-2026-14637",
+      "id": "CVE-2026-11962",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.07.04",
-      "title": "CVE-2026-14637 — HIGH (CVSS 8.2)",
-      "excerpt": "A security vulnerability has been detected in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7. The affected element is the function getCartItems in the library…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14637"
+      "date": "2026.07.06",
+      "title": "CVE-2026-11962 — HIGH (CVSS 8.8)",
+      "excerpt": "The FileOrganizer WordPress plugin before 1.2.0 does not validate the file type on several of its file-management operations, allowing authenticated users who have been granted file-manager access — which its premium add-on can extend to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11962"
     }
   ]
 }
