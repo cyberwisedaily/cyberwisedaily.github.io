@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T14:44:58+00:00",
-  "generated_date_display": "2026.07.08",
-  "threats_tracked": 73,
+  "generated_at": "2026-07-09T15:38:46+00:00",
+  "generated_date_display": "2026.07.09",
+  "threats_tracked": 71,
   "terminal": {
-    "header_date": "2026.07.08",
+    "header_date": "2026.07.09",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "8 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.08"
+      "today_metric": "Brief sent: 2026.07.09"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "21 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290"
     },
     {
-      "id": "CVE-2026-13019",
+      "id": "CVE-2026-59702",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.07",
-      "title": "CVE-2026-13019 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Esri Portal for ArcGIS versions 12.1 and earlier on Windows, Linux and Kubernetes have a missing authentication for critical function vulnerability allows a remote, unauthenticated attacker to access an unprotected API.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13019"
+      "date": "2026.07.08",
+      "title": "CVE-2026-59702 — CRITICAL (CVSS 9.3)",
+      "excerpt": "repomix contains a server-side request forgery vulnerability in the POST /api/pack endpoint that allows unauthenticated attackers to make arbitrary outbound requests. The endpoint fails to properly validate http://, https://, and file://…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59702"
     },
     {
-      "id": "CVE-2026-59800",
+      "id": "CVE-2026-9074",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.07",
-      "title": "CVE-2026-59800 — CRITICAL (CVSS 9.8)",
-      "excerpt": "9Router before 0.4.44 contains an OS command injection vulnerability in the unauthenticated POST /api/tunnel/tailscale-install endpoint (this route is not covered by the dashboard middleware matcher, so no authorization check is applied).…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59800"
+      "date": "2026.07.08",
+      "title": "CVE-2026-9074 — CRITICAL (CVSS 9.1)",
+      "excerpt": "IBM API Connect 10.0.8.0 through 10.0.8.9 and 12.1.0.0 through 12.1.0.3 contains an unauthenticated SQL injection vulnerability in the password reset functionality.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9074"
     },
     {
-      "id": "CVE-2026-23697",
+      "id": "CVE-2026-29009",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.07.07",
-      "title": "CVE-2026-23697 — HIGH (CVSS 8.8)",
-      "excerpt": "Vtiger CRM before 8.4.0 contains an authenticated file upload vulnerability that allows low-privileged users to achieve remote code execution by uploading a .phar file containing arbitrary PHP code through the Documents module, bypassing…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23697"
+      "date": "2026.07.08",
+      "title": "CVE-2026-29009 — HIGH (CVSS 8.2)",
+      "excerpt": "U-Boot through 2026.04-rc3 contains a buffer overflow vulnerability in nfs_readlink_reply() (net/nfs-common.c) when CONFIG_CMD_NFS is enabled, allowing a malicious or compromised NFS server to overflow the 2048-byte nfs_path_buff buffer…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29009"
     }
   ]
 }
