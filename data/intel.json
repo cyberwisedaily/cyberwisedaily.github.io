@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-13T15:17:48+00:00",
-  "generated_date_display": "2026.07.13",
-  "threats_tracked": 68,
+  "generated_at": "2026-07-14T14:20:18+00:00",
+  "generated_date_display": "2026.07.14",
+  "threats_tracked": 69,
   "terminal": {
-    "header_date": "2026.07.13",
+    "header_date": "2026.07.14",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "10 high-severity advisories"
+        "text": "21 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1637"
+        "text": "KEV catalog size: 1638"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.13"
+      "today_metric": "Brief sent: 2026.07.14"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "18 active exploits in last 30d"
+      "today_metric": "19 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2008-4128",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.13",
+      "title": "CVE-2008-4128: Cisco IOS actively exploited",
+      "excerpt": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128"
+    },
     {
       "id": "CVE-2026-56291",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939"
     },
     {
-      "id": "CVE-2026-48908",
+      "id": "CVE-2026-57433",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.07",
-      "title": "CVE-2026-48908: JoomShaper SP Page Builder actively exploited",
-      "excerpt": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908"
+      "date": "2026.07.13",
+      "title": "CVE-2026-57433 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record. retrieve_hook_common reads a signed 32-bit item count from an SX_HOOK record and calls av_extend with that count plus one.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57433"
     },
     {
-      "id": "CVE-2026-15511",
+      "id": "CVE-2026-61500",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.12",
-      "title": "CVE-2026-15511 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability was determined in Comfast CF-WR631AX V3 up to 2.7.0.8. Affected by this vulnerability is the function system_wl_upload_pic_file of the file /usr/bin/webmgnt of the component FastCGI Backend. This manipulation of the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15511"
+      "date": "2026.07.13",
+      "title": "CVE-2026-61500 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61500"
     },
     {
-      "id": "CVE-2026-58596",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.07.12",
-      "title": "CVE-2026-58596 — HIGH (CVSS 8.3)",
-      "excerpt": "Untrusted pointer dereference in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58596"
-    },
-    {
-      "id": "CVE-2026-10666",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.07.12",
-      "title": "CVE-2026-10666 — HIGH (CVSS 8.1)",
-      "excerpt": "parse_ipv4() in subsys/net/ip/utils.c (reached via net_ipaddr_parse() for strings of the form \"a.b.c.d:port\") copies the port substring into a fixed 17-byte stack buffer (char ipaddr[NET_IPV4_ADDR_LEN + 1]) using a length of str_len - end…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10666"
+      "id": "CVE-2026-13221",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.13",
+      "title": "CVE-2026-13221 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Perl versions through 5.43.9 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk. When such branches are combined into a trie, the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13221"
     }
   ]
 }
