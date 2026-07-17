@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T14:29:14+00:00",
-  "generated_date_display": "2026.07.16",
-  "threats_tracked": 73,
+  "generated_at": "2026-07-17T14:09:27+00:00",
+  "generated_date_display": "2026.07.17",
+  "threats_tracked": 75,
   "terminal": {
-    "header_date": "2026.07.16",
+    "header_date": "2026.07.17",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "23 high-severity advisories"
+        "text": "11 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1644"
+        "text": "KEV catalog size: 1647"
       }
     ]
   },
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.16"
+      "today_metric": "Brief sent: 2026.07.17"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "25 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-46817",
+      "id": "CVE-2026-58644",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.15",
-      "title": "CVE-2026-46817: Oracle E-Business Suite actively exploited",
-      "excerpt": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817"
+      "date": "2026.07.16",
+      "title": "CVE-2026-58644: Microsoft SharePoint actively exploited",
+      "excerpt": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
     },
     {
-      "id": "CVE-2023-4346",
+      "id": "CVE-2026-25089",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.15",
-      "title": "CVE-2023-4346: KNX Association KNX Protocol Connection Authorization Option 1 actively exploited",
-      "excerpt": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346"
+      "date": "2026.07.16",
+      "title": "CVE-2026-25089: Fortinet FortiSandbox actively exploited",
+      "excerpt": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
     },
     {
-      "id": "CVE-2026-56155",
+      "id": "CVE-2026-39808",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.14",
-      "title": "CVE-2026-56155: Microsoft Active Directory Federation Services actively exploited",
-      "excerpt": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56155"
+      "date": "2026.07.16",
+      "title": "CVE-2026-39808: Fortinet FortiSandbox actively exploited",
+      "excerpt": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808"
     },
     {
-      "id": "CVE-2026-50148",
+      "id": "CVE-2026-45695",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.15",
-      "title": "CVE-2026-50148 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Metabase is an open-source business intelligence and embedded analytics tool. From 1.54.0 until 1.54.24, 1.55.24, 1.56.25, 1.57.19, 1.58.14, 1.59.10, and 1.60.4, a Metabase user with permission to add or edit a database connection can…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50148"
+      "date": "2026.07.16",
+      "title": "CVE-2026-45695 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Kopia is a cross-platform backup tool for Windows, macOS, and Linux with fast incremental backups, client-side end-to-end encryption, compression, and data deduplication. Prior to 0.23.0, Kopia's HTTP server started with…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45695"
     },
     {
-      "id": "CVE-2026-44986",
+      "id": "CVE-2026-14890",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.15",
-      "title": "CVE-2026-44986 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Penpot is an open-source design tool for design and code collaboration. Prior to 2.14.5, Penpot exposed teams_invitations.clj invitation tokens from create-team-invitations, embedded an existing profile id in auth.clj…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44986"
+      "date": "2026.07.16",
+      "title": "CVE-2026-14890 — CRITICAL (CVSS 9.1)",
+      "excerpt": "SGLang uses an expert-parallel backup subsystem that exposes a ZeroMQ PULL socket on a routable network interface that does not contain authentication or deserialization safeguards, allowing an attacker to provide a malicious pickle file…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14890"
     },
     {
-      "id": "CVE-2026-61736",
+      "id": "CVE-2026-44632",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.15",
-      "title": "CVE-2026-61736 — CRITICAL (CVSS 9.3)",
-      "excerpt": "LightRAG provides simple and fast retrieval-augmented generation. Prior to 1.5.4, the server defaults to CORS_ORIGINS=* combined with allow_credentials=True in lightrag/api/lightrag_server.py, causing Starlette CORSMiddleware to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61736"
+      "date": "2026.07.16",
+      "title": "CVE-2026-44632 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Yamcs is a mission control framework. Prior to 5.12.7, a server-side code injection vulnerability existed in the Yamcs algorithm evaluation engine org.yamcs.algorithms.JavaExprAlgorithmExecutionFactory, which dynamically compiled and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44632"
     }
   ]
 }
