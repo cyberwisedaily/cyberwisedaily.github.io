@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T14:09:27+00:00",
-  "generated_date_display": "2026.07.17",
+  "generated_at": "2026-07-18T13:54:34+00:00",
+  "generated_date_display": "2026.07.18",
   "threats_tracked": 75,
   "terminal": {
-    "header_date": "2026.07.17",
+    "header_date": "2026.07.18",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "11 high-severity advisories"
+        "text": "7 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.17"
+      "today_metric": "Brief sent: 2026.07.18"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808"
     },
     {
-      "id": "CVE-2026-45695",
+      "id": "CVE-2026-51080",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.16",
-      "title": "CVE-2026-45695 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Kopia is a cross-platform backup tool for Windows, macOS, and Linux with fast incremental backups, client-side end-to-end encryption, compression, and data deduplication. Prior to 0.23.0, Kopia's HTTP server started with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45695"
+      "date": "2026.07.17",
+      "title": "CVE-2026-51080 — CRITICAL (CVSS 9.8)",
+      "excerpt": "libpvestorage-perl v9.1.1 and libpve-storage-perl v8.3.7 were discovered to contain an XML External Entity (XXE) vulnerability.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51080"
     },
     {
-      "id": "CVE-2026-14890",
+      "id": "CVE-2026-12692",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.16",
-      "title": "CVE-2026-14890 — CRITICAL (CVSS 9.1)",
-      "excerpt": "SGLang uses an expert-parallel backup subsystem that exposes a ZeroMQ PULL socket on a routable network interface that does not contain authentication or deserialization safeguards, allowing an attacker to provide a malicious pickle file…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14890"
+      "date": "2026.07.17",
+      "title": "CVE-2026-12692 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass. This issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12692"
     },
     {
-      "id": "CVE-2026-44632",
+      "id": "CVE-2024-23564",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.16",
-      "title": "CVE-2026-44632 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Yamcs is a mission control framework. Prior to 5.12.7, a server-side code injection vulnerability existed in the Yamcs algorithm evaluation engine org.yamcs.algorithms.JavaExprAlgorithmExecutionFactory, which dynamically compiled and…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44632"
+      "date": "2026.07.17",
+      "title": "CVE-2024-23564 — CRITICAL (CVSS 9.1)",
+      "excerpt": "HCL Aftermarket EPC is affected by Business Logic Vulnerability using which a non valid user of the application can obtain passwords from the server and redirect them to their own email address by manipulating the server's response. The…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23564"
     }
   ]
 }
