@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-18T13:54:34+00:00",
-  "generated_date_display": "2026.07.18",
-  "threats_tracked": 75,
+  "generated_at": "2026-07-19T13:57:52+00:00",
+  "generated_date_display": "2026.07.19",
+  "threats_tracked": 74,
   "terminal": {
-    "header_date": "2026.07.18",
+    "header_date": "2026.07.19",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "WARN",
-        "text": "7 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.18"
+      "today_metric": "Brief sent: 2026.07.19"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "25 active exploits in last 30d"
+      "today_metric": "24 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808"
     },
     {
-      "id": "CVE-2026-51080",
+      "id": "CVE-2026-16117",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.17",
-      "title": "CVE-2026-51080 — CRITICAL (CVSS 9.8)",
-      "excerpt": "libpvestorage-perl v9.1.1 and libpve-storage-perl v8.3.7 were discovered to contain an XML External Entity (XXE) vulnerability.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51080"
+      "date": "2026.07.18",
+      "title": "CVE-2026-16117 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Impact: @fastify/http-proxy versions up to and including 11.5.0 fail to rewrite the request prefix when the prefix segment is URL-encoded. Fastify's router URL-decodes paths for route matching, but request.url retains the original encoded…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16117"
     },
     {
-      "id": "CVE-2026-12692",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.07.17",
-      "title": "CVE-2026-12692 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass. This issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12692"
+      "id": "CVE-2023-54366",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.07.18",
+      "title": "CVE-2023-54366 — HIGH (CVSS 8.8)",
+      "excerpt": "SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE, allowing SELECT, CREATE, UPDATE, and DELETE operations on tables without explicit permissions. Attackers with database access or unauthenticated users on…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54366"
     },
     {
-      "id": "CVE-2024-23564",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.07.17",
-      "title": "CVE-2024-23564 — CRITICAL (CVSS 9.1)",
-      "excerpt": "HCL Aftermarket EPC is affected by Business Logic Vulnerability using which a non valid user of the application can obtain passwords from the server and redirect them to their own email address by manipulating the server's response. The…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23564"
+      "id": "CVE-2024-58362",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.07.18",
+      "title": "CVE-2024-58362 — HIGH (CVSS 8.8)",
+      "excerpt": "SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. When a record access method defines a…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58362"
     }
   ]
 }
