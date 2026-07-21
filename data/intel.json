@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-07-20T14:36:20+00:00",
-  "generated_date_display": "2026.07.20",
+  "generated_at": "2026-07-21T14:30:15+00:00",
+  "generated_date_display": "2026.07.21",
   "threats_tracked": 74,
   "terminal": {
-    "header_date": "2026.07.20",
+    "header_date": "2026.07.21",
     "lines": [
       {
+        "level": "CRIT",
+        "text": "4 critical CVEs published"
+      },
+      {
         "level": "WARN",
-        "text": "1 high-severity advisory"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -32,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.20"
+      "today_metric": "Brief sent: 2026.07.21"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "0 critical-severity playbooks queued"
+      "today_metric": "4 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -92,13 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808"
     },
     {
-      "id": "CVE-2026-16221",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.07.19",
-      "title": "CVE-2026-16221 — HIGH (CVSS 7.5)",
-      "excerpt": "Impact: fast-uri versions from 2.3.1 through 4.1.0 (including the 3.x line up to 3.1.3 and the 2.x line up to 2.4.2) do not treat a literal backslash character (U+005C) as an authority delimiter. Node's native WHATWG URL parser, used by…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16221"
+      "id": "CVE-2026-46412",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.20",
+      "title": "CVE-2026-46412 — CRITICAL (CVSS 10.0)",
+      "excerpt": "@beproduct/nestjs-auth is a NestJS authentication module for BeProduct IDS (Identity Server) with OpenID Connect support. Between 2026-05-11 20:19 UTC and 22:56 UTC, an attacker used a compromised npm publish token to publish 18 malicious…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46412"
+    },
+    {
+      "id": "CVE-2026-51027",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.20",
+      "title": "CVE-2026-51027 — CRITICAL (CVSS 9.9)",
+      "excerpt": "An issue in FileThingie v.2.5.7 allows a remote attacker to obtain sensitive information via the ft2.php component.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51027"
+    },
+    {
+      "id": "CVE-2026-12701",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.07.20",
+      "title": "CVE-2026-12701 — CRITICAL (CVSS 9.0)",
+      "excerpt": "A path traversal vulnerability was found in pulpcore. The relative_path_validator function only verifies that content paths do not begin with \"/\" but fails to block directory traversal sequences such as \"../\" anywhere in the path. An…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12701"
     }
   ]
 }
