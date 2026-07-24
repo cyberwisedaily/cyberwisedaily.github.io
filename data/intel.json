@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T14:37:57+00:00",
-  "generated_date_display": "2026.07.23",
-  "threats_tracked": 80,
+  "generated_at": "2026-07-24T14:17:53+00:00",
+  "generated_date_display": "2026.07.24",
+  "threats_tracked": 76,
   "terminal": {
-    "header_date": "2026.07.23",
+    "header_date": "2026.07.24",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "8 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.23"
+      "today_metric": "Brief sent: 2026.07.24"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "30 active exploits in last 30d"
+      "today_metric": "26 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137"
     },
     {
-      "id": "CVE-2026-2395",
+      "id": "CVE-2026-47668",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.22",
-      "title": "CVE-2026-2395 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Xpoda Türkiye Informatics Technology Inc. No Code Platform allows SQL Injection. This issue affects No Code Platform: from 4.3.1.0…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2395"
+      "date": "2026.07.23",
+      "title": "CVE-2026-47668 — CRITICAL (CVSS 10.0)",
+      "excerpt": "DbGate is cross-platform database manager. In versions 7.1.8 and prior, DbGate's JSON script runner (`POST /runners/start`) allows remote code execution via code injection in the `functionName` parameter of JSON script `assign` commands.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47668"
     },
     {
-      "id": "CVE-2026-16606",
+      "id": "CVE-2026-65687",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.22",
-      "title": "CVE-2026-16606 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability in Fujitsu Software Linux openFT and Fujitsu Software Oracle Solaris openFT before version 12.1D00 allows for unauthenticated remote code execution (pre-auth RCE) on GNU/Linux or Oracle Solaris. The Fsas Technologies PSIRT…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16606"
+      "date": "2026.07.23",
+      "title": "CVE-2026-65687 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its SVG processing feature that allows unauthenticated attackers to read arbitrary files from the server filesystem by…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65687"
     },
     {
-      "id": "CVE-2026-40712",
+      "id": "CVE-2026-65688",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.22",
-      "title": "CVE-2026-40712 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Dell PowerProtect Data Manager, versions prior to 20.2.0.0, contain(s) an Improper Input Validation vulnerability in the REST API. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40712"
+      "date": "2026.07.23",
+      "title": "CVE-2026-65688 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its font processing feature that allows unauthenticated attackers to read arbitrary files from the server filesystem by…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65688"
     }
   ]
 }
