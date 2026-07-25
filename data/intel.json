@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-24T14:17:53+00:00",
-  "generated_date_display": "2026.07.24",
+  "generated_at": "2026-07-25T14:07:04+00:00",
+  "generated_date_display": "2026.07.25",
   "threats_tracked": 76,
   "terminal": {
-    "header_date": "2026.07.24",
+    "header_date": "2026.07.25",
     "lines": [
       {
         "level": "CRIT",
-        "text": "4 critical CVEs published"
+        "text": "3 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "8 high-severity advisories"
+        "text": "3 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.24"
+      "today_metric": "Brief sent: 2026.07.25"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "4 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137"
     },
     {
-      "id": "CVE-2026-47668",
+      "id": "CVE-2026-56163",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.23",
-      "title": "CVE-2026-47668 — CRITICAL (CVSS 10.0)",
-      "excerpt": "DbGate is cross-platform database manager. In versions 7.1.8 and prior, DbGate's JSON script runner (`POST /runners/start`) allows remote code execution via code injection in the `functionName` parameter of JSON script `assign` commands.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47668"
+      "date": "2026.07.24",
+      "title": "CVE-2026-56163 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Missing authentication for critical function in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56163"
     },
     {
-      "id": "CVE-2026-65687",
+      "id": "CVE-2026-57106",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.23",
-      "title": "CVE-2026-65687 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its SVG processing feature that allows unauthenticated attackers to read arbitrary files from the server filesystem by…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65687"
+      "date": "2026.07.24",
+      "title": "CVE-2026-57106 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Server-side request forgery (ssrf) in Data Quality allows an unauthorized attacker to elevate privileges over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57106"
     },
     {
-      "id": "CVE-2026-65688",
+      "id": "CVE-2026-58630",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.23",
-      "title": "CVE-2026-65688 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its font processing feature that allows unauthenticated attackers to read arbitrary files from the server filesystem by…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65688"
+      "date": "2026.07.24",
+      "title": "CVE-2026-58630 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58630"
     }
   ]
 }
