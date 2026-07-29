@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-28T14:55:30+00:00",
-  "generated_date_display": "2026.07.28",
+  "generated_at": "2026-07-29T14:36:43+00:00",
+  "generated_date_display": "2026.07.29",
   "threats_tracked": 76,
   "terminal": {
-    "header_date": "2026.07.28",
+    "header_date": "2026.07.29",
     "lines": [
       {
         "level": "CRIT",
-        "text": "5 critical CVEs published"
+        "text": "8 critical CVEs published"
       },
       {
         "level": "WARN",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.28"
+      "today_metric": "Brief sent: 2026.07.29"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "5 critical-severity playbooks queued"
+      "today_metric": "8 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232"
     },
     {
-      "id": "CVE-2026-59527",
+      "id": "CVE-2026-51252",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.27",
-      "title": "CVE-2026-59527 — CRITICAL (CVSS 9.3)",
-      "excerpt": "Unauthenticated SQL Injection in MapSVG <= 8.14.0 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59527"
+      "date": "2026.07.28",
+      "title": "CVE-2026-51252 — CRITICAL (CVSS 9.8)",
+      "excerpt": "schreibfaul1 ESP32-audioI2S 3.4.5 has a buffer overflow vulnerability in the MP3Decoder::UnpackSFMPEG1 function due to missing input validation on attacker-controlled MP3 metadata.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51252"
     },
     {
-      "id": "CVE-2026-59533",
+      "id": "CVE-2026-51259",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.27",
-      "title": "CVE-2026-59533 — CRITICAL (CVSS 9.3)",
-      "excerpt": "Unauthenticated SQL Injection in Relevanssi Light <= 1.2.2 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59533"
+      "date": "2026.07.28",
+      "title": "CVE-2026-51259 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Unchecked unsigned integer overflow in buffer size calculation in schreibfaul1 ESP32-audioI2S 3.4.5 leads to undersized PSRAM buffer allocation. Subsequent normal audio buffer read and write operations cause heap out-of-bounds access,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51259"
     },
     {
-      "id": "CVE-2026-59538",
+      "id": "CVE-2026-66713",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.27",
-      "title": "CVE-2026-59538 — CRITICAL (CVSS 9.3)",
-      "excerpt": "Unauthenticated SQL Injection in GamiPress <= 7.9.7 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59538"
+      "date": "2026.07.28",
+      "title": "CVE-2026-66713 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Deserialization of Untrusted Data (CWE-502) in the Tribes-based clustering component in Apache Software Foundation Apache Axis2/Java through 2.0.0 on Apache Tomcat (only when Tribes clustering is enabled, which is off by default) allows…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66713"
     }
   ]
 }
