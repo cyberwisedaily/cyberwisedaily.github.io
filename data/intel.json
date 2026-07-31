@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-30T14:37:46+00:00",
-  "generated_date_display": "2026.07.30",
+  "generated_at": "2026-07-31T14:44:15+00:00",
+  "generated_date_display": "2026.07.31",
   "threats_tracked": 76,
   "terminal": {
-    "header_date": "2026.07.30",
+    "header_date": "2026.07.31",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.07.30"
+      "today_metric": "Brief sent: 2026.07.31"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812"
     },
     {
-      "id": "CVE-2026-54735",
+      "id": "CVE-2026-15435",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.29",
-      "title": "CVE-2026-54735 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Prebid Server is an open-source solution for running real-time advertising auctions in the cloud. Prior to version 4.4.0, certain bidder adapters in Prebid Server interpolate user-supplied parameters into outbound request URLs without…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54735"
+      "date": "2026.07.30",
+      "title": "CVE-2026-15435 — CRITICAL (CVSS 9.8)",
+      "excerpt": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\"…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15435"
     },
     {
-      "id": "CVE-2026-54680",
+      "id": "CVE-2026-28323",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.29",
-      "title": "CVE-2026-54680 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Logging operator automates the deployment and configuration of Kubernetes logging pipelines. Prior to 6.6.0, the Fluentd configuration renderer FluentRender in pkg/sdk/logging/model/render/fluent.go writes CRD strings such as Flow…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54680"
+      "date": "2026.07.30",
+      "title": "CVE-2026-28323 — CRITICAL (CVSS 9.8)",
+      "excerpt": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability. This requires the SAML 2.0 authentication method to be enabled.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28323"
     },
     {
-      "id": "CVE-2026-60112",
+      "id": "CVE-2026-4978",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.29",
-      "title": "CVE-2026-60112 — CRITICAL (CVSS 9.8)",
-      "excerpt": "AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unauthenticated network attacker to obtain a valid session and issue arbitrary spacecraft commands by calling…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60112"
+      "date": "2026.07.30",
+      "title": "CVE-2026-4978 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Traffic Analysis System allows SQL Injection. This issue affects Traffic Analysis System: from 30 before 34.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4978"
     }
   ]
 }
