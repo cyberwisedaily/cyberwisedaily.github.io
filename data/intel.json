@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-04T14:56:25+00:00",
-  "generated_date_display": "2026.08.04",
-  "threats_tracked": 76,
+  "generated_at": "2026-08-05T14:42:03+00:00",
+  "generated_date_display": "2026.08.05",
+  "threats_tracked": 79,
   "terminal": {
-    "header_date": "2026.08.04",
+    "header_date": "2026.08.05",
     "lines": [
       {
         "level": "CRIT",
-        "text": "10 critical CVEs published"
+        "text": "6 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "16 high-severity advisories"
+        "text": "17 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1657"
+        "text": "KEV catalog size: 1660"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.04"
+      "today_metric": "Brief sent: 2026.08.05"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "10 critical-severity playbooks queued"
+      "today_metric": "6 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "26 active exploits in last 30d"
+      "today_metric": "29 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-18577",
+      "id": "CVE-2026-18556",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.03",
-      "title": "CVE-2026-18577: N-able N-central actively exploited",
-      "excerpt": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577"
+      "date": "2026.08.04",
+      "title": "CVE-2026-18556: N-able N-central actively exploited",
+      "excerpt": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556"
     },
     {
-      "id": "CVE-2026-20316",
+      "id": "CVE-2026-34486",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.29",
-      "title": "CVE-2026-20316: Cisco Secure Firewall Management Center (FMC) actively exploited",
-      "excerpt": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316"
+      "date": "2026.08.04",
+      "title": "CVE-2026-34486: Apache Tomcat actively exploited",
+      "excerpt": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486"
     },
     {
-      "id": "CVE-2025-68686",
+      "id": "CVE-2026-9198",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.07.27",
-      "title": "CVE-2025-68686: Fortinet FortiOS actively exploited",
-      "excerpt": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686"
+      "date": "2026.08.04",
+      "title": "CVE-2026-9198: IBM Langflow actively exploited",
+      "excerpt": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198"
     },
     {
-      "id": "CVE-2026-18602",
+      "id": "CVE-2026-61514",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.03",
-      "title": "CVE-2026-18602 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function ovpn-client.get_recommend_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Executing a manipulation of the argument…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18602"
+      "date": "2026.08.04",
+      "title": "CVE-2026-61514 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Puwell IP Camera firmware versions 2.x through 4.x contains an authentication bypass vulnerability that allows unauthenticated attackers to access device functions by sending protocol-conforming packets over TCP port 23456 without…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61514"
     },
     {
-      "id": "CVE-2026-41452",
+      "id": "CVE-2026-61515",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.03",
-      "title": "CVE-2026-41452 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41452"
+      "date": "2026.08.04",
+      "title": "CVE-2026-61515 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Puwell IP Camera firmware versions 2.x through 4.x contains an unauthenticated command injection vulnerability that allows remote attackers to execute arbitrary operating system commands by sending a crafted JSON payload to the DebugShell…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61515"
     },
     {
-      "id": "CVE-2026-18612",
+      "id": "CVE-2026-69098",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.03",
-      "title": "CVE-2026-18612 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A flaw has been found in GL-iNet GL-MT3000 up to 4.4.5. This vulnerability affects the function plugins.remove_package/plugins.install_package of the file /cgi-bin/glc of the component plugins.so Native Plugin. This manipulation causes…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18612"
+      "date": "2026.08.04",
+      "title": "CVE-2026-69098 — CRITICAL (CVSS 9.8)",
+      "excerpt": "kotaemon through 0.12.0 contains an insecure deserialization vulnerability in the check_connection endpoint that allows unauthenticated attackers to instantiate arbitrary Python classes by supplying crafted YAML/JSON input with a __type__…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69098"
     }
   ]
 }
