@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-05T14:42:03+00:00",
-  "generated_date_display": "2026.08.05",
-  "threats_tracked": 79,
+  "generated_at": "2026-08-06T14:41:51+00:00",
+  "generated_date_display": "2026.08.06",
+  "threats_tracked": 80,
   "terminal": {
-    "header_date": "2026.08.05",
+    "header_date": "2026.08.06",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
+        "text": "7 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1660"
+        "text": "KEV catalog size: 1661"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.05"
+      "today_metric": "Brief sent: 2026.08.06"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "7 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "29 active exploits in last 30d"
+      "today_metric": "30 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-63077",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.08.05",
+      "title": "CVE-2026-63077: JetBrains TeamCity actively exploited",
+      "excerpt": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077"
+    },
     {
       "id": "CVE-2026-18556",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486"
     },
     {
-      "id": "CVE-2026-9198",
+      "id": "CVE-2026-7329",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.04",
-      "title": "CVE-2026-9198: IBM Langflow actively exploited",
-      "excerpt": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198"
+      "date": "2026.08.05",
+      "title": "CVE-2026-7329 — CRITICAL (CVSS 9.9)",
+      "excerpt": "An improper privilege management vulnerability in the SQL, SPARQL, and Optic REST query interfaces of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST role to escalate privileges…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7329"
     },
     {
-      "id": "CVE-2026-61514",
+      "id": "CVE-2026-8709",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.04",
-      "title": "CVE-2026-61514 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Puwell IP Camera firmware versions 2.x through 4.x contains an authentication bypass vulnerability that allows unauthenticated attackers to access device functions by sending protocol-conforming packets over TCP port 23456 without…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61514"
+      "date": "2026.08.05",
+      "title": "CVE-2026-8709 — CRITICAL (CVSS 9.9)",
+      "excerpt": "An improper privilege management vulnerability in the REST API document patch operation of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST role to escalate privileges and execute…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8709"
     },
     {
-      "id": "CVE-2026-61515",
+      "id": "CVE-2026-9193",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.04",
-      "title": "CVE-2026-61515 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Puwell IP Camera firmware versions 2.x through 4.x contains an unauthenticated command injection vulnerability that allows remote attackers to execute arbitrary operating system commands by sending a crafted JSON payload to the DebugShell…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61515"
-    },
-    {
-      "id": "CVE-2026-69098",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.04",
-      "title": "CVE-2026-69098 — CRITICAL (CVSS 9.8)",
-      "excerpt": "kotaemon through 0.12.0 contains an insecure deserialization vulnerability in the check_connection endpoint that allows unauthenticated attackers to instantiate arbitrary Python classes by supplying crafted YAML/JSON input with a __type__…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69098"
+      "date": "2026.08.05",
+      "title": "CVE-2026-9193 — CRITICAL (CVSS 9.9)",
+      "excerpt": "An improper privilege management vulnerability in the Hadoop integration of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged Hadoop role to escalate privileges and execute privileged…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9193"
     }
   ]
 }
