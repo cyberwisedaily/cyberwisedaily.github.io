@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-14T13:49:27+00:00",
-  "generated_date_display": "2026.08.14",
-  "threats_tracked": 73,
+  "generated_at": "2026-08-15T13:04:16+00:00",
+  "generated_date_display": "2026.08.15",
+  "threats_tracked": 71,
   "terminal": {
-    "header_date": "2026.08.14",
+    "header_date": "2026.08.15",
     "lines": [
       {
         "level": "CRIT",
-        "text": "11 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "WARN",
-        "text": "26 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.14"
+      "today_metric": "Brief sent: 2026.08.15"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "11 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "23 active exploits in last 30d"
+      "today_metric": "21 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72898"
     },
     {
-      "id": "CVE-2026-27544",
+      "id": "CVE-2026-19626",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.13",
-      "title": "CVE-2026-27544 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Unauthenticated Remote Code Execution (RCE) in QA Analytics <= 5.2.0.0 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27544"
+      "date": "2026.08.14",
+      "title": "CVE-2026-19626 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A remote code execution vulnerability exists in Tenable Security Center's report generation functionality. An authenticated, non-administrative user could exploit this issue by supplying specially crafted input that is later processed…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19626"
     },
     {
-      "id": "CVE-2026-61962",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.13",
-      "title": "CVE-2026-61962 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Unauthenticated Arbitrary Code Execution in WP BASE Booking <= 6.3.0 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61962"
+      "id": "CVE-2026-19823",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.08.14",
+      "title": "CVE-2026-19823 — HIGH (CVSS 8.8)",
+      "excerpt": "A security flaw has been discovered in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. Impacted is the function formQOSRuleDel of the file /goform/delQos of the component QoS Rule Deletion. Performing a manipulation of the argument qosIndex…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19823"
     },
     {
-      "id": "CVE-2026-28008",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.13",
-      "title": "CVE-2026-28008 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Unauthenticated Broken Authentication in OAuth Single Sign On – SSO (OAuth Client) <= 7.0.0 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28008"
+      "id": "CVE-2026-19824",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.08.14",
+      "title": "CVE-2026-19824 — HIGH (CVSS 8.8)",
+      "excerpt": "A weakness has been identified in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. The affected element is the function ipMacBindListStore of the file /goform/addIpMacBind. Executing a manipulation of the argument IPMacBindRule can lead to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19824"
     }
   ]
 }
