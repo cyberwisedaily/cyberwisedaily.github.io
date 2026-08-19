@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-18T13:15:01+00:00",
-  "generated_date_display": "2026.08.18",
-  "threats_tracked": 69,
+  "generated_at": "2026-08-19T13:22:06+00:00",
+  "generated_date_display": "2026.08.19",
+  "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.08.18",
+    "header_date": "2026.08.19",
     "lines": [
       {
         "level": "CRIT",
-        "text": "4 critical CVEs published"
+        "text": "7 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "16 high-severity advisories"
+        "text": "35 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1666"
+        "text": "KEV catalog size: 1670"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.18"
+      "today_metric": "Brief sent: 2026.08.19"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "4 critical-severity playbooks queued"
+      "today_metric": "7 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "19 active exploits in last 30d"
+      "today_metric": "23 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2025-62593",
+      "id": "CVE-2026-33824",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.17",
-      "title": "CVE-2025-62593: Ray-Project Ray actively exploited",
-      "excerpt": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62593"
+      "date": "2026.08.18",
+      "title": "CVE-2026-33824: Microsoft Internet Key Exchange (IKE) Service Extensions actively exploited",
+      "excerpt": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824"
     },
     {
-      "id": "CVE-2026-20349",
+      "id": "CVE-2026-59310",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.11",
-      "title": "CVE-2026-20349: Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)  actively exploited",
-      "excerpt": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20349"
+      "date": "2026.08.18",
+      "title": "CVE-2026-59310: Broadcom VMware vCenter actively exploited",
+      "excerpt": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
     },
     {
-      "id": "CVE-2026-68820",
+      "id": "CVE-2026-55040",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.11",
-      "title": "CVE-2026-68820: Microsoft Windows Ancillary Function Driver for WinSock  actively exploited",
-      "excerpt": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820"
+      "date": "2026.08.18",
+      "title": "CVE-2026-55040: Microsoft SharePoint actively exploited",
+      "excerpt": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
     },
     {
-      "id": "CVE-2026-71566",
+      "id": "CVE-2026-32444",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.17",
-      "title": "CVE-2026-71566 — CRITICAL (CVSS 9.3)",
-      "excerpt": "FakeFish handles incoming credentials by passing them down to scripts. This works for real hardware because in the end it's up to the BMC to validate them. However, KubeVirt relies on a KUBECONFIG file mounted to the container and…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71566"
+      "date": "2026.08.18",
+      "title": "CVE-2026-32444 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Contributor Remote Code Execution (RCE) in Cwicly <= 1.4.4 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32444"
     },
     {
-      "id": "CVE-2026-55674",
+      "id": "CVE-2026-32463",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.17",
-      "title": "CVE-2026-55674 — CRITICAL (CVSS 9.3)",
-      "excerpt": "Discourse is an open-source discussion platform. Prior to 2026.1.6, 2026.5.2, 2026.6.1, and 2026.7.0, an unauthenticated attacker could send a single request with a crafted color_scheme_id (or dark_scheme_id) cookie to inject arbitrary…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55674"
+      "date": "2026.08.18",
+      "title": "CVE-2026-32463 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Contributor Arbitrary File Upload in Sync Post With Other Site <= 1.9.3 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32463"
     },
     {
-      "id": "CVE-2026-64859",
+      "id": "CVE-2026-32474",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.17",
-      "title": "CVE-2026-64859 — CRITICAL (CVSS 9.1)",
-      "excerpt": "New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.7, the admin user list and user lookup APIs, including GET /api/user/, return User.AccessToken as access_token…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64859"
+      "date": "2026.08.18",
+      "title": "CVE-2026-32474 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Contributor Arbitrary File Upload in Templatiq <= 0.2.5 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32474"
     }
   ]
 }
