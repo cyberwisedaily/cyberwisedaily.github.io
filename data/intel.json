@@ -1,17 +1,13 @@
 {
-  "generated_at": "2026-08-22T13:06:08+00:00",
-  "generated_date_display": "2026.08.22",
+  "generated_at": "2026-08-23T13:07:23+00:00",
+  "generated_date_display": "2026.08.23",
   "threats_tracked": 71,
   "terminal": {
-    "header_date": "2026.08.22",
+    "header_date": "2026.08.23",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "15 critical CVEs published"
-      },
-      {
         "level": "WARN",
-        "text": "9 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +32,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.22"
+      "today_metric": "Brief sent: 2026.08.23"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "15 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +92,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72529"
     },
     {
-      "id": "CVE-2026-69502",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.21",
-      "title": "CVE-2026-69502 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69502"
+      "id": "CVE-2026-59808",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.08.22",
+      "title": "CVE-2026-59808 — HIGH (CVSS 8.8)",
+      "excerpt": "AVideo through commit 9c39d8c8 contains an authentication bypass vulnerability where deduplicateByEncoderQueueId() returns video_id_hash credentials for any video by encoder_queue_id without ownership verification, and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59808"
     },
     {
-      "id": "CVE-2026-48749",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.21",
-      "title": "CVE-2026-48749 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, a specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution. Version 7.2.0…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48749"
+      "id": "CVE-2026-71513",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.08.22",
+      "title": "CVE-2026-71513 — HIGH (CVSS 8.8)",
+      "excerpt": "NLTK before 3.10.3 contains a remote code execution vulnerability in AllowlistUnpickler that validates only the pickle module string and not the global name, allowing attackers to resolve dotted names by attribute traversal to callables…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71513"
     },
     {
-      "id": "CVE-2026-48750",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.21",
-      "title": "CVE-2026-48750 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, the `record-output` parameter of the `/instances/$name/exec` endpoint stores the output of the command in the `exec-output` directory of the instance. If…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48750"
+      "id": "CVE-2026-60084",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.08.22",
+      "title": "CVE-2026-60084 — HIGH (CVSS 8.7)",
+      "excerpt": "SiYuan versions before v3.7.4 contain an arbitrary file deletion vulnerability in the /api/search/removeTemplate endpoint that accepts an unvalidated path parameter passed directly to os.RemoveAll. Authenticated admin attackers can supply…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60084"
     }
   ]
 }
