@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-24T13:27:19+00:00",
-  "generated_date_display": "2026.08.24",
-  "threats_tracked": 71,
+  "generated_at": "2026-08-25T13:25:02+00:00",
+  "generated_date_display": "2026.08.25",
+  "threats_tracked": 72,
   "terminal": {
-    "header_date": "2026.08.24",
+    "header_date": "2026.08.25",
     "lines": [
       {
         "level": "CRIT",
-        "text": "7 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "20 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1674"
+        "text": "KEV catalog size: 1675"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.24"
+      "today_metric": "Brief sent: 2026.08.25"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "7 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "21 active exploits in last 30d"
+      "today_metric": "22 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-21962",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.08.24",
+      "title": "CVE-2026-21962: Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in actively exploited",
+      "excerpt": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21962"
+    },
     {
       "id": "CVE-2026-73570",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72530"
     },
     {
-      "id": "CVE-2026-72529",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.20",
-      "title": "CVE-2026-72529: TrueConf Server actively exploited",
-      "excerpt": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72529"
-    },
-    {
-      "id": "CVE-2026-78167",
+      "id": "CVE-2026-76840",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.08.24",
-      "title": "CVE-2026-78167 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A weakness has been identified in EFM ipTIME T16000M 14.20.2. The impacted element is the function httpcon_check_session_url of the component Session Validation Handler. This manipulation causes improper authentication. Remote…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78167"
+      "title": "CVE-2026-76840 — CRITICAL (CVSS 9.6)",
+      "excerpt": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read with a buffer of cb bytes,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76840"
     },
     {
-      "id": "CVE-2026-78169",
+      "id": "CVE-2026-59564",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.08.24",
-      "title": "CVE-2026-78169 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This impacts the function strcpy of the file /goform/aspRemoteApConfTempSend of the component HTTP Request Handler. Performing a manipulation of the argument…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78169"
+      "title": "CVE-2026-59564 — CRITICAL (CVSS 9.1)",
+      "excerpt": "An authentication bypass issue exists in communications between affected versions of the Zscaler Client Connector and the Zscaler Client Connector Portal.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59564"
     },
     {
-      "id": "CVE-2026-5388",
+      "id": "CVE-2026-59568",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.23",
-      "title": "CVE-2026-5388 — CRITICAL (CVSS 9.8)",
-      "excerpt": "justhtml before 1.15.0 contains multiple security issues in URL sanitization helpers (clean_url_value/clean_url_in_js_string), HTML serialization, Markdown passthrough (html_passthrough=True), and several custom sanitization-policy edge…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5388"
+      "date": "2026.08.24",
+      "title": "CVE-2026-59568 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow remote code execution, giving an unauthenticated, unprivileged user the ability to execute arbitrary code in the ZCC context.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59568"
     }
   ]
 }
