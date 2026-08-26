@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-25T13:25:02+00:00",
-  "generated_date_display": "2026.08.25",
-  "threats_tracked": 72,
+  "generated_at": "2026-08-26T13:30:39+00:00",
+  "generated_date_display": "2026.08.26",
+  "threats_tracked": 73,
   "terminal": {
-    "header_date": "2026.08.25",
+    "header_date": "2026.08.26",
     "lines": [
       {
         "level": "CRIT",
-        "text": "5 critical CVEs published"
+        "text": "8 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "18 high-severity advisories"
+        "text": "24 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1675"
+        "text": "KEV catalog size: 1676"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.25"
+      "today_metric": "Brief sent: 2026.08.26"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "5 critical-severity playbooks queued"
+      "today_metric": "8 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "22 active exploits in last 30d"
+      "today_metric": "23 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-60004",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.08.25",
+      "title": "CVE-2026-60004: Gitea Gitea actively exploited",
+      "excerpt": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
+    },
     {
       "id": "CVE-2026-21962",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570"
     },
     {
-      "id": "CVE-2026-72530",
+      "id": "CVE-2026-16286",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.20",
-      "title": "CVE-2026-72530: TrueConf Server actively exploited",
-      "excerpt": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72530"
+      "date": "2026.08.25",
+      "title": "CVE-2026-16286 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload a Web Shell to a Web Server. This…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16286"
     },
     {
-      "id": "CVE-2026-76840",
+      "id": "CVE-2022-51000",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.24",
-      "title": "CVE-2026-76840 — CRITICAL (CVSS 9.6)",
-      "excerpt": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read with a buffer of cb bytes,…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76840"
+      "date": "2026.08.25",
+      "title": "CVE-2022-51000 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Nokogiri before 1.13.2 (CRuby, when using packaged libraries) ships vendored libxml2 2.9.12 and libxslt 1.1.34, which are affected by two upstream CVEs. Via CVE-2021-30560 in libxslt, an application transforming XML with untrusted XSL…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-51000"
     },
     {
-      "id": "CVE-2026-59564",
+      "id": "CVE-2024-58378",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.24",
-      "title": "CVE-2026-59564 — CRITICAL (CVSS 9.1)",
-      "excerpt": "An authentication bypass issue exists in communications between affected versions of the Zscaler Client Connector and the Zscaler Client Connector Portal.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59564"
-    },
-    {
-      "id": "CVE-2026-59568",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.24",
-      "title": "CVE-2026-59568 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow remote code execution, giving an unauthenticated, unprivileged user the ability to execute arbitrary code in the ZCC context.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59568"
+      "date": "2026.08.25",
+      "title": "CVE-2024-58378 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Nokogiri before 1.15.6 and 1.16.x before 1.16.2 (CRuby, when using the packaged libxml2) is affected by a use-after-free vulnerability in libxml2 (CVE-2024-25062) in the xmlTextReader module, which underlies Nokogiri::XML::Reader. When…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58378"
     }
   ]
 }
