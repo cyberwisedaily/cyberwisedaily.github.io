@@ -1,18 +1,10 @@
 {
-  "generated_at": "2026-08-28T22:29:28+00:00",
-  "generated_date_display": "2026.08.28",
-  "threats_tracked": 80,
+  "generated_at": "2026-08-29T16:48:24+00:00",
+  "generated_date_display": "2026.08.29",
+  "threats_tracked": 79,
   "terminal": {
-    "header_date": "2026.08.28",
+    "header_date": "2026.08.29",
     "lines": [
-      {
-        "level": "CRIT",
-        "text": "8 critical CVEs published"
-      },
-      {
-        "level": "WARN",
-        "text": "25 high-severity advisories"
-      },
       {
         "level": "INFO",
         "text": "50 CVEs ingested in 24h"
@@ -36,21 +28,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.28"
+      "today_metric": "Brief sent: 2026.08.29"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "8 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "30 active exploits in last 30d"
+      "today_metric": "29 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -94,33 +86,6 @@
       "title": "CVE-2026-66384: JFrog Artifactory actively exploited",
       "excerpt": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific…",
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384"
-    },
-    {
-      "id": "CVE-2026-69658",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.28",
-      "title": "CVE-2026-69658 — CRITICAL (CVSS 9.8)",
-      "excerpt": "MQTT credentials and control traffic are transmitted in cleartext, exposing sensitive information to network-level attackers. This may enable unauthorized device impersonation and disruption of messaging functions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69658"
-    },
-    {
-      "id": "CVE-2026-71187",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.28",
-      "title": "CVE-2026-71187 — CRITICAL (CVSS 9.8)",
-      "excerpt": "The Ebyte device relies on client side authentication logic that can be reproduced by unauthenticated users. An attacker may generate valid authentication requests and bypass authentication to obtain administrative access to the device.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71187"
-    },
-    {
-      "id": "CVE-2026-73125",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.28",
-      "title": "CVE-2026-73125 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Ebyte device web management interface does not consistently enforce authentication before granting access to administrative functionality. An unauthenticated remote attacker could access sensitive configuration information, modify device…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73125"
     }
   ]
 }
