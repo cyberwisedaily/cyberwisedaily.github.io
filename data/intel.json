@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-08-31T19:10:13+00:00",
-  "generated_date_display": "2026.08.31",
-  "threats_tracked": 83,
+  "generated_at": "2026-09-01T16:46:18+00:00",
+  "generated_date_display": "2026.09.01",
+  "threats_tracked": 81,
   "terminal": {
-    "header_date": "2026.08.31",
+    "header_date": "2026.09.01",
     "lines": [
       {
         "level": "CRIT",
-        "text": "2 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "2 new KEV entries today"
+        "text": "12 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "7 high-severity advisories"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,21 +29,21 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "2 new KEV entries today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.08.31"
+      "today_metric": "Brief sent: 2026.09.01"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "12 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
     },
     {
-      "id": "CVE-2026-82592",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.08.30",
-      "title": "CVE-2026-82592 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A vulnerability was detected in D-Link DIR-825M 1.1.8. This affects the function sub_46725C of the file /boafrm/formDiskFormat of the component Disk Formatting Handler Endpoint. The manipulation of the argument partition results in…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82592"
-    },
-    {
-      "id": "CVE-2026-82593",
+      "id": "CVE-2026-79748",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.08.31",
-      "title": "CVE-2026-82593 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A flaw has been found in D-Link DIR-825M 1.1.8. This impacts the function sub_41802C of the file /boafrm/formLtefotaUpgradeFibocom of the component LTE Module Firmware Upgrade. This manipulation of the argument fota_url causes stack-based…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82593"
+      "title": "CVE-2026-79748 — CRITICAL (CVSS 9.9)",
+      "excerpt": "MCPHub is a unified hub for centrally managing and dynamically orchestrating multiple MCP servers/APIs into separate endpoints with flexible routing strategies. Prior to version 0.12.15, the POST /api/servers and PUT /api/servers/:name…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79748"
     },
     {
-      "id": "CVE-2026-56718",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.08.30",
-      "title": "CVE-2026-56718 — HIGH (CVSS 7.5)",
-      "excerpt": "AJCloud AJY IPC firmware prior to version 01.10715.11.37 contains a path traversal vulnerability in the jdbhttpd web service that allows unauthenticated remote attackers to read arbitrary files with root privileges by supplying path…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56718"
+      "id": "CVE-2026-51724",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.08.31",
+      "title": "CVE-2026-51724 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Incorrect access control in the delSmartQosCfg function of TOTOLINK T6 4.1.5cu.748_B20211015 allows unauthenticated attackers to remove Smart QoS rules via sending a crafted POST request to /cgi-bin/cstecgi.cgi.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51724"
+    },
+    {
+      "id": "CVE-2026-51734",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.08.31",
+      "title": "CVE-2026-51734 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Incorrect access control in the informSlaveUpdate function of TOTOLINK T6 4.1.5cu.748_B20211015 allows unauthenticated attackers to trigger mesh slave update coordination via sending a crafted POST request to /cgi-bin/cstecgi.cgi.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51734"
     }
   ]
 }
