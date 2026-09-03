@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-02T16:42:26+00:00",
-  "generated_date_display": "2026.09.02",
-  "threats_tracked": 81,
+  "generated_at": "2026-09-03T16:33:46+00:00",
+  "generated_date_display": "2026.09.03",
+  "threats_tracked": 87,
   "terminal": {
-    "header_date": "2026.09.02",
+    "header_date": "2026.09.03",
     "lines": [
       {
         "level": "CRIT",
-        "text": "5 critical CVEs published"
+        "text": "6 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1687"
+        "text": "KEV catalog size: 1694"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.02"
+      "today_metric": "Brief sent: 2026.09.03"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "5 critical-severity playbooks queued"
+      "today_metric": "6 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "31 active exploits in last 30d"
+      "today_metric": "37 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-82078",
+      "id": "CVE-2026-59822",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.31",
-      "title": "CVE-2026-82078: PaperCut NG/MF actively exploited",
-      "excerpt": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82078"
+      "date": "2026.09.02",
+      "title": "CVE-2026-59822: BerriAI LiteLLM actively exploited",
+      "excerpt": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59822"
     },
     {
-      "id": "CVE-2026-81578",
+      "id": "CVE-2026-48710",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.31",
-      "title": "CVE-2026-81578: PaperCut NG/MF actively exploited",
-      "excerpt": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81578"
+      "date": "2026.09.02",
+      "title": "CVE-2026-48710: Kludex Starlette actively exploited",
+      "excerpt": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710"
     },
     {
-      "id": "CVE-2023-49105",
+      "id": "CVE-2026-49869",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.08.27",
-      "title": "CVE-2023-49105: ownCloud ownCloud actively exploited",
-      "excerpt": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
+      "date": "2026.09.02",
+      "title": "CVE-2026-49869: Kestra Kestra OSS actively exploited",
+      "excerpt": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49869"
     },
     {
-      "id": "CVE-2026-51934",
+      "id": "CVE-2026-20212",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.01",
-      "title": "CVE-2026-51934 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Buffer Overflow vulnerability in Shenzhen Jixiang Tengda Technology Co., Ltd. Tenda A18 v.15.13.07.09 allows a remote attacker to execute arbitrary code via the fromSetCmdlineRun function",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-51934"
+      "date": "2026.09.02",
+      "title": "CVE-2026-20212 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A vulnerability in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to execute code with&nbsp;root privileges. This vulnerability exists because TCP ports 43210 and 43211 are…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20212"
     },
     {
-      "id": "CVE-2026-52111",
+      "id": "CVE-2026-20274",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.01",
-      "title": "CVE-2026-52111 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An issue in fast-note-sync-service <=2.13.7 allows a remote attacker to escalate privileges via the admin configuration endpoint exposes authTokenKey",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52111"
+      "date": "2026.09.02",
+      "title": "CVE-2026-20274 — CRITICAL (CVSS 9.8)",
+      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening releases that…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20274"
     },
     {
-      "id": "CVE-2026-19766",
+      "id": "CVE-2026-20279",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.01",
-      "title": "CVE-2026-19766 — CRITICAL (CVSS 9.6)",
-      "excerpt": "An authentication bypass vulnerability exists in the underlying operating system of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute arbitrary code as a privileged user on…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19766"
+      "date": "2026.09.02",
+      "title": "CVE-2026-20279 — CRITICAL (CVSS 9.8)",
+      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening releases that…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20279"
     }
   ]
 }
