@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T16:33:46+00:00",
-  "generated_date_display": "2026.09.03",
-  "threats_tracked": 87,
+  "generated_at": "2026-09-04T16:29:40+00:00",
+  "generated_date_display": "2026.09.04",
+  "threats_tracked": 84,
   "terminal": {
-    "header_date": "2026.09.03",
+    "header_date": "2026.09.04",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "20 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.03"
+      "today_metric": "Brief sent: 2026.09.04"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "37 active exploits in last 30d"
+      "today_metric": "34 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49869"
     },
     {
-      "id": "CVE-2026-20212",
+      "id": "CVE-2026-84238",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.02",
-      "title": "CVE-2026-20212 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to execute code with&nbsp;root privileges. This vulnerability exists because TCP ports 43210 and 43211 are…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20212"
+      "date": "2026.09.03",
+      "title": "CVE-2026-84238 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Unauthenticated Broken Access Control in YITH Request a Quote for WooCommerce Premium < 4.46.0 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84238"
     },
     {
-      "id": "CVE-2026-20274",
+      "id": "CVE-2026-84753",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.02",
-      "title": "CVE-2026-20274 — CRITICAL (CVSS 9.8)",
-      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening releases that…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20274"
+      "date": "2026.09.03",
+      "title": "CVE-2026-84753 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Unauthenticated PHP Object Injection in Mail Mint <= 1.31.0 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84753"
     },
     {
-      "id": "CVE-2026-20279",
+      "id": "CVE-2026-84814",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.02",
-      "title": "CVE-2026-20279 — CRITICAL (CVSS 9.8)",
-      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening releases that…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20279"
+      "date": "2026.09.03",
+      "title": "CVE-2026-84814 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Subscriber Privilege Escalation in Bricksforge <= 3.1.8.8 versions.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84814"
     }
   ]
 }
