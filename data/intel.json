@@ -1,17 +1,13 @@
 {
-  "generated_at": "2026-09-06T15:35:04+00:00",
-  "generated_date_display": "2026.09.06",
-  "threats_tracked": 84,
+  "generated_at": "2026-09-07T17:46:58+00:00",
+  "generated_date_display": "2026.09.07",
+  "threats_tracked": 83,
   "terminal": {
-    "header_date": "2026.09.06",
+    "header_date": "2026.09.07",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "9 critical CVEs published"
-      },
-      {
         "level": "WARN",
-        "text": "11 high-severity advisories"
+        "text": "8 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +32,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.06"
+      "today_metric": "Brief sent: 2026.09.07"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "9 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "34 active exploits in last 30d"
+      "today_metric": "33 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +92,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710"
     },
     {
-      "id": "CVE-2026-86152",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.06",
-      "title": "CVE-2026-86152 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A flaw has been found in Tenda CP3 27.5.57.101. The impacted element is the function CAutoAddWifi::ThreadProc of the file Functions/AutoAddWifi.cpp of the component Kylin. Executing a manipulation can lead to os command injection. The…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86152"
+      "id": "CVE-2026-20501",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.07",
+      "title": "CVE-2026-20501 — HIGH (CVSS 8.4)",
+      "excerpt": "In vdec, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID:…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20501"
     },
     {
-      "id": "CVE-2026-86167",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.06",
-      "title": "CVE-2026-86167 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid leads to os command injection. Remote…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86167"
+      "id": "CVE-2026-20502",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.07",
+      "title": "CVE-2026-20502 — HIGH (CVSS 8.4)",
+      "excerpt": "In vdec, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID:…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20502"
     },
     {
-      "id": "CVE-2026-16310",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
+      "id": "CVE-2026-86220",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
       "date": "2026.09.06",
-      "title": "CVE-2026-16310 — CRITICAL (CVSS 9.8)",
-      "excerpt": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.8.5 via the 'id' parameter due to missing validation on a user controlled key. This makes it possible for…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16310"
+      "title": "CVE-2026-86220 — HIGH (CVSS 7.3)",
+      "excerpt": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. The affected element is the function mysqli_query of the file /admin/modal_add_course.php. The manipulation of the argument course results in sql…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86220"
     }
   ]
 }
