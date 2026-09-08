@@ -1,13 +1,17 @@
 {
-  "generated_at": "2026-09-07T17:46:58+00:00",
-  "generated_date_display": "2026.09.07",
+  "generated_at": "2026-09-08T16:44:57+00:00",
+  "generated_date_display": "2026.09.08",
   "threats_tracked": 83,
   "terminal": {
-    "header_date": "2026.09.07",
+    "header_date": "2026.09.08",
     "lines": [
       {
+        "level": "CRIT",
+        "text": "3 critical CVEs published"
+      },
+      {
         "level": "WARN",
-        "text": "8 high-severity advisories"
+        "text": "11 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -32,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.07"
+      "today_metric": "Brief sent: 2026.09.08"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "0 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -92,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710"
     },
     {
-      "id": "CVE-2026-20501",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
+      "id": "CVE-2026-75650",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
       "date": "2026.09.07",
-      "title": "CVE-2026-20501 — HIGH (CVSS 8.4)",
-      "excerpt": "In vdec, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID:…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20501"
+      "title": "CVE-2026-75650 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75650"
     },
     {
-      "id": "CVE-2026-20502",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
+      "id": "CVE-2026-86478",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
       "date": "2026.09.07",
-      "title": "CVE-2026-20502 — HIGH (CVSS 8.4)",
-      "excerpt": "In vdec, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID:…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20502"
+      "title": "CVE-2026-86478 — CRITICAL (CVSS 9.8)",
+      "excerpt": "In JetBrains YouTrack before 2025.3.161254, 2026.1.14042 improper authentication in YouTrack Helpdesk allowed unauthenticated account takeover via a self-asserted email address",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86478"
     },
     {
-      "id": "CVE-2026-86220",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.09.06",
-      "title": "CVE-2026-86220 — HIGH (CVSS 7.3)",
-      "excerpt": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. The affected element is the function mysqli_query of the file /admin/modal_add_course.php. The manipulation of the argument course results in sql…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86220"
+      "id": "CVE-2026-86480",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.07",
+      "title": "CVE-2026-86480 — CRITICAL (CVSS 9.8)",
+      "excerpt": "In JetBrains Hub before 2026.2.52442 an unauthenticated attacker could register a trusted service and gain superuser privileges",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86480"
     }
   ]
 }
