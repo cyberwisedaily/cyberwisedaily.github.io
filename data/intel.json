@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-08T16:44:57+00:00",
-  "generated_date_display": "2026.09.08",
-  "threats_tracked": 83,
+  "generated_at": "2026-09-09T16:46:56+00:00",
+  "generated_date_display": "2026.09.09",
+  "threats_tracked": 87,
   "terminal": {
-    "header_date": "2026.09.08",
+    "header_date": "2026.09.09",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "11 high-severity advisories"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1695"
+        "text": "KEV catalog size: 1699"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.08"
+      "today_metric": "Brief sent: 2026.09.09"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "33 active exploits in last 30d"
+      "today_metric": "37 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-85046",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.04",
-      "title": "CVE-2026-85046: Google Chromium V8 actively exploited",
-      "excerpt": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85046"
-    },
-    {
-      "id": "CVE-2026-59822",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.02",
-      "title": "CVE-2026-59822: BerriAI LiteLLM actively exploited",
-      "excerpt": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59822"
-    },
-    {
-      "id": "CVE-2026-48710",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.02",
-      "title": "CVE-2026-48710: Kludex Starlette actively exploited",
-      "excerpt": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710"
-    },
-    {
       "id": "CVE-2026-75650",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.07",
-      "title": "CVE-2026-75650 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this…",
+      "date": "2026.09.08",
+      "title": "CVE-2026-75650: Adobe Commerce and Magento actively exploited",
+      "excerpt": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75650"
     },
     {
-      "id": "CVE-2026-86478",
+      "id": "CVE-2026-81963",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.07",
-      "title": "CVE-2026-86478 — CRITICAL (CVSS 9.8)",
-      "excerpt": "In JetBrains YouTrack before 2025.3.161254, 2026.1.14042 improper authentication in YouTrack Helpdesk allowed unauthenticated account takeover via a self-asserted email address",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86478"
+      "date": "2026.09.08",
+      "title": "CVE-2026-81963: Microsoft Windows actively exploited",
+      "excerpt": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81963"
     },
     {
-      "id": "CVE-2026-86480",
+      "id": "CVE-2026-86218",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.07",
-      "title": "CVE-2026-86480 — CRITICAL (CVSS 9.8)",
-      "excerpt": "In JetBrains Hub before 2026.2.52442 an unauthenticated attacker could register a trusted service and gain superuser privileges",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86480"
+      "date": "2026.09.08",
+      "title": "CVE-2026-86218: N-able N-central actively exploited",
+      "excerpt": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86218"
+    },
+    {
+      "id": "CVE-2026-26084",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.08",
+      "title": "CVE-2026-26084 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A improper access control vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow attacker to access sensitive…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-26084"
+    },
+    {
+      "id": "CVE-2026-79569",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.08",
+      "title": "CVE-2026-79569 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Movie_Recommend v1.0.0 was discovered to contain a SQL injection vulnerability in the sort parameter at /loadingmore. This vulnerability allows attackers to access sensitive database information via a crafted SQL statement.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79569"
+    },
+    {
+      "id": "CVE-2026-79570",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.08",
+      "title": "CVE-2026-79570 — CRITICAL (CVSS 9.8)",
+      "excerpt": "mfish-nocode-pro v1.0.0 was discovered to contain a SQL injection vulnerability in the tableName parameter at /sys/dbConnect/data. This vulnerability allows attackers to access sensitive database information via a crafted SQL statement.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79570"
     }
   ]
 }
