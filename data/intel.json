@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-12T15:39:01+00:00",
-  "generated_date_display": "2026.09.12",
+  "generated_at": "2026-09-13T16:30:20+00:00",
+  "generated_date_display": "2026.09.13",
   "threats_tracked": 94,
   "terminal": {
-    "header_date": "2026.09.12",
+    "header_date": "2026.09.13",
     "lines": [
       {
         "level": "CRIT",
-        "text": "5 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "WARN",
-        "text": "16 high-severity advisories"
+        "text": "17 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.12"
+      "today_metric": "Brief sent: 2026.09.13"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "5 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42018"
     },
     {
-      "id": "CVE-2026-72709",
+      "id": "CVE-2026-90558",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.11",
-      "title": "CVE-2026-72709 — CRITICAL (CVSS 9.8)",
-      "excerpt": "SPIP before 4.4.18 contains a missing authorization vulnerability in the administrative action endpoints under ecrire/action/ that allows unauthenticated attackers to perform privileged actions by supplying a valid HMAC-SHA256 nonce…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72709"
+      "date": "2026.09.12",
+      "title": "CVE-2026-90558 — CRITICAL (CVSS 9.8)",
+      "excerpt": "sngrep through 1.8.4 contains stack buffer overflow vulnerabilities in SIP attribute formatting routines when header values exceed the 255-byte buffer limit. Attackers can craft malicious SIP packets with oversized Call-ID, X-Call-ID, or…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90558"
     },
     {
-      "id": "CVE-2026-72710",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.11",
-      "title": "CVE-2026-72710 — CRITICAL (CVSS 9.8)",
-      "excerpt": "SPIP before 4.4.18 contains a remote code execution vulnerability in the editer_objet action where the arg parameter resolves SQL table names without enforcing an editable columns allowlist, allowing attackers with a valid nonce to inject…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72710"
+      "id": "CVE-2026-90493",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.13",
+      "title": "CVE-2026-90493 — HIGH (CVSS 8.8)",
+      "excerpt": "A vulnerability was detected in Tonec Internet Download Manager up to 6.42 Build 63 on Windows. The impacted element is an unknown function of the file idmwfp.sys of the component Kernel Driver. The manipulation results in improper access…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90493"
     },
     {
-      "id": "CVE-2026-62103",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.11",
-      "title": "CVE-2026-62103 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Unauthenticated PHP Object Injection in Everest Forms <= 3.6.0 versions.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62103"
+      "id": "CVE-2026-90510",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.13",
+      "title": "CVE-2026-90510 — HIGH (CVSS 8.3)",
+      "excerpt": "A security vulnerability has been detected in dromara orion-visor up to 2.5.7. This affects the function HostKeyServiceImpl.encryptKey of the file…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90510"
     }
   ]
 }
