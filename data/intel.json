@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-13T16:30:20+00:00",
-  "generated_date_display": "2026.09.13",
+  "generated_at": "2026-09-14T18:06:35+00:00",
+  "generated_date_display": "2026.09.14",
   "threats_tracked": 94,
   "terminal": {
-    "header_date": "2026.09.13",
+    "header_date": "2026.09.14",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.13"
+      "today_metric": "Brief sent: 2026.09.14"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42018"
     },
     {
-      "id": "CVE-2026-90558",
+      "id": "CVE-2026-81648",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.12",
-      "title": "CVE-2026-90558 — CRITICAL (CVSS 9.8)",
-      "excerpt": "sngrep through 1.8.4 contains stack buffer overflow vulnerabilities in SIP attribute formatting routines when header values exceed the 255-byte buffer limit. Attackers can craft malicious SIP packets with oversized Call-ID, X-Call-ID, or…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90558"
+      "date": "2026.09.13",
+      "title": "CVE-2026-81648 — CRITICAL (CVSS 10.0)",
+      "excerpt": "The CryptoPayment Gateway WordPress plugin from 1.2.1 to 1.2.2 does not apply an authorization check on one of its AJAX endpoints, allowing unauthenticated users to invoke administrative operations, including deleting arbitrary files on…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81648"
     },
     {
-      "id": "CVE-2026-90493",
+      "id": "CVE-2026-74933",
       "tag": "ANALYSIS",
       "tag_class": "warn",
       "date": "2026.09.13",
-      "title": "CVE-2026-90493 — HIGH (CVSS 8.8)",
-      "excerpt": "A vulnerability was detected in Tonec Internet Download Manager up to 6.42 Build 63 on Windows. The impacted element is an unknown function of the file idmwfp.sys of the component Kernel Driver. The manipulation results in improper access…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90493"
+      "title": "CVE-2026-74933 — HIGH (CVSS 8.8)",
+      "excerpt": "The GenieWords WordPress plugin from 1.5.27 to 1.5.34 does not have authorisation checks on some of its REST API and AJAX actions, and decodes stored values before printing them, allowing unauthenticated users to overwrite its…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74933"
     },
     {
-      "id": "CVE-2026-90510",
+      "id": "CVE-2026-85129",
       "tag": "ANALYSIS",
       "tag_class": "warn",
       "date": "2026.09.13",
-      "title": "CVE-2026-90510 — HIGH (CVSS 8.3)",
-      "excerpt": "A security vulnerability has been detected in dromara orion-visor up to 2.5.7. This affects the function HostKeyServiceImpl.encryptKey of the file…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90510"
+      "title": "CVE-2026-85129 — HIGH (CVSS 8.8)",
+      "excerpt": "The Hoo Companion WordPress plugin 1.0.2 does not have any authorisation or validation checks in one of its import features, and does not sanitise the data submitted to it before storing it as the active theme's settings, allowing…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85129"
     }
   ]
 }
