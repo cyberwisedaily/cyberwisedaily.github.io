@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-14T18:06:35+00:00",
-  "generated_date_display": "2026.09.14",
-  "threats_tracked": 94,
+  "generated_at": "2026-09-15T17:09:12+00:00",
+  "generated_date_display": "2026.09.15",
+  "threats_tracked": 95,
   "terminal": {
-    "header_date": "2026.09.14",
+    "header_date": "2026.09.15",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "12 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1709"
+        "text": "KEV catalog size: 1710"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.14"
+      "today_metric": "Brief sent: 2026.09.15"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "44 active exploits in last 30d"
+      "today_metric": "45 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-76461",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.14",
+      "title": "CVE-2026-76461: Cisco Secure Email Gateway actively exploited",
+      "excerpt": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461"
+    },
     {
       "id": "CVE-2026-84869",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42016"
     },
     {
-      "id": "CVE-2026-42018",
+      "id": "CVE-2026-20353",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.11",
-      "title": "CVE-2026-42018: JFrog Artifactory actively exploited",
-      "excerpt": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42018"
+      "date": "2026.09.14",
+      "title": "CVE-2026-20353 — CRITICAL (CVSS 9.8)",
+      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Email Gateway and Cisco Secure Email and Web Manager engineering team has conducted a comprehensive internal security review. This review…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20353"
     },
     {
-      "id": "CVE-2026-81648",
+      "id": "CVE-2026-76440",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.13",
-      "title": "CVE-2026-81648 — CRITICAL (CVSS 10.0)",
-      "excerpt": "The CryptoPayment Gateway WordPress plugin from 1.2.1 to 1.2.2 does not apply an authorization check on one of its AJAX endpoints, allowing unauthenticated users to invoke administrative operations, including deleting arbitrary files on…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81648"
+      "date": "2026.09.14",
+      "title": "CVE-2026-76440 — CRITICAL (CVSS 9.8)",
+      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Email Gateway and Cisco Secure Email and Web Manager engineering team has conducted a comprehensive internal security review. This review…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76440"
     },
     {
-      "id": "CVE-2026-74933",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.09.13",
-      "title": "CVE-2026-74933 — HIGH (CVSS 8.8)",
-      "excerpt": "The GenieWords WordPress plugin from 1.5.27 to 1.5.34 does not have authorisation checks on some of its REST API and AJAX actions, and decodes stored values before printing them, allowing unauthenticated users to overwrite its…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74933"
-    },
-    {
-      "id": "CVE-2026-85129",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.09.13",
-      "title": "CVE-2026-85129 — HIGH (CVSS 8.8)",
-      "excerpt": "The Hoo Companion WordPress plugin 1.0.2 does not have any authorisation or validation checks in one of its import features, and does not sanitise the data submitted to it before storing it as the active theme's settings, allowing…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85129"
+      "id": "CVE-2026-76441",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.14",
+      "title": "CVE-2026-76441 — CRITICAL (CVSS 9.8)",
+      "excerpt": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Email Gateway and Cisco Secure Email and Web Manager engineering team has conducted a comprehensive internal security review. This review…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76441"
     }
   ]
 }
