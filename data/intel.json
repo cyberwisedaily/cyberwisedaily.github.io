@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-19T15:58:01+00:00",
-  "generated_date_display": "2026.09.19",
-  "threats_tracked": 95,
+  "generated_at": "2026-09-20T16:18:51+00:00",
+  "generated_date_display": "2026.09.20",
+  "threats_tracked": 93,
   "terminal": {
-    "header_date": "2026.09.19",
+    "header_date": "2026.09.20",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
+        "text": "3 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "16 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.19"
+      "today_metric": "Brief sent: 2026.09.20"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "45 active exploits in last 30d"
+      "today_metric": "43 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39682"
     },
     {
-      "id": "CVE-2025-15399",
+      "id": "CVE-2026-94083",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.18",
-      "title": "CVE-2025-15399 — CRITICAL (CVSS 10.0)",
-      "excerpt": "IBM Common Licensing Agent 9.0, Agent 9.0.0.1, Agent 9.0.0.2, ART 9.0, ART 9.0.0.1, and ART 9.0.0.2 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15399"
+      "date": "2026.09.20",
+      "title": "CVE-2026-94083 — CRITICAL (CVSS 9.4)",
+      "excerpt": "Suricata before 8.0.7 has a DoH2 type confusion that can cause an invalid free, because cleanup code for the HTTP2 state is executed even though the actual state is HTTP1 (when there is a DoH2 request with an HTTP1 to HTTP2 upgrade). This…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94083"
     },
     {
-      "id": "CVE-2026-10747",
+      "id": "CVE-2026-94084",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.18",
-      "title": "CVE-2026-10747 — CRITICAL (CVSS 10.0)",
-      "excerpt": "IBM MQ Appliance could allow a remote attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow in protocol message processing before authentication.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10747"
+      "date": "2026.09.20",
+      "title": "CVE-2026-94084 — CRITICAL (CVSS 9.4)",
+      "excerpt": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94084"
     },
     {
-      "id": "CVE-2025-53837",
+      "id": "CVE-2026-93958",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.18",
-      "title": "CVE-2025-53837 — CRITICAL (CVSS 9.9)",
-      "excerpt": "XWiki Rendering is a generic rendering system that converts textual input in a given syntax (wiki syntax, HTML, etc) into another syntax (XHTML, etc). Prior to versions 14.10.2 and 15.0 RC1, any user who can edit their own user profile or…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53837"
+      "date": "2026.09.20",
+      "title": "CVE-2026-93958 — CRITICAL (CVSS 9.1)",
+      "excerpt": "A vulnerability was found in D-Link R95 BE9500_1.00.16. This vulnerability affects the function system of the file /bin/ssi of the component DHMAPI. The manipulation of the argument NTPServer results in os command injection. The attack…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93958"
     }
   ]
 }
