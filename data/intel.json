@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-23T17:17:47+00:00",
-  "generated_date_display": "2026.09.23",
-  "threats_tracked": 97,
+  "generated_at": "2026-09-24T17:23:00+00:00",
+  "generated_date_display": "2026.09.24",
+  "threats_tracked": 96,
   "terminal": {
-    "header_date": "2026.09.23",
+    "header_date": "2026.09.24",
     "lines": [
       {
         "level": "CRIT",
-        "text": "17 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "12 high-severity advisories"
+        "text": "17 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.23"
+      "today_metric": "Brief sent: 2026.09.24"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "17 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "47 active exploits in last 30d"
+      "today_metric": "46 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93616"
     },
     {
-      "id": "CVE-2026-73369",
+      "id": "CVE-2026-77602",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-73369 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73369"
+      "date": "2026.09.23",
+      "title": "CVE-2026-77602 — CRITICAL (CVSS 9.9)",
+      "excerpt": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.1.0 until 7.3.0, authenticated non-administrator users can write content under targets_modified/ that is later…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77602"
     },
     {
-      "id": "CVE-2026-75699",
+      "id": "CVE-2026-84474",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-75699 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75699"
+      "date": "2026.09.23",
+      "title": "CVE-2026-84474 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A flaw was found in Red Hat Ansible Automation Platform's automation- controller. The provisioning-callback secret (host_config_key) is exposed to users holding only the read-level view_jobtemplate permission -- both in the job template…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84474"
     },
     {
-      "id": "CVE-2026-75703",
+      "id": "CVE-2026-84502",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-75703 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75703"
+      "date": "2026.09.23",
+      "title": "CVE-2026-84502 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A flaw was found in Red Hat Ansible Automation Platform's automation- controller. The Project scm_url field is not validated against values that begin with a dash and is stored and passed verbatim to the git SCM module. Because the module…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84502"
     }
   ]
 }
