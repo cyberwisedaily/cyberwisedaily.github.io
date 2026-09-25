@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-09-24T17:23:00+00:00",
-  "generated_date_display": "2026.09.24",
-  "threats_tracked": 96,
+  "generated_at": "2026-09-25T17:21:52+00:00",
+  "generated_date_display": "2026.09.25",
+  "threats_tracked": 101,
   "terminal": {
-    "header_date": "2026.09.24",
+    "header_date": "2026.09.25",
     "lines": [
       {
         "level": "CRIT",
-        "text": "5 critical CVEs published"
+        "text": "3 critical CVEs published"
+      },
+      {
+        "level": "CRIT",
+        "text": "2 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "17 high-severity advisories"
+        "text": "20 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1721"
+        "text": "KEV catalog size: 1725"
       }
     ]
   },
@@ -29,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "2 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.24"
+      "today_metric": "Brief sent: 2026.09.25"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "5 critical-severity playbooks queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "46 active exploits in last 30d"
+      "today_metric": "49 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-93952",
+      "id": "CVE-2026-67279",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-93952: Arista VeloCloud Orchestrator actively exploited",
-      "excerpt": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93952"
+      "date": "2026.09.25",
+      "title": "CVE-2026-67279: MikroTik RouterOS actively exploited",
+      "excerpt": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67279"
     },
     {
-      "id": "CVE-2026-94127",
+      "id": "CVE-2026-65660",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-94127: F5 BIG-IP APM actively exploited",
-      "excerpt": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94127"
+      "date": "2026.09.25",
+      "title": "CVE-2026-65660: Microsoft SharePoint actively exploited",
+      "excerpt": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660"
     },
     {
-      "id": "CVE-2026-93616",
+      "id": "CVE-2026-5430",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.22",
-      "title": "CVE-2026-93616: Check Point Multiple Products actively exploited",
-      "excerpt": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93616"
+      "date": "2026.09.24",
+      "title": "CVE-2026-5430: WSO2 Multiple Products actively exploited",
+      "excerpt": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430"
     },
     {
-      "id": "CVE-2026-77602",
+      "id": "CVE-2026-61732",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.23",
-      "title": "CVE-2026-77602 — CRITICAL (CVSS 9.9)",
-      "excerpt": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.1.0 until 7.3.0, authenticated non-administrator users can write content under targets_modified/ that is later…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77602"
+      "date": "2026.09.24",
+      "title": "CVE-2026-61732 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Decepticon is an autonomous hacking agent for red teams. Versions prior to 1.1.17 wrap web crawl results — the output of agent reconnaissance against target services — into LLM messages without neutralizing ChatML special-token literals.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61732"
     },
     {
-      "id": "CVE-2026-84474",
+      "id": "CVE-2026-13249",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.23",
-      "title": "CVE-2026-84474 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A flaw was found in Red Hat Ansible Automation Platform's automation- controller. The provisioning-callback secret (host_config_key) is exposed to users holding only the read-level view_jobtemplate permission -- both in the job template…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84474"
+      "date": "2026.09.24",
+      "title": "CVE-2026-13249 — CRITICAL (CVSS 9.8)",
+      "excerpt": "An unauthenticated Remote Code Execution via Arbitrary File Upload vulnerability in the web management interface in Honeywell PD45 Industrial Printer version F10.19.010040, allows upload of attacker controlled files without requiring…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13249"
     },
     {
-      "id": "CVE-2026-84502",
+      "id": "CVE-2026-61741",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.23",
-      "title": "CVE-2026-84502 — CRITICAL (CVSS 9.9)",
-      "excerpt": "A flaw was found in Red Hat Ansible Automation Platform's automation- controller. The Project scm_url field is not validated against values that begin with a dash and is stored and passed verbatim to the git SCM module. Because the module…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84502"
+      "date": "2026.09.24",
+      "title": "CVE-2026-61741 — CRITICAL (CVSS 9.3)",
+      "excerpt": "http4s-scala-xml provides `EntityDecoder[F, scala.xml.Elem]` instances that parse XML message bodies. Prior to versions 0.24.1 and 1.0.0-M39, these decoders used a `javax.xml.parsers.SAXParserFactory` obtained from…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61741"
     }
   ]
 }
