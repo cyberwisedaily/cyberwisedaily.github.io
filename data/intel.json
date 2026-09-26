@@ -1,21 +1,13 @@
 {
-  "generated_at": "2026-09-25T17:21:52+00:00",
-  "generated_date_display": "2026.09.25",
-  "threats_tracked": 101,
+  "generated_at": "2026-09-26T16:32:32+00:00",
+  "generated_date_display": "2026.09.26",
+  "threats_tracked": 94,
   "terminal": {
-    "header_date": "2026.09.25",
+    "header_date": "2026.09.26",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "3 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "2 new KEV entries today"
-      },
-      {
         "level": "WARN",
-        "text": "20 high-severity advisories"
+        "text": "6 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -23,7 +15,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1725"
+        "text": "KEV catalog size: 1726"
       }
     ]
   },
@@ -33,28 +25,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "2 new KEV entries today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.25"
+      "today_metric": "Brief sent: 2026.09.26"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "49 active exploits in last 30d"
+      "today_metric": "44 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -91,40 +83,40 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660"
     },
     {
-      "id": "CVE-2026-5430",
+      "id": "CVE-2026-87902",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.24",
-      "title": "CVE-2026-5430: WSO2 Multiple Products actively exploited",
-      "excerpt": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430"
+      "date": "2026.09.25",
+      "title": "CVE-2026-87902: WordPress Core actively exploited",
+      "excerpt": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87902"
     },
     {
-      "id": "CVE-2026-61732",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.24",
-      "title": "CVE-2026-61732 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Decepticon is an autonomous hacking agent for red teams. Versions prior to 1.1.17 wrap web crawl results — the output of agent reconnaissance against target services — into LLM messages without neutralizing ChatML special-token literals.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61732"
+      "id": "CVE-2026-94445",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.25",
+      "title": "CVE-2026-94445 — HIGH (CVSS 8.8)",
+      "excerpt": "A malicious txtar could escape the intended execution context and force arbitrary writes to the playground host's trusted filesystem. Disjointly, one of the three possible paths to invoke go vet on the playground host did not correctly…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94445"
     },
     {
-      "id": "CVE-2026-13249",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.24",
-      "title": "CVE-2026-13249 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An unauthenticated Remote Code Execution via Arbitrary File Upload vulnerability in the web management interface in Honeywell PD45 Industrial Printer version F10.19.010040, allows upload of attacker controlled files without requiring…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13249"
+      "id": "CVE-2026-91837",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.25",
+      "title": "CVE-2026-91837 — HIGH (CVSS 7.8)",
+      "excerpt": "A flaw was found in NetworkManager-iodine, the iodine VPN plugin for NetworkManager. A local unprivileged user can exploit a vulnerability in how the 'nameserver' setting is processed when establishing an iodine VPN connection. By…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91837"
     },
     {
-      "id": "CVE-2026-61741",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.24",
-      "title": "CVE-2026-61741 — CRITICAL (CVSS 9.3)",
-      "excerpt": "http4s-scala-xml provides `EntityDecoder[F, scala.xml.Elem]` instances that parse XML message bodies. Prior to versions 0.24.1 and 1.0.0-M39, these decoders used a `javax.xml.parsers.SAXParserFactory` obtained from…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61741"
+      "id": "CVE-2026-89032",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.09.25",
+      "title": "CVE-2026-89032 — HIGH (CVSS 7.7)",
+      "excerpt": "BerriAI LiteLLM before 1.101.0-rc.1 contains a tenant isolation bypass vulnerability in the semantic cache layer that allows authenticated users to read other tenants' cached responses by exploiting a metadata key mismatch between…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89032"
     }
   ]
 }
