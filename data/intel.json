@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-29T18:09:10+00:00",
-  "generated_date_display": "2026.09.29",
-  "threats_tracked": 95,
+  "generated_at": "2026-09-30T18:02:08+00:00",
+  "generated_date_display": "2026.09.30",
+  "threats_tracked": 96,
   "terminal": {
-    "header_date": "2026.09.29",
+    "header_date": "2026.09.30",
     "lines": [
       {
         "level": "CRIT",
@@ -15,7 +15,7 @@
       },
       {
         "level": "WARN",
-        "text": "4 high-severity advisories"
+        "text": "13 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -23,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1729"
+        "text": "KEV catalog size: 1730"
       }
     ]
   },
@@ -40,7 +40,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.09.29"
+      "today_metric": "Brief sent: 2026.09.30"
     },
     {
       "id": "playbooks",
@@ -54,7 +54,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "44 active exploits in last 30d"
+      "today_metric": "45 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -72,6 +72,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-76504",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.09.30",
+      "title": "CVE-2026-76504: Cisco Catalyst SD-WAN Manager actively exploited",
+      "excerpt": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504"
+    },
     {
       "id": "CVE-2026-86950",
       "tag": "CRITICAL",
@@ -91,40 +100,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88772"
     },
     {
-      "id": "CVE-2026-88771",
+      "id": "CVE-2026-84436",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.27",
-      "title": "CVE-2026-88771: Citrix NetScaler actively exploited",
-      "excerpt": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88771"
+      "date": "2026.09.29",
+      "title": "CVE-2026-84436 — CRITICAL (CVSS 9.1)",
+      "excerpt": "IBM Guardium Data Protection 12.2 is vulnerable to command injection in the certificate export CLI functionality, allowing a privileged authenticated CLI user to execute arbitrary commands with root privileges.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84436"
     },
     {
-      "id": "CVE-2026-49994",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.09.28",
-      "title": "CVE-2026-49994 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Bluehood monitors local bluetooth activity. Prior to version 0.7.1, when auth_enabled is set in Bluehood, only the HTML page handlers enforced session validation. The /api/* handlers (settings, devices, groups, per-device endpoints…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49994"
-    },
-    {
-      "id": "CVE-2026-55157",
+      "id": "CVE-2026-84421",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.09.28",
-      "title": "CVE-2026-55157 — HIGH (CVSS 8.4)",
-      "excerpt": "Token Optimizer MCP measures token savings per AI coding agent, optimizes context, and shares a live local knowledge graph across 16 CLI clients. Prior to version 5.1.0, token-optimizer-mcp is vulnerable to OS command injection in the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55157"
+      "date": "2026.09.29",
+      "title": "CVE-2026-84421 — HIGH (CVSS 8.8)",
+      "excerpt": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of paths during archive extraction.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84421"
     },
     {
-      "id": "CVE-2026-55160",
+      "id": "CVE-2026-102558",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.09.28",
-      "title": "CVE-2026-55160 — HIGH (CVSS 7.6)",
-      "excerpt": "Stringer is a self-hosted, anti-social RSS reader. Prior to commit 75cb095, an unrestricted Server-Side Request Forgery (SSRF) vulnerability allows any authenticated user to force the Stringer server to send arbitrary HTTP/HTTPS requests…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55160"
+      "date": "2026.09.29",
+      "title": "CVE-2026-102558 — HIGH (CVSS 8.6)",
+      "excerpt": "A flaw was found in libsoup. When max-incoming-payload-size is unlimited (0), SoupWebsocketConnection could grow its incoming GByteArray based on an attacker-controlled frame length until the length wrapped, causing a heap buffer overflow…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102558"
     }
   ]
 }
