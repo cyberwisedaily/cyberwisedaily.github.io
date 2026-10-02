@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-10-01T18:28:56+00:00",
-  "generated_date_display": "2026.10.01",
-  "threats_tracked": 93,
+  "generated_at": "2026-10-02T17:56:03+00:00",
+  "generated_date_display": "2026.10.02",
+  "threats_tracked": 98,
   "terminal": {
-    "header_date": "2026.10.01",
+    "header_date": "2026.10.02",
     "lines": [
       {
         "level": "CRIT",
-        "text": "7 critical CVEs published"
+        "text": "6 critical CVEs published"
+      },
+      {
+        "level": "CRIT",
+        "text": "2 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "27 high-severity advisories"
+        "text": "15 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1730"
+        "text": "KEV catalog size: 1733"
       }
     ]
   },
@@ -29,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "2 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.01"
+      "today_metric": "Brief sent: 2026.10.02"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "7 critical-severity playbooks queued"
+      "today_metric": "6 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "43 active exploits in last 30d"
+      "today_metric": "46 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-76504",
+      "id": "CVE-2026-102490",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.30",
-      "title": "CVE-2026-76504: Cisco Catalyst SD-WAN Manager actively exploited",
-      "excerpt": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504"
+      "date": "2026.10.02",
+      "title": "CVE-2026-102490: Zammad GmbH Zammad actively exploited",
+      "excerpt": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490"
     },
     {
-      "id": "CVE-2026-86950",
+      "id": "CVE-2026-102489",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.29",
-      "title": "CVE-2026-86950: Apple Multiple Products actively exploited",
-      "excerpt": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86950"
+      "date": "2026.10.02",
+      "title": "CVE-2026-102489: Zammad GmbH Zammad actively exploited",
+      "excerpt": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
     },
     {
-      "id": "CVE-2026-88772",
+      "id": "CVE-2026-104286",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.27",
-      "title": "CVE-2026-88772: Citrix NetScaler actively exploited",
-      "excerpt": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88772"
+      "date": "2026.10.01",
+      "title": "CVE-2026-104286: Fortinet FortiMail actively exploited",
+      "excerpt": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
     },
     {
-      "id": "CVE-2026-102115",
+      "id": "CVE-2026-104286",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.30",
-      "title": "CVE-2026-102115 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Kiteworks Core did not correctly validate a parameter submitted to the password reset workflow. An unauthenticated attacker who knew the email address of a user with a locally stored password could potentially reset that account's…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102115"
+      "date": "2026.10.01",
+      "title": "CVE-2026-104286 — CRITICAL (CVSS 9.8)",
+      "excerpt": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2.0 through 7.2.9 may…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
     },
     {
-      "id": "CVE-2026-102095",
+      "id": "CVE-2026-103922",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.30",
-      "title": "CVE-2026-102095 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Kiteworks Email Protection Gateway before version 9.5.0 is vulnerable to Server-Side Request Forgery. Kiteworks Email Protection Gateway performed server-side fetches of URLs contained in the message content it processed, without…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102095"
+      "date": "2026.10.01",
+      "title": "CVE-2026-103922 — CRITICAL (CVSS 9.3)",
+      "excerpt": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103922"
     },
     {
-      "id": "CVE-2026-102102",
+      "id": "CVE-2026-102628",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.09.30",
-      "title": "CVE-2026-102102 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Kiteworks Email Protection Gateway before version 9.5.0 is vulnerable to Server-Side Request Forgery (SSRF). A server-side request forgery (SSRF) weakness in Kiteworks Email Protection Gateway could allow a remote, unauthenticated…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102102"
+      "date": "2026.10.01",
+      "title": "CVE-2026-102628 — CRITICAL (CVSS 9.3)",
+      "excerpt": "The Cadmos LTI application hosted at cadmos.eummena.io had Laravel debug mode enabled (APP_DEBUG=true, APP_ENV=local) in a publicly accessible environment. An unauthenticated attacker could send a GET request and trigger an unhandled…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102628"
     }
   ]
 }
