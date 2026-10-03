@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-10-02T17:56:03+00:00",
-  "generated_date_display": "2026.10.02",
-  "threats_tracked": 98,
+  "generated_at": "2026-10-03T16:32:46+00:00",
+  "generated_date_display": "2026.10.03",
+  "threats_tracked": 89,
   "terminal": {
-    "header_date": "2026.10.02",
+    "header_date": "2026.10.03",
     "lines": [
       {
         "level": "CRIT",
         "text": "6 critical CVEs published"
       },
       {
-        "level": "CRIT",
-        "text": "2 new KEV entries today"
-      },
-      {
         "level": "WARN",
-        "text": "15 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,14 +29,14 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "2 new KEV entries today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.02"
+      "today_metric": "Brief sent: 2026.10.03"
     },
     {
       "id": "playbooks",
@@ -54,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "46 active exploits in last 30d"
+      "today_metric": "39 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
     },
     {
-      "id": "CVE-2026-104286",
+      "id": "CVE-2026-103956",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.01",
-      "title": "CVE-2026-104286 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2.0 through 7.2.9 may…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
+      "date": "2026.10.02",
+      "title": "CVE-2026-103956 — CRITICAL (CVSS 10.0)",
+      "excerpt": "Missing authentication for critical function in the authentication dependency in Loom for AWS before 1.6.1 allowed remote actors to obtain super-admin authority over the agent control plane, including registering tool servers, reading…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103956"
     },
     {
-      "id": "CVE-2026-103922",
+      "id": "CVE-2026-82041",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.01",
-      "title": "CVE-2026-103922 — CRITICAL (CVSS 9.3)",
-      "excerpt": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103922"
+      "date": "2026.10.02",
+      "title": "CVE-2026-82041 — CRITICAL (CVSS 9.9)",
+      "excerpt": "UTMStack before 11.2.16 contains a missing authorization vulnerability in UTMIncidentCommandWebsocket.processCommand(), the handler mapped to the /command/{hostname} STOMP destination, where no role check or command allowlist is applied…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82041"
     },
     {
-      "id": "CVE-2026-102628",
+      "id": "CVE-2023-54405",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.01",
-      "title": "CVE-2026-102628 — CRITICAL (CVSS 9.3)",
-      "excerpt": "The Cadmos LTI application hosted at cadmos.eummena.io had Laravel debug mode enabled (APP_DEBUG=true, APP_ENV=local) in a publicly accessible environment. An unauthenticated attacker could send a GET request and trigger an unhandled…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102628"
+      "date": "2026.10.02",
+      "title": "CVE-2023-54405 — CRITICAL (CVSS 9.8)",
+      "excerpt": "H3C CVM, the Cloud Virtualization Management component of the H3C CAS cloud platform, contains an unauthenticated arbitrary file upload vulnerability in the /cas/fileUpload/upload endpoint that allows remote attackers to write arbitrary…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54405"
     }
   ]
 }
