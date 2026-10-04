@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T16:32:46+00:00",
-  "generated_date_display": "2026.10.03",
+  "generated_at": "2026-10-04T16:54:28+00:00",
+  "generated_date_display": "2026.10.04",
   "threats_tracked": 89,
   "terminal": {
-    "header_date": "2026.10.03",
+    "header_date": "2026.10.04",
     "lines": [
       {
         "level": "CRIT",
-        "text": "6 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "17 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.03"
+      "today_metric": "Brief sent: 2026.10.04"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "6 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
     },
     {
-      "id": "CVE-2026-103956",
+      "id": "CVE-2026-105134",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.02",
-      "title": "CVE-2026-103956 — CRITICAL (CVSS 10.0)",
-      "excerpt": "Missing authentication for critical function in the authentication dependency in Loom for AWS before 1.6.1 allowed remote actors to obtain super-admin authority over the agent control plane, including registering tool servers, reading…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103956"
+      "date": "2026.10.04",
+      "title": "CVE-2026-105134 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
     },
     {
-      "id": "CVE-2026-82041",
+      "id": "CVE-2026-105135",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.02",
-      "title": "CVE-2026-82041 — CRITICAL (CVSS 9.9)",
-      "excerpt": "UTMStack before 11.2.16 contains a missing authorization vulnerability in UTMIncidentCommandWebsocket.processCommand(), the handler mapped to the /command/{hostname} STOMP destination, where no role check or command allowlist is applied…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82041"
+      "date": "2026.10.04",
+      "title": "CVE-2026-105135 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105135"
     },
     {
-      "id": "CVE-2023-54405",
+      "id": "CVE-2026-105207",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.02",
-      "title": "CVE-2023-54405 — CRITICAL (CVSS 9.8)",
-      "excerpt": "H3C CVM, the Cloud Virtualization Management component of the H3C CAS cloud platform, contains an unauthenticated arbitrary file upload vulnerability in the /cas/fileUpload/upload endpoint that allows remote attackers to write arbitrary…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54405"
+      "date": "2026.10.04",
+      "title": "CVE-2026-105207 — CRITICAL (CVSS 9.8)",
+      "excerpt": "ZITADEL 3.0.0 through 3.4.15 and 4.0.0 before 4.17.3 creates links between user accounts and external identity providers without verifying a primary factor or the caller's permission, including on identify-only Login V2 sessions and via…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105207"
     }
   ]
 }
