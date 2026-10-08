@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-10-07T18:59:39+00:00",
-  "generated_date_display": "2026.10.07",
-  "threats_tracked": 89,
+  "generated_at": "2026-10-08T18:55:22+00:00",
+  "generated_date_display": "2026.10.08",
+  "threats_tracked": 99,
   "terminal": {
-    "header_date": "2026.10.07",
+    "header_date": "2026.10.08",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "1 critical CVE published"
+      },
+      {
+        "level": "CRIT",
+        "text": "5 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "10 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1734"
+        "text": "KEV catalog size: 1739"
       }
     ]
   },
@@ -29,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "5 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.07"
+      "today_metric": "Brief sent: 2026.10.08"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "39 active exploits in last 30d"
+      "today_metric": "44 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-88779",
+      "id": "CVE-2015-5477",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.04",
-      "title": "CVE-2026-88779: Citrix NetScaler actively exploited",
-      "excerpt": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779"
+      "date": "2026.10.08",
+      "title": "CVE-2015-5477: ISC BIND actively exploited",
+      "excerpt": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477"
     },
     {
-      "id": "CVE-2026-102490",
+      "id": "CVE-2016-3081",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.02",
-      "title": "CVE-2026-102490: Zammad GmbH Zammad actively exploited",
-      "excerpt": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490"
+      "date": "2026.10.08",
+      "title": "CVE-2016-3081: Apache Struts actively exploited",
+      "excerpt": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
     },
     {
-      "id": "CVE-2026-102489",
+      "id": "CVE-2023-22894",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.02",
-      "title": "CVE-2026-102489: Zammad GmbH Zammad actively exploited",
-      "excerpt": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
+      "date": "2026.10.08",
+      "title": "CVE-2023-22894: Strapi Strapi actively exploited",
+      "excerpt": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s)…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
     },
     {
-      "id": "CVE-2026-102322",
+      "id": "CVE-2026-76268",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.06",
-      "title": "CVE-2026-102322 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Incorrect Authorization in SiteIsolation in Google Chrome prior to 155.0.8059.39 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102322"
+      "date": "2026.10.07",
+      "title": "CVE-2026-76268 — CRITICAL (CVSS 9.8)",
+      "excerpt": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a search head cluster member could execute…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76268"
     },
     {
-      "id": "CVE-2026-106197",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.06",
-      "title": "CVE-2026-106197 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Use after free in Browser in Google Chrome prior to 155.0.8059.39 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106197"
+      "id": "CVE-2026-76282",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.07",
+      "title": "CVE-2026-76282 — HIGH (CVSS 8.8)",
+      "excerpt": "Improper Control of a Resource Through its Lifetime. Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilities are grouped by Common Weakness…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76282"
     },
     {
-      "id": "CVE-2026-106211",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.06",
-      "title": "CVE-2026-106211 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Use after free in TabStrip in Google Chrome prior to 155.0.8059.39 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106211"
+      "id": "CVE-2026-107352",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.07",
+      "title": "CVE-2026-107352 — HIGH (CVSS 7.7)",
+      "excerpt": "Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text) from other AWS accounts. Query…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107352"
     }
   ]
 }
