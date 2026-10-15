@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-14T17:22:53+00:00",
-  "generated_date_display": "2026.10.14",
-  "threats_tracked": 82,
+  "generated_at": "2026-10-15T17:11:52+00:00",
+  "generated_date_display": "2026.10.15",
+  "threats_tracked": 85,
   "terminal": {
-    "header_date": "2026.10.14",
+    "header_date": "2026.10.15",
     "lines": [
       {
         "level": "CRIT",
-        "text": "7 critical CVEs published"
+        "text": "5 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "31 high-severity advisories"
+        "text": "22 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1741"
+        "text": "KEV catalog size: 1745"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.14"
+      "today_metric": "Brief sent: 2026.10.15"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "7 critical-severity playbooks queued"
+      "today_metric": "5 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "32 active exploits in last 30d"
+      "today_metric": "35 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-104935",
+      "id": "CVE-2026-105134",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.13",
-      "title": "CVE-2026-104935: Ivanti Connect Secure actively exploited",
-      "excerpt": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+      "date": "2026.10.14",
+      "title": "CVE-2026-105134: Ahsay AhsayCBS actively exploited",
+      "excerpt": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
     },
     {
-      "id": "CVE-2026-96951",
+      "id": "CVE-2026-76519",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.13",
-      "title": "CVE-2026-96951: Microsoft Windows actively exploited",
-      "excerpt": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      "date": "2026.10.14",
+      "title": "CVE-2026-76519: Cisco Secure Email Gateway actively exploited",
+      "excerpt": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
     },
     {
-      "id": "CVE-2015-5477",
+      "id": "CVE-2026-105133",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.08",
-      "title": "CVE-2015-5477: ISC BIND actively exploited",
-      "excerpt": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477"
+      "date": "2026.10.14",
+      "title": "CVE-2026-105133: Ahsay AhsayCBS actively exploited",
+      "excerpt": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
     },
     {
-      "id": "CVE-2026-106173",
+      "id": "CVE-2026-101950",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.13",
-      "title": "CVE-2026-106173 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSIEM 7.5.0 may allow attacker to execute unauthorized code or commands via specially crafted packets.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173"
+      "date": "2026.10.14",
+      "title": "CVE-2026-101950 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A Heap-based Buffer Overflow vulnerability in the SVR component of Juniper Networks Junos OS on SRX Series allows an unauthenticated network attacker to cause a denial of service and potentially compromise confidentiality and integrity…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101950"
     },
     {
-      "id": "CVE-2026-37107",
+      "id": "CVE-2026-101956",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.13",
-      "title": "CVE-2026-37107 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An issue in HTMLy v.3.1.1 allows a remote attacker to escalate privileges via the get_feed function in the admin.php component",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-37107"
+      "date": "2026.10.14",
+      "title": "CVE-2026-101956 — CRITICAL (CVSS 9.8)",
+      "excerpt": "An Improper Authentication vulnerability in the J-Web web management component of Juniper Networks Junos OS allows an unauthenticated remote attacker to execute arbitrary Junos commands with root privileges via the exposed J-Web web…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101956"
     },
     {
-      "id": "CVE-2026-100202",
+      "id": "CVE-2026-101980",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.13",
-      "title": "CVE-2026-100202 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Use after free in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code over a network.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100202"
+      "date": "2026.10.14",
+      "title": "CVE-2026-101980 — CRITICAL (CVSS 9.8)",
+      "excerpt": "An Integer Underflow vulnerability in the kernel of Juniper Networks Junos OS with Extended Echo configured allows an unauthenticated, network-based attacker to cause a denial of service by a kernel crash.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101980"
     }
   ]
 }
