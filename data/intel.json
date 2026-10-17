@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-16T16:48:11+00:00",
-  "generated_date_display": "2026.10.16",
-  "threats_tracked": 86,
+  "generated_at": "2026-10-17T15:45:16+00:00",
+  "generated_date_display": "2026.10.17",
+  "threats_tracked": 85,
   "terminal": {
-    "header_date": "2026.10.16",
+    "header_date": "2026.10.17",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "8 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "12 high-severity advisories"
+        "text": "19 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1746"
+        "text": "KEV catalog size: 1748"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.16"
+      "today_metric": "Brief sent: 2026.10.17"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "8 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "36 active exploits in last 30d"
+      "today_metric": "35 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,6 +69,24 @@
   ],
   "briefings": [
     {
+      "id": "CVE-2026-102764",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.16",
+      "title": "CVE-2026-102764: BeyondTrust Remote Support actively exploited",
+      "excerpt": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+    },
+    {
+      "id": "CVE-2025-61624",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.16",
+      "title": "CVE-2025-61624: Fortinet Multiple Products actively exploited",
+      "excerpt": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+    },
+    {
       "id": "CVE-2026-21589",
       "tag": "CRITICAL",
       "tag_class": "crit",
@@ -78,49 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
     },
     {
-      "id": "CVE-2026-105134",
+      "id": "CVE-2026-85746",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.14",
-      "title": "CVE-2026-105134: Ahsay AhsayCBS actively exploited",
-      "excerpt": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+      "date": "2026.10.16",
+      "title": "CVE-2026-85746 — CRITICAL (CVSS 9.9)",
+      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ST_AsText can write beyond an allocated output buffer when converting deeply nested…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85746"
     },
     {
-      "id": "CVE-2026-76519",
+      "id": "CVE-2026-85748",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.14",
-      "title": "CVE-2026-76519: Cisco Secure Email Gateway actively exploited",
-      "excerpt": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+      "date": "2026.10.16",
+      "title": "CVE-2026-85748 — CRITICAL (CVSS 9.9)",
+      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 12.3.1 until 12.3.3 and 13.0.2, SYS_REFCURSOR handling is affected because cursor-array reallocation can leave stale references in routine contexts. A low-privileged…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85748"
     },
     {
-      "id": "CVE-2026-110812",
+      "id": "CVE-2026-92262",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.15",
-      "title": "CVE-2026-110812 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Deserialization of untrusted data in the Gremlin graph data import component in Amazon Neptune engine might allow an authenticated remote actor with standard database permissions to execute arbitrary code and access internal service…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110812"
-    },
-    {
-      "id": "CVE-2026-84731",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.15",
-      "title": "CVE-2026-84731 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An unauthenticated remote attacker can bypass authentication and gain full access to administrative API endpoints in Nutanix Prism Element by including a crafted internal management HTTP header. The vulnerability is caused by a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84731"
-    },
-    {
-      "id": "CVE-2026-102946",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.15",
-      "title": "CVE-2026-102946 — CRITICAL (CVSS 9.1)",
-      "excerpt": "joserfc is a Python library that provides an implementation of several JSON Object Signing and Encryption (JOSE) standards. Prior to 1.7.4, joserfc.jws.deserialize_json() accepts a JWS General JSON Serialization with an empty signatures…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102946"
+      "date": "2026.10.16",
+      "title": "CVE-2026-92262 — CRITICAL (CVSS 9.9)",
+      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the #mysql50# bypass prefix is affected because it allows the #mysql50# prefix to bypass normal…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92262"
     }
   ]
 }
