@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-17T15:45:16+00:00",
-  "generated_date_display": "2026.10.17",
+  "generated_at": "2026-10-18T16:00:44+00:00",
+  "generated_date_display": "2026.10.18",
   "threats_tracked": 85,
   "terminal": {
-    "header_date": "2026.10.17",
+    "header_date": "2026.10.18",
     "lines": [
       {
         "level": "CRIT",
-        "text": "8 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.17"
+      "today_metric": "Brief sent: 2026.10.18"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "8 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
     },
     {
-      "id": "CVE-2026-85746",
+      "id": "CVE-2026-111911",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.16",
-      "title": "CVE-2026-85746 — CRITICAL (CVSS 9.9)",
-      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ST_AsText can write beyond an allocated output buffer when converting deeply nested…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85746"
+      "date": "2026.10.17",
+      "title": "CVE-2026-111911 — CRITICAL (CVSS 9.8)",
+      "excerpt": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Attackers can stage a victim username,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111911"
     },
     {
-      "id": "CVE-2026-85748",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.16",
-      "title": "CVE-2026-85748 — CRITICAL (CVSS 9.9)",
-      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 12.3.1 until 12.3.3 and 13.0.2, SYS_REFCURSOR handling is affected because cursor-array reallocation can leave stale references in routine contexts. A low-privileged…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85748"
+      "id": "CVE-2026-111884",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.17",
+      "title": "CVE-2026-111884 — HIGH (CVSS 8.3)",
+      "excerpt": "phpMyFAQ before 4.1.9 and 4.2.0-alpha before 4.2.0-beta does not require the current password when changing an account e-mail in the user control panel (UserController::updateData, api/user/data/update), checking only the session and CSRF…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111884"
     },
     {
-      "id": "CVE-2026-92262",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.16",
-      "title": "CVE-2026-92262 — CRITICAL (CVSS 9.9)",
-      "excerpt": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the #mysql50# bypass prefix is affected because it allows the #mysql50# prefix to bypass normal…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92262"
+      "id": "CVE-2026-111908",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.17",
+      "title": "CVE-2026-111908 — HIGH (CVSS 8.3)",
+      "excerpt": "phpMyFAQ 4.0.0 before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains a broken object-level authorization vulnerability in the PUT /api/v3.1/faq/update endpoint, which checks only the global edit_faq permission and does not verify access…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111908"
     }
   ]
 }
