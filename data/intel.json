@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T16:00:44+00:00",
-  "generated_date_display": "2026.10.18",
-  "threats_tracked": 85,
+  "generated_at": "2026-10-19T18:45:54+00:00",
+  "generated_date_display": "2026.10.19",
+  "threats_tracked": 82,
   "terminal": {
-    "header_date": "2026.10.18",
+    "header_date": "2026.10.19",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "5 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.18"
+      "today_metric": "Brief sent: 2026.10.19"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "35 active exploits in last 30d"
+      "today_metric": "32 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
     },
     {
-      "id": "CVE-2026-111911",
+      "id": "CVE-2026-108983",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.17",
-      "title": "CVE-2026-111911 — CRITICAL (CVSS 9.8)",
-      "excerpt": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Attackers can stage a victim username,…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111911"
+      "date": "2026.10.19",
+      "title": "CVE-2026-108983 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108983"
     },
     {
-      "id": "CVE-2026-111884",
+      "id": "CVE-2026-111441",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.10.17",
-      "title": "CVE-2026-111884 — HIGH (CVSS 8.3)",
-      "excerpt": "phpMyFAQ before 4.1.9 and 4.2.0-alpha before 4.2.0-beta does not require the current password when changing an account e-mail in the user control panel (UserController::updateData, api/user/data/update), checking only the session and CSRF…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111884"
+      "date": "2026.10.19",
+      "title": "CVE-2026-111441 — HIGH (CVSS 8.1)",
+      "excerpt": "在 openGauss-server 的 src/gausskernel/cbb/utils/hll/hll.cpp 中，内置函数 HllObjectUnpack() 存在长度校验缺陷。该函数从用户提供的 packed HLL 解析 lenUsed 与 lenTotal 后，仅检查输入长度足以覆盖 HLL_HEAD_SIZE + lenUsed，随后按 lenTotal 分配缓冲区、按 lenUsed 调用 memcpy_s() 拷贝输入，既未校验 lenTotal >=…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111441"
     },
     {
-      "id": "CVE-2026-111908",
+      "id": "CVE-2026-108984",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.10.17",
-      "title": "CVE-2026-111908 — HIGH (CVSS 8.3)",
-      "excerpt": "phpMyFAQ 4.0.0 before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains a broken object-level authorization vulnerability in the PUT /api/v3.1/faq/update endpoint, which checks only the global edit_faq permission and does not verify access…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111908"
+      "date": "2026.10.19",
+      "title": "CVE-2026-108984 — HIGH (CVSS 7.5)",
+      "excerpt": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108984"
     }
   ]
 }
