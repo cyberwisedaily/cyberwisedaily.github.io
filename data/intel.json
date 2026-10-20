@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T18:45:54+00:00",
-  "generated_date_display": "2026.10.19",
+  "generated_at": "2026-10-20T17:22:43+00:00",
+  "generated_date_display": "2026.10.20",
   "threats_tracked": 82,
   "terminal": {
-    "header_date": "2026.10.19",
+    "header_date": "2026.10.20",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "5 high-severity advisories"
+        "text": "6 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.19"
+      "today_metric": "Brief sent: 2026.10.20"
     },
     {
       "id": "playbooks",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
     },
     {
-      "id": "CVE-2026-108983",
+      "id": "CVE-2026-109437",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.10.19",
-      "title": "CVE-2026-108983 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108983"
+      "title": "CVE-2026-109437 — CRITICAL (CVSS 9.8)",
+      "excerpt": "Cognition before 0.13.0 contains an unauthenticated remote code execution vulnerability due to defaulting its agent sandbox backend to local execution and shipping no authentication on its REST/SSE API. Attackers can create a session via…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109437"
     },
     {
-      "id": "CVE-2026-111441",
+      "id": "CVE-2025-52290",
       "tag": "ANALYSIS",
       "tag_class": "warn",
       "date": "2026.10.19",
-      "title": "CVE-2026-111441 — HIGH (CVSS 8.1)",
-      "excerpt": "在 openGauss-server 的 src/gausskernel/cbb/utils/hll/hll.cpp 中，内置函数 HllObjectUnpack() 存在长度校验缺陷。该函数从用户提供的 packed HLL 解析 lenUsed 与 lenTotal 后，仅检查输入长度足以覆盖 HLL_HEAD_SIZE + lenUsed，随后按 lenTotal 分配缓冲区、按 lenUsed 调用 memcpy_s() 拷贝输入，既未校验 lenTotal >=…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111441"
+      "title": "CVE-2025-52290 — HIGH (CVSS 7.5)",
+      "excerpt": "A NULL pointer dereference in the avpriv_h264_has_num_reorder_frames function of Ffmpeg version N-119856-gbe46370941 allows attackers to cause a Denial of Service (DoS) via processing a crafted media file.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52290"
     },
     {
-      "id": "CVE-2026-108984",
+      "id": "CVE-2026-111759",
       "tag": "ANALYSIS",
       "tag_class": "warn",
       "date": "2026.10.19",
-      "title": "CVE-2026-108984 — HIGH (CVSS 7.5)",
-      "excerpt": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108984"
+      "title": "CVE-2026-111759 — HIGH (CVSS 7.5)",
+      "excerpt": "markdown-it is a Markdown parser. Prior to 14.3.2 and 15.0.2, when typographer: true is enabled, specially crafted Markdown can cause quadratic processing time in the smartquotes rule, potentially leading to denial of service in…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111759"
     }
   ]
 }
