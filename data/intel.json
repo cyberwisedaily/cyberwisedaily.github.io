@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-20T17:22:43+00:00",
-  "generated_date_display": "2026.10.20",
-  "threats_tracked": 82,
+  "generated_at": "2026-10-21T17:25:18+00:00",
+  "generated_date_display": "2026.10.21",
+  "threats_tracked": 88,
   "terminal": {
-    "header_date": "2026.10.20",
+    "header_date": "2026.10.21",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "6 critical CVEs published"
       },
       {
         "level": "WARN",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1748"
+        "text": "KEV catalog size: 1754"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.20"
+      "today_metric": "Brief sent: 2026.10.21"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "6 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "32 active exploits in last 30d"
+      "today_metric": "38 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-102764",
+      "id": "CVE-2026-106931",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.16",
-      "title": "CVE-2026-102764: BeyondTrust Remote Support actively exploited",
-      "excerpt": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+      "date": "2026.10.20",
+      "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition actively exploited",
+      "excerpt": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
     },
     {
-      "id": "CVE-2025-61624",
+      "id": "CVE-2026-96656",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.16",
-      "title": "CVE-2025-61624: Fortinet Multiple Products actively exploited",
-      "excerpt": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+      "date": "2026.10.20",
+      "title": "CVE-2026-96656: Plex Media Server actively exploited",
+      "excerpt": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
     },
     {
-      "id": "CVE-2026-21589",
+      "id": "CVE-2026-96655",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.15",
-      "title": "CVE-2026-21589: Atlassian Multiple Products actively exploited",
-      "excerpt": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+      "date": "2026.10.20",
+      "title": "CVE-2026-96655: Plex Media Server actively exploited",
+      "excerpt": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655"
     },
     {
-      "id": "CVE-2026-109437",
+      "id": "CVE-2026-113506",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.19",
-      "title": "CVE-2026-109437 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Cognition before 0.13.0 contains an unauthenticated remote code execution vulnerability due to defaulting its agent sandbox backend to local execution and shipping no authentication on its REST/SSE API. Attackers can create a session via…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109437"
+      "date": "2026.10.20",
+      "title": "CVE-2026-113506 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A vulnerability has been found in aaPanel up to 8.25.0. The affected element is the function ExecShell of the file class/public/common.py of the component File Manager. The manipulation of the argument sfile/dfile/access/user leads to os…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113506"
     },
     {
-      "id": "CVE-2025-52290",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.10.19",
-      "title": "CVE-2025-52290 — HIGH (CVSS 7.5)",
-      "excerpt": "A NULL pointer dereference in the avpriv_h264_has_num_reorder_frames function of Ffmpeg version N-119856-gbe46370941 allows attackers to cause a Denial of Service (DoS) via processing a crafted media file.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52290"
+      "id": "CVE-2026-113672",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.20",
+      "title": "CVE-2026-113672 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. From 0.9.0 until 3.3.15, 3.4.10, 3.5.4, and 3.6.0-rc2, the repo-server evaluates .jsonnet files with an importer that does not confine import, importstr, or…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113672"
     },
     {
-      "id": "CVE-2026-111759",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.10.19",
-      "title": "CVE-2026-111759 — HIGH (CVSS 7.5)",
-      "excerpt": "markdown-it is a Markdown parser. Prior to 14.3.2 and 15.0.2, when typographer: true is enabled, specially crafted Markdown can cause quadratic processing time in the smartquotes rule, potentially leading to denial of service in…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111759"
+      "id": "CVE-2026-113708",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.20",
+      "title": "CVE-2026-113708 — CRITICAL (CVSS 9.9)",
+      "excerpt": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. From 2.7.0 until 3.3.15, 3.4.10, 3.5.4, and 3.6.0-rc2, Kustomize passes ref or version query values from remote resource, base, or component URLs to git fetch…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113708"
     }
   ]
 }
