@@ -1,17 +1,13 @@
 {
-  "generated_at": "2026-10-25T16:37:06+00:00",
-  "generated_date_display": "2026.10.25",
-  "threats_tracked": 83,
+  "generated_at": "2026-10-26T18:44:12+00:00",
+  "generated_date_display": "2026.10.26",
+  "threats_tracked": 80,
   "terminal": {
-    "header_date": "2026.10.25",
+    "header_date": "2026.10.26",
     "lines": [
       {
-        "level": "CRIT",
-        "text": "2 critical CVEs published"
-      },
-      {
         "level": "WARN",
-        "text": "10 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +32,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.25"
+      "today_metric": "Brief sent: 2026.10.26"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "33 active exploits in last 30d"
+      "today_metric": "30 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +92,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
     },
     {
-      "id": "CVE-2026-115995",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.24",
-      "title": "CVE-2026-115995 — CRITICAL (CVSS 9.6)",
-      "excerpt": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115995"
-    },
-    {
-      "id": "CVE-2026-114820",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.24",
-      "title": "CVE-2026-114820 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE). Supported versions that are affected are Oracle Java SE: 8u511-b32, 8u511-perf-b32, 11.0.33.0.2,…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114820"
-    },
-    {
-      "id": "CVE-2026-116068",
+      "id": "CVE-2026-116116",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.10.25",
-      "title": "CVE-2026-116068 — HIGH (CVSS 8.8)",
-      "excerpt": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values. Attackers can call procedures like…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116068"
+      "date": "2026.10.26",
+      "title": "CVE-2026-116116 — HIGH (CVSS 8.2)",
+      "excerpt": "A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verification of cryptographic signature. The attack needs to be…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116116"
+    },
+    {
+      "id": "CVE-2026-113345",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.26",
+      "title": "CVE-2026-113345 — HIGH (CVSS 7.8)",
+      "excerpt": "Electronic delivery item Inspection Support System provided by Japan's Ministry of Land, Infrastructure, Transport and Tourism contains an improper file access permission vulnerability. Files in the installation folder of the application…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113345"
+    },
+    {
+      "id": "CVE-2026-107894",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.26",
+      "title": "CVE-2026-107894 — HIGH (CVSS 7.8)",
+      "excerpt": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains a stack-based buffer overflow vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107894"
     }
   ]
 }
