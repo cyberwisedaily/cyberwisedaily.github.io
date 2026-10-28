@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-27T18:07:16+00:00",
-  "generated_date_display": "2026.10.27",
+  "generated_at": "2026-10-28T18:23:47+00:00",
+  "generated_date_display": "2026.10.28",
   "threats_tracked": 82,
   "terminal": {
-    "header_date": "2026.10.27",
+    "header_date": "2026.10.28",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "2 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "9 high-severity advisories"
+        "text": "12 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1758"
+        "text": "KEV catalog size: 1760"
       }
     ]
   },
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.27"
+      "today_metric": "Brief sent: 2026.10.28"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "2 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -69,6 +69,24 @@
   ],
   "briefings": [
     {
+      "id": "CVE-2026-48356",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.27",
+      "title": "CVE-2026-48356: Adobe Commerce and Magento actively exploited",
+      "excerpt": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+    },
+    {
+      "id": "CVE-2026-111497",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.10.27",
+      "title": "CVE-2026-111497: Google Brotli actively exploited",
+      "excerpt": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
+    },
+    {
       "id": "CVE-2026-109618",
       "tag": "CRITICAL",
       "tag_class": "crit",
@@ -78,49 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
     },
     {
-      "id": "CVE-2026-109619",
+      "id": "CVE-2026-116692",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.26",
-      "title": "CVE-2026-109619: PHP Group PHP actively exploited",
-      "excerpt": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
+      "date": "2026.10.27",
+      "title": "CVE-2026-116692 — CRITICAL (CVSS 9.8)",
+      "excerpt": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 3.12.0rc0 until 3.17.0, third-party scorer deserialization in mlflow/genai/scorers/base.py accepts request-selected…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116692"
     },
     {
-      "id": "CVE-2026-114625",
+      "id": "CVE-2026-112352",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.23",
-      "title": "CVE-2026-114625: Arista VeloCloud Orchestrator actively exploited",
-      "excerpt": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
+      "date": "2026.10.27",
+      "title": "CVE-2026-112352 — CRITICAL (CVSS 9.1)",
+      "excerpt": "Sunhillo SureLine before 9.1.5 contains an authentication bypass vulnerability that allows an unauthenticated remote attacker to impersonate any user with an active web session by forging a session cookie containing only a cleartext…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112352"
     },
     {
-      "id": "CVE-2026-102649",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.26",
-      "title": "CVE-2026-102649 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Burrito is a Terraform Automation Collaboration Software (TACoS) Kubernetes operator. Prior to 0.13.0, `POST /api/webhook` accepts unsigned GitHub and GitLab events when a `TerraformRepository`'s credentials omit `webhookSecret` or set it…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102649"
-    },
-    {
-      "id": "CVE-2026-110720",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.26",
-      "title": "CVE-2026-110720 — CRITICAL (CVSS 9.9)",
-      "excerpt": "Consul-k8s versions 0.42.0 and later are vulnerable to a cross-namespace authorization bypass in component ACL binding rules that may allow an attacker to obtain elevated Consul privileges. This vulnerability (CVE-2026-110720) is fixed in…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110720"
-    },
-    {
-      "id": "CVE-2026-10757",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.26",
-      "title": "CVE-2026-10757 — CRITICAL (CVSS 9.8)",
-      "excerpt": "There is a SQL injection vulnerability in Esri ArcGIS Server versions 12.1 and earlier on Windows and Linux that may allow a remote attacker with privileges to access the service (which could, depending on the service being configured in…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10757"
+      "id": "CVE-2026-112351",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.27",
+      "title": "CVE-2026-112351 — HIGH (CVSS 8.8)",
+      "excerpt": "Sunhillo SureLine before 9.1.5 contains an OS command injection vulnerability in the networkDiag.cgi endpoint that allows an authenticated remote attacker with any web account to execute arbitrary commands as root by injecting shell…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112351"
     }
   ]
 }
