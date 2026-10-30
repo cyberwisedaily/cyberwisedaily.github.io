@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-29T18:33:49+00:00",
-  "generated_date_display": "2026.10.29",
-  "threats_tracked": 84,
+  "generated_at": "2026-10-30T18:06:02+00:00",
+  "generated_date_display": "2026.10.30",
+  "threats_tracked": 89,
   "terminal": {
-    "header_date": "2026.10.29",
+    "header_date": "2026.10.30",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "2 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "20 high-severity advisories"
+        "text": "19 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1762"
+        "text": "KEV catalog size: 1766"
       }
     ]
   },
@@ -29,28 +29,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "2 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.10.29"
+      "today_metric": "Brief sent: 2026.10.30"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "0 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "34 active exploits in last 30d"
+      "today_metric": "37 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +69,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-41709",
+      "id": "CVE-2026-118527",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.28",
-      "title": "CVE-2026-41709: Broadcom VMware ESX actively exploited",
-      "excerpt": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
+      "date": "2026.10.30",
+      "title": "CVE-2026-118527: Ivanti Connect Secure actively exploited",
+      "excerpt": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
     },
     {
-      "id": "CVE-2026-46300",
+      "id": "CVE-2026-111357",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.28",
-      "title": "CVE-2026-46300: Linux Kernel actively exploited",
-      "excerpt": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
+      "date": "2026.10.30",
+      "title": "CVE-2026-111357: Ivanti Connect Secure actively exploited",
+      "excerpt": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
     },
     {
-      "id": "CVE-2026-48356",
+      "id": "CVE-2026-97229",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.27",
-      "title": "CVE-2026-48356: Adobe Commerce and Magento actively exploited",
-      "excerpt": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+      "date": "2026.10.29",
+      "title": "CVE-2026-97229: GitLab Community Edition and Enterprise Edition actively exploited",
+      "excerpt": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
     },
     {
-      "id": "CVE-2026-117574",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.10.28",
-      "title": "CVE-2026-117574 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A flaw was found in ai-gateway-payload-processing. An authenticated remote attacker can exploit this vulnerability by submitting a request specifying another tenant's model identifier in the request body or header. Because the service…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117574"
-    },
-    {
-      "id": "CVE-2026-118683",
+      "id": "CVE-2026-119168",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.10.28",
-      "title": "CVE-2026-118683 — HIGH (CVSS 8.8)",
-      "excerpt": "MONAI from 1.2.0 before 1.6.1 contains a remote code execution vulnerability in ConfigWorkflow.__init__, which passes a bundle's configs/logging.conf to logging.config.fileConfig that eval()s handler class and args fields. Attackers can…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118683"
+      "date": "2026.10.29",
+      "title": "CVE-2026-119168 — HIGH (CVSS 8.8)",
+      "excerpt": "HashiCorp Nomad and Nomad Enterprise are vulnerable to symlink following during same-client allocation data migration that may allow a malicious workload to change permissions and ownership of host directories. This could allow…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119168"
     },
     {
-      "id": "CVE-2026-118645",
+      "id": "CVE-2026-107347",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.10.28",
-      "title": "CVE-2026-118645 — HIGH (CVSS 8.7)",
-      "excerpt": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a filter injection vulnerability in the Quick Base node, which sends the Where filter to the Quick Base API as raw query text. Attackers supplying untrusted input…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118645"
+      "date": "2026.10.29",
+      "title": "CVE-2026-107347 — HIGH (CVSS 8.4)",
+      "excerpt": "HashiCorp Nomad and Nomad Enterprise are vulnerable to symlink following during dispatch payload and executor log writes that may allow a malicious workload to modify files outside its allocation directory. When the client agent runs as…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107347"
+    },
+    {
+      "id": "CVE-2026-9535",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.10.29",
+      "title": "CVE-2026-9535 — HIGH (CVSS 8.2)",
+      "excerpt": "A out-of-bounds read vulnerability exists in the vtkChacoReader InputGraph2 functionality of vtk (version(s): 9.6.1). A specially crafted chaco can lead to an out-of-bounds read. An attacker can provide a malicious file to trigger this…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9535"
     }
   ]
 }
