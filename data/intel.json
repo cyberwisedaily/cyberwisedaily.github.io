@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-01T17:59:30+00:00",
-  "generated_date_display": "2026.11.01",
-  "threats_tracked": 85,
+  "generated_at": "2026-11-02T21:49:29+00:00",
+  "generated_date_display": "2026.11.02",
+  "threats_tracked": 83,
   "terminal": {
-    "header_date": "2026.11.01",
+    "header_date": "2026.11.02",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "6 high-severity advisories"
+        "text": "11 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.01"
+      "today_metric": "Brief sent: 2026.11.02"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "35 active exploits in last 30d"
+      "today_metric": "33 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
     },
     {
-      "id": "CVE-2026-120189",
+      "id": "CVE-2026-120276",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.01",
-      "title": "CVE-2026-120189 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120189"
+      "date": "2026.11.02",
+      "title": "CVE-2026-120276 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120276"
     },
     {
-      "id": "CVE-2026-120195",
+      "id": "CVE-2026-120277",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.01",
-      "title": "CVE-2026-120195 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120195"
+      "date": "2026.11.02",
+      "title": "CVE-2026-120277 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A security vulnerability has been detected in WAVLINK WN536AX6-A V260507_2.0.0. This issue affects the function sub_41a1d8 of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120277"
     },
     {
-      "id": "CVE-2026-120198",
+      "id": "CVE-2026-120279",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.01",
-      "title": "CVE-2026-120198 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A vulnerability has been found in WAVLINK WL-WN530BE1-A V251117. Affected is the function con_check_read_finish of the file /protocol.csp. Such manipulation of the argument group_name/IP-FROM leads to command injection. It is possible to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120198"
+      "date": "2026.11.02",
+      "title": "CVE-2026-120279 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A flaw has been found in WAVLINK WN536AX6-A V260507. The affected element is an unknown function of the file /protocol.csp of the component openvpn_cli Handler. Executing a manipulation of the argument file_id can lead to os command…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120279"
     }
   ]
 }
