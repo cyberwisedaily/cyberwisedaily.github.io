@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T19:55:20+00:00",
-  "generated_date_display": "2026.11.04",
-  "threats_tracked": 83,
+  "generated_at": "2026-11-05T20:08:20+00:00",
+  "generated_date_display": "2026.11.05",
+  "threats_tracked": 84,
   "terminal": {
-    "header_date": "2026.11.04",
+    "header_date": "2026.11.05",
     "lines": [
       {
         "level": "CRIT",
@@ -11,7 +11,7 @@
       },
       {
         "level": "WARN",
-        "text": "27 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1767"
+        "text": "KEV catalog size: 1768"
       }
     ]
   },
@@ -36,7 +36,7 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.04"
+      "today_metric": "Brief sent: 2026.11.05"
     },
     {
       "id": "playbooks",
@@ -50,7 +50,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "33 active exploits in last 30d"
+      "today_metric": "34 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2024-27834",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.04",
+      "title": "CVE-2024-27834: Apple Multiple Products actively exploited",
+      "excerpt": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834"
+    },
     {
       "id": "CVE-2026-119977",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
     },
     {
-      "id": "CVE-2026-111357",
+      "id": "CVE-2026-121933",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.30",
-      "title": "CVE-2026-111357: Ivanti Connect Secure actively exploited",
-      "excerpt": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+      "date": "2026.11.04",
+      "title": "CVE-2026-121933 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121933"
     },
     {
-      "id": "CVE-2026-95731",
+      "id": "CVE-2026-122013",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.03",
-      "title": "CVE-2026-95731 — CRITICAL (CVSS 9.8)",
-      "excerpt": "Hardcoded password vulnerabilities in the command-line interface of HPE Networking Fabric Composer could allow an unauthenticated remote attacker to access the affected system using hardcoded credentials. Successful exploitation could…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95731"
+      "date": "2026.11.04",
+      "title": "CVE-2026-122013 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A vulnerability was detected in Comfast CF-WR632AX 2.6.0.1. Affected by this vulnerability is an unknown functionality of the file /usr/bin/webmgnt of the component Multipart Parser. Performing a manipulation of the argument filename…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122013"
     },
     {
-      "id": "CVE-2026-95732",
+      "id": "CVE-2025-71457",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.03",
-      "title": "CVE-2026-95732 — CRITICAL (CVSS 9.6)",
-      "excerpt": "An authentication bypass vulnerability exists in the underlying operating system of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute arbitrary code on the affected system.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95732"
-    },
-    {
-      "id": "CVE-2026-95733",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.03",
-      "title": "CVE-2026-95733 — CRITICAL (CVSS 9.6)",
-      "excerpt": "A vulnerability exists in a component of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute arbitrary code on the affected system.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95733"
+      "date": "2026.11.04",
+      "title": "CVE-2025-71457 — CRITICAL (CVSS 9.8)",
+      "excerpt": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457"
     }
   ]
 }
