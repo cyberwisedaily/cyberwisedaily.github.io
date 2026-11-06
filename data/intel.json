@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-05T20:08:20+00:00",
-  "generated_date_display": "2026.11.05",
+  "generated_at": "2026-11-06T19:34:52+00:00",
+  "generated_date_display": "2026.11.06",
   "threats_tracked": 84,
   "terminal": {
-    "header_date": "2026.11.05",
+    "header_date": "2026.11.06",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
+        "text": "4 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "20 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,14 +36,14 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.05"
+      "today_metric": "Brief sent: 2026.11.06"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "4 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
     },
     {
-      "id": "CVE-2026-121933",
+      "id": "CVE-2026-116779",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.04",
-      "title": "CVE-2026-121933 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121933"
+      "date": "2026.11.05",
+      "title": "CVE-2026-116779 — CRITICAL (CVSS 9.8)",
+      "excerpt": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.3, sofia_presence_handle_sip_i_message()…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
     },
     {
-      "id": "CVE-2026-122013",
+      "id": "CVE-2026-102940",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.04",
-      "title": "CVE-2026-122013 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A vulnerability was detected in Comfast CF-WR632AX 2.6.0.1. Affected by this vulnerability is an unknown functionality of the file /usr/bin/webmgnt of the component Multipart Parser. Performing a manipulation of the argument filename…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122013"
+      "date": "2026.11.05",
+      "title": "CVE-2026-102940 — CRITICAL (CVSS 9.6)",
+      "excerpt": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.4.0, controllers/C_Document.class.php write actions, including move_action_process(), do not verify the caller's access to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102940"
     },
     {
-      "id": "CVE-2025-71457",
+      "id": "CVE-2026-116785",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.04",
-      "title": "CVE-2025-71457 — CRITICAL (CVSS 9.8)",
-      "excerpt": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457"
+      "date": "2026.11.05",
+      "title": "CVE-2026-116785 — CRITICAL (CVSS 9.1)",
+      "excerpt": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.2, ws_read_frame() decoded a WebSocket…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116785"
     }
   ]
 }
