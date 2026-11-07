@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-06T19:34:52+00:00",
-  "generated_date_display": "2026.11.06",
-  "threats_tracked": 84,
+  "generated_at": "2026-11-07T17:47:33+00:00",
+  "generated_date_display": "2026.11.07",
+  "threats_tracked": 85,
   "terminal": {
-    "header_date": "2026.11.06",
+    "header_date": "2026.11.07",
     "lines": [
       {
         "level": "CRIT",
-        "text": "4 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "WARN",
-        "text": "20 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +19,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1768"
+        "text": "KEV catalog size: 1769"
       }
     ]
   },
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.06"
+      "today_metric": "Brief sent: 2026.11.07"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "4 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "34 active exploits in last 30d"
+      "today_metric": "35 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -68,6 +68,15 @@
     }
   ],
   "briefings": [
+    {
+      "id": "CVE-2026-19868",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.06",
+      "title": "CVE-2026-19868: SonicWall SonicOS SSLVPN actively exploited",
+      "excerpt": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
+    },
     {
       "id": "CVE-2024-27834",
       "tag": "CRITICAL",
@@ -87,40 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
     },
     {
-      "id": "CVE-2026-118527",
+      "id": "CVE-2026-119923",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.10.30",
-      "title": "CVE-2026-118527: Ivanti Connect Secure actively exploited",
-      "excerpt": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
+      "date": "2026.11.06",
+      "title": "CVE-2026-119923 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A heap-based buffer overflow in the TDS prelogin parser in the Babelfish for PostgreSQL extension versions 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 and in Amazon Aurora PostgreSQL with Babelfish might allow remote attackers to…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119923"
     },
     {
-      "id": "CVE-2026-116779",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.05",
-      "title": "CVE-2026-116779 — CRITICAL (CVSS 9.8)",
-      "excerpt": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.3, sofia_presence_handle_sip_i_message()…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+      "id": "CVE-2026-118670",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.11.06",
+      "title": "CVE-2026-118670 — HIGH (CVSS 8.8)",
+      "excerpt": "OHIF Viewers is a zero-footprint DICOM viewer with shared extension packages. From 3.5.0-beta.0 until 3.12.15, 3.13.7, and 3.14.0-beta.19, the dicom-pdf extension reads the attacker-controlled MIMETypeOfEncapsulatedDocument value in…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118670"
     },
     {
-      "id": "CVE-2026-102940",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.05",
-      "title": "CVE-2026-102940 — CRITICAL (CVSS 9.6)",
-      "excerpt": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.4.0, controllers/C_Document.class.php write actions, including move_action_process(), do not verify the caller's access to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102940"
-    },
-    {
-      "id": "CVE-2026-116785",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.05",
-      "title": "CVE-2026-116785 — CRITICAL (CVSS 9.1)",
-      "excerpt": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.2, ws_read_frame() decoded a WebSocket…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116785"
+      "id": "CVE-2026-107154",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.11.06",
+      "title": "CVE-2026-107154 — HIGH (CVSS 8.8)",
+      "excerpt": "A session validation vulnerability has been identified in the SonicOS management interface, which in specific conditions could potentially enable a remote unauthenticated attacker to perform unauthorized operations.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107154"
     }
   ]
 }
