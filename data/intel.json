@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-07T17:47:33+00:00",
-  "generated_date_display": "2026.11.07",
-  "threats_tracked": 85,
+  "generated_at": "2026-11-08T17:58:53+00:00",
+  "generated_date_display": "2026.11.08",
+  "threats_tracked": 80,
   "terminal": {
-    "header_date": "2026.11.07",
+    "header_date": "2026.11.08",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
+        "text": "4 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "14 high-severity advisories"
+        "text": "3 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -36,21 +36,21 @@
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.07"
+      "today_metric": "Brief sent: 2026.11.08"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "4 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "35 active exploits in last 30d"
+      "today_metric": "30 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -96,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
     },
     {
-      "id": "CVE-2026-119923",
+      "id": "CVE-2026-124057",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.06",
-      "title": "CVE-2026-119923 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A heap-based buffer overflow in the TDS prelogin parser in the Babelfish for PostgreSQL extension versions 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 and in Amazon Aurora PostgreSQL with Babelfish might allow remote attackers to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119923"
+      "date": "2026.11.07",
+      "title": "CVE-2026-124057 — CRITICAL (CVSS 9.1)",
+      "excerpt": "A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1 results in buffer overflow. The…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124057"
     },
     {
-      "id": "CVE-2026-118670",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.11.06",
-      "title": "CVE-2026-118670 — HIGH (CVSS 8.8)",
-      "excerpt": "OHIF Viewers is a zero-footprint DICOM viewer with shared extension packages. From 3.5.0-beta.0 until 3.12.15, 3.13.7, and 3.14.0-beta.19, the dicom-pdf extension reads the attacker-controlled MIMETypeOfEncapsulatedDocument value in…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118670"
+      "id": "CVE-2026-124058",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.07",
+      "title": "CVE-2026-124058 — CRITICAL (CVSS 9.1)",
+      "excerpt": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can lead to buffer overflow. The attack…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124058"
     },
     {
-      "id": "CVE-2026-107154",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.11.06",
-      "title": "CVE-2026-107154 — HIGH (CVSS 8.8)",
-      "excerpt": "A session validation vulnerability has been identified in the SonicOS management interface, which in specific conditions could potentially enable a remote unauthenticated attacker to perform unauthorized operations.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107154"
+      "id": "CVE-2026-124059",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.07",
+      "title": "CVE-2026-124059 — CRITICAL (CVSS 9.1)",
+      "excerpt": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ApCliKeyStr leads to buffer…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124059"
     }
   ]
 }
