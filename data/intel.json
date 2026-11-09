@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-11-08T17:58:53+00:00",
-  "generated_date_display": "2026.11.08",
-  "threats_tracked": 80,
+  "generated_at": "2026-11-09T22:33:25+00:00",
+  "generated_date_display": "2026.11.09",
+  "threats_tracked": 88,
   "terminal": {
-    "header_date": "2026.11.08",
+    "header_date": "2026.11.09",
     "lines": [
       {
         "level": "CRIT",
         "text": "4 critical CVEs published"
       },
       {
+        "level": "CRIT",
+        "text": "4 new KEV entries today"
+      },
+      {
         "level": "WARN",
-        "text": "3 high-severity advisories"
+        "text": "17 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1769"
+        "text": "KEV catalog size: 1773"
       }
     ]
   },
@@ -29,14 +33,14 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "4 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.08"
+      "today_metric": "Brief sent: 2026.11.09"
     },
     {
       "id": "playbooks",
@@ -50,7 +54,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "30 active exploits in last 30d"
+      "today_metric": "34 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-19868",
+      "id": "CVE-2026-102895",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.06",
-      "title": "CVE-2026-19868: SonicWall SonicOS SSLVPN actively exploited",
-      "excerpt": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
+      "date": "2026.11.09",
+      "title": "CVE-2026-102895: GPUStack GPUStack actively exploited",
+      "excerpt": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
     },
     {
-      "id": "CVE-2024-27834",
+      "id": "CVE-2026-123158",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.04",
-      "title": "CVE-2024-27834: Apple Multiple Products actively exploited",
-      "excerpt": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834"
+      "date": "2026.11.09",
+      "title": "CVE-2026-123158: OpenBSD OpenSSH actively exploited",
+      "excerpt": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
     },
     {
-      "id": "CVE-2026-119977",
+      "id": "CVE-2026-116779",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.03",
-      "title": "CVE-2026-119977: WordPress WordPress Core actively exploited",
-      "excerpt": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
+      "date": "2026.11.09",
+      "title": "CVE-2026-116779: SignalWire FreeSwitch actively exploited",
+      "excerpt": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
     },
     {
-      "id": "CVE-2026-124057",
+      "id": "CVE-2026-124560",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.07",
-      "title": "CVE-2026-124057 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1 results in buffer overflow. The…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124057"
+      "date": "2026.11.09",
+      "title": "CVE-2026-124560 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124560"
     },
     {
-      "id": "CVE-2026-124058",
+      "id": "CVE-2026-115213",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.07",
-      "title": "CVE-2026-124058 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can lead to buffer overflow. The attack…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124058"
+      "date": "2026.11.09",
+      "title": "CVE-2026-115213 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The EASY-JS-WPAPI Client HANDLE for the WordPress REST-API WordPress plugin through 2.0 does not prevent the administrator credentials it stores from being disclosed to unauthenticated users and does not correctly verify authentication,…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115213"
     },
     {
-      "id": "CVE-2026-124059",
+      "id": "CVE-2026-115237",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.07",
-      "title": "CVE-2026-124059 — CRITICAL (CVSS 9.1)",
-      "excerpt": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ApCliKeyStr leads to buffer…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124059"
+      "date": "2026.11.09",
+      "title": "CVE-2026-115237 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The Grand Job WordPress plugin through 1.2.1 does not correctly verify the password reset code before updating a user's password, allowing unauthenticated attackers to set the password of arbitrary accounts, including administrators, and…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115237"
     }
   ]
 }
