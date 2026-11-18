@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T21:07:42+00:00",
-  "generated_date_display": "2026.11.17",
-  "threats_tracked": 85,
+  "generated_at": "2026-11-18T20:45:02+00:00",
+  "generated_date_display": "2026.11.18",
+  "threats_tracked": 92,
   "terminal": {
-    "header_date": "2026.11.17",
+    "header_date": "2026.11.18",
     "lines": [
       {
         "level": "CRIT",
@@ -11,11 +11,11 @@
       },
       {
         "level": "CRIT",
-        "text": "1 new KEV entry today"
+        "text": "4 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "11 high-severity advisories"
+        "text": "18 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -23,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1782"
+        "text": "KEV catalog size: 1786"
       }
     ]
   },
@@ -33,14 +33,14 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "1 new KEV entry today"
+      "today_metric": "4 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.17"
+      "today_metric": "Brief sent: 2026.11.18"
     },
     {
       "id": "playbooks",
@@ -54,7 +54,7 @@
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "34 active exploits in last 30d"
+      "today_metric": "38 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -73,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-115731",
+      "id": "CVE-2024-10441",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.18",
+      "title": "CVE-2024-10441: Synology DiskStation Manager (DSM) actively exploited",
+      "excerpt": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
+    },
+    {
+      "id": "CVE-2026-40217",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.18",
+      "title": "CVE-2026-40217: BerriAI LiteLLM actively exploited",
+      "excerpt": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217"
+    },
+    {
+      "id": "CVE-2026-90817",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.18",
+      "title": "CVE-2026-90817: Vanderbilt University Research Electronic Data Capture (REDCap) actively exploited",
+      "excerpt": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
+    },
+    {
+      "id": "CVE-2026-130910",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.11.17",
-      "title": "CVE-2026-115731: Perforce Puppet Enterprise actively exploited",
-      "excerpt": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+      "title": "CVE-2026-130910 — CRITICAL (CVSS 9.6)",
+      "excerpt": "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130910"
     },
     {
-      "id": "CVE-2026-114713",
+      "id": "CVE-2026-130926",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.13",
-      "title": "CVE-2026-114713: UnrealIRCd UnrealIRCd actively exploited",
-      "excerpt": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
+      "date": "2026.11.17",
+      "title": "CVE-2026-130926 — CRITICAL (CVSS 9.0)",
+      "excerpt": "Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130926"
     },
     {
-      "id": "CVE-2026-123039",
+      "id": "CVE-2026-130929",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.13",
-      "title": "CVE-2026-123039: Check Point Multiple Products actively exploited",
-      "excerpt": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039"
-    },
-    {
-      "id": "CVE-2026-130071",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.16",
-      "title": "CVE-2026-130071 — CRITICAL (CVSS 9.8)",
-      "excerpt": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
-    },
-    {
-      "id": "CVE-2026-130070",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.16",
-      "title": "CVE-2026-130070 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Ghost by muneeb141 on the main branch from commit c731cdf through commit 672dfec contains an authentication bypass vulnerability in the whitelisted ghost.api.ghost.convert_to_real_user method that allows unauthenticated attackers to skip…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130070"
-    },
-    {
-      "id": "CVE-2026-130072",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.16",
-      "title": "CVE-2026-130072 — CRITICAL (CVSS 9.1)",
-      "excerpt": "Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability that allows unauthenticated attackers to rename files by sending PUT /rename requests handled before authentication middleware.…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130072"
+      "date": "2026.11.17",
+      "title": "CVE-2026-130929 — CRITICAL (CVSS 9.0)",
+      "excerpt": "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130929"
     }
   ]
 }
