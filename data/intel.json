@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-11-18T20:45:02+00:00",
-  "generated_date_display": "2026.11.18",
-  "threats_tracked": 92,
+  "generated_at": "2026-11-19T20:50:34+00:00",
+  "generated_date_display": "2026.11.19",
+  "threats_tracked": 88,
   "terminal": {
-    "header_date": "2026.11.18",
+    "header_date": "2026.11.19",
     "lines": [
       {
         "level": "CRIT",
-        "text": "3 critical CVEs published"
-      },
-      {
-        "level": "CRIT",
-        "text": "4 new KEV entries today"
+        "text": "4 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "18 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,21 +29,21 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "4 new KEV entries today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.18"
+      "today_metric": "Brief sent: 2026.11.19"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "3 critical-severity playbooks queued"
+      "today_metric": "4 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
     },
     {
-      "id": "CVE-2026-130910",
+      "id": "CVE-2026-132139",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.17",
-      "title": "CVE-2026-130910 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Protection mechanism failure in ANGLE in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130910"
+      "date": "2026.11.18",
+      "title": "CVE-2026-132139 — CRITICAL (CVSS 9.9)",
+      "excerpt": "A weakness has been identified in DrayTek Vigor2960 up to 1.5.1.6. Affected is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. Executing a manipulation of the argument filename can lead to stack-based buffer overflow.…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139"
     },
     {
-      "id": "CVE-2026-130926",
+      "id": "CVE-2026-73969",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.17",
-      "title": "CVE-2026-130926 — CRITICAL (CVSS 9.0)",
-      "excerpt": "Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130926"
+      "date": "2026.11.18",
+      "title": "CVE-2026-73969 — CRITICAL (CVSS 9.8)",
+      "excerpt": "AnsibleForms is a self-hosted web application that turns automation into self-service forms. Prior to 6.2.1, AnsibleForms uses a public hard-coded fallback JWT signing secret from server/config/auth.config.js when ACCESS_TOKEN_SECRET is…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73969"
     },
     {
-      "id": "CVE-2026-130929",
+      "id": "CVE-2026-55506",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.17",
-      "title": "CVE-2026-130929 — CRITICAL (CVSS 9.0)",
-      "excerpt": "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130929"
+      "date": "2026.11.18",
+      "title": "CVE-2026-55506 — CRITICAL (CVSS 9.6)",
+      "excerpt": "Wavelog is web-based amateur radio logging software. Prior to 2.5, the filename parameter accepted by POST /qsl/addQsoToQsl in application/controllers/Qsl.php addQsoToQsl() is stored without rejecting directory separators or relative path…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55506"
     }
   ]
 }
