@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-24T22:38:10+00:00",
-  "generated_date_display": "2026.11.24",
-  "threats_tracked": 92,
+  "generated_at": "2026-11-25T21:51:40+00:00",
+  "generated_date_display": "2026.11.25",
+  "threats_tracked": 109,
   "terminal": {
-    "header_date": "2026.11.24",
+    "header_date": "2026.11.25",
     "lines": [
       {
         "level": "CRIT",
-        "text": "2 critical CVEs published"
+        "text": "1 critical CVE published"
       },
       {
         "level": "CRIT",
-        "text": "3 new KEV entries today"
+        "text": "10 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "25 high-severity advisories"
+        "text": "4 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -23,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1795"
+        "text": "KEV catalog size: 1805"
       }
     ]
   },
@@ -33,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "3 new KEV entries today"
+      "today_metric": "10 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.24"
+      "today_metric": "Brief sent: 2026.11.25"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "2 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "39 active exploits in last 30d"
+      "today_metric": "49 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -73,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-132224",
+      "id": "CVE-2026-103406",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.25",
+      "title": "CVE-2026-103406: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router actively exploited",
+      "excerpt": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+    },
+    {
+      "id": "CVE-2026-133469",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.25",
+      "title": "CVE-2026-133469: Vates Xen Orchestra actively exploited",
+      "excerpt": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+    },
+    {
+      "id": "CVE-2025-41450",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.25",
+      "title": "CVE-2025-41450: Danfoss AK-SM 800A Series actively exploited",
+      "excerpt": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+    },
+    {
+      "id": "CVE-2026-124284",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.11.24",
-      "title": "CVE-2026-132224: Optimizely Web Experimentation actively exploited",
-      "excerpt": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"
+      "title": "CVE-2026-124284 — CRITICAL (CVSS 9.8)",
+      "excerpt": "A critical security vulnerability affects certain authentication methods in Genetec Security Center, including external identity providers using OpenID Connect (OIDC) or SAML 2.0, and Active Directory Federation Services (AD FS) using…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124284"
     },
     {
-      "id": "CVE-2026-131914",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.24",
-      "title": "CVE-2026-131914: Idunno AntiCsrf actively exploited",
-      "excerpt": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
-    },
-    {
-      "id": "CVE-2026-132165",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.24",
-      "title": "CVE-2026-132165: Drupal Core actively exploited",
-      "excerpt": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165"
-    },
-    {
-      "id": "CVE-2026-130169",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.23",
-      "title": "CVE-2026-130169 — CRITICAL (CVSS 10.0)",
-      "excerpt": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, hardcoded default JWT verification key…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169"
-    },
-    {
-      "id": "CVE-2026-134401",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.24",
-      "title": "CVE-2026-134401 — CRITICAL (CVSS 9.6)",
-      "excerpt": "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401"
-    },
-    {
-      "id": "CVE-2026-101862",
+      "id": "CVE-2026-16663",
       "tag": "ANALYSIS",
       "tag_class": "warn",
-      "date": "2026.11.23",
-      "title": "CVE-2026-101862 — HIGH (CVSS 8.8)",
-      "excerpt": "EUSurvey through 1.6, prior to commit 0669a36, contains a path traversal vulnerability in the survey import function that allows authenticated attackers with the Form Manager role to execute arbitrary code on the server. The POST…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101862"
+      "date": "2026.11.24",
+      "title": "CVE-2026-16663 — HIGH (CVSS 8.4)",
+      "excerpt": "MCUboot's encrypted serial-recovery path contains an attacker-controlled out-of-bounds stack write in decrypt_region_inplace() in boot/boot_serial/src/boot_serial_encryption.c. The routine decrypts an uploaded encrypted image one flash…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16663"
+    },
+    {
+      "id": "CVE-2026-133456",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.11.24",
+      "title": "CVE-2026-133456 — HIGH (CVSS 7.5)",
+      "excerpt": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.11.1 before 0.11.3, anyone with an Exa Search Monitor trigger's URL can start one run of the owner's…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133456"
     }
   ]
 }
