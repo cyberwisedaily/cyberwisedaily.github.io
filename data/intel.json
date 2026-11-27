@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-11-26T21:45:37+00:00",
-  "generated_date_display": "2026.11.26",
-  "threats_tracked": 97,
+  "generated_at": "2026-11-27T21:29:31+00:00",
+  "generated_date_display": "2026.11.27",
+  "threats_tracked": 101,
   "terminal": {
-    "header_date": "2026.11.26",
+    "header_date": "2026.11.27",
     "lines": [
       {
         "level": "CRIT",
-        "text": "4 critical CVEs published"
+        "text": "1 critical CVE published"
+      },
+      {
+        "level": "CRIT",
+        "text": "3 new KEV entries today"
       },
       {
         "level": "WARN",
-        "text": "19 high-severity advisories"
+        "text": "3 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -19,7 +23,7 @@
       },
       {
         "level": "INFO",
-        "text": "KEV catalog size: 1805"
+        "text": "KEV catalog size: 1808"
       }
     ]
   },
@@ -29,28 +33,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "0 new KEV entries today"
+      "today_metric": "3 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.26"
+      "today_metric": "Brief sent: 2026.11.27"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "4 critical-severity playbooks queued"
+      "today_metric": "1 critical-severity playbook queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "47 active exploits in last 30d"
+      "today_metric": "48 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -69,58 +73,58 @@
   ],
   "briefings": [
     {
-      "id": "CVE-2026-103406",
+      "id": "CVE-2026-120705",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2026-103406: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router actively exploited",
-      "excerpt": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+      "date": "2026.11.27",
+      "title": "CVE-2026-120705: OSGeo GeoServer actively exploited",
+      "excerpt": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705"
     },
     {
-      "id": "CVE-2026-133469",
+      "id": "CVE-2026-129243",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2026-133469: Vates Xen Orchestra actively exploited",
-      "excerpt": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+      "date": "2026.11.27",
+      "title": "CVE-2026-129243: OSGeo GeoServer actively exploited",
+      "excerpt": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243"
     },
     {
-      "id": "CVE-2025-41450",
+      "id": "CVE-2026-136716",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2025-41450: Danfoss AK-SM 800A Series actively exploited",
-      "excerpt": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+      "date": "2026.11.27",
+      "title": "CVE-2026-136716: Drupal Core actively exploited",
+      "excerpt": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716"
     },
     {
-      "id": "CVE-2026-136823",
+      "id": "CVE-2026-106125",
       "tag": "CRITICAL",
       "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2026-136823 — CRITICAL (CVSS 10.0)",
-      "excerpt": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136823"
+      "date": "2026.11.27",
+      "title": "CVE-2026-106125 — CRITICAL (CVSS 9.8)",
+      "excerpt": "The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 8.7 via the 'callback' parameter of the sneeit_compact_menu_mega_content AJAX action. The handler…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106125"
     },
     {
-      "id": "CVE-2026-133971",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2026-133971 — CRITICAL (CVSS 9.8)",
-      "excerpt": "An authentication bypass vulnerability exists in the web management interface of HPE Networking Management Software (Airwave). Successful exploitation could allow an unauthenticated remote attacker to gain unauthorized administrative…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133971"
+      "id": "CVE-2026-113774",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.11.27",
+      "title": "CVE-2026-113774 — HIGH (CVSS 8.8)",
+      "excerpt": "The Schema & Structured Data for WP & AMP plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 1.68. This is due to deserialization of untrusted input via the admin export…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113774"
     },
     {
-      "id": "CVE-2026-133972",
-      "tag": "CRITICAL",
-      "tag_class": "crit",
-      "date": "2026.11.25",
-      "title": "CVE-2026-133972 — CRITICAL (CVSS 9.8)",
-      "excerpt": "A vulnerability in system functionality could allow an attacker with network access to bypass authentication. Successful exploitation could potentially allow an attacker to perform unauthorized actions, affecting system integrity and…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133972"
+      "id": "CVE-2026-137660",
+      "tag": "ANALYSIS",
+      "tag_class": "warn",
+      "date": "2026.11.26",
+      "title": "CVE-2026-137660 — HIGH (CVSS 7.3)",
+      "excerpt": "A vulnerability has been found in stylefeng Guns up to 2.2. Affected by this issue is the function TokenAndPermissionInterceptor.preHandle of the file TokenAndPermissionInterceptor.java of the component JWT Signing. Such manipulation…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137660"
     }
   ]
 }
