@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-11-27T21:29:31+00:00",
-  "generated_date_display": "2026.11.27",
-  "threats_tracked": 101,
+  "generated_at": "2026-11-28T20:23:35+00:00",
+  "generated_date_display": "2026.11.28",
+  "threats_tracked": 96,
   "terminal": {
-    "header_date": "2026.11.27",
+    "header_date": "2026.11.28",
     "lines": [
       {
         "level": "CRIT",
-        "text": "1 critical CVE published"
-      },
-      {
-        "level": "CRIT",
-        "text": "3 new KEV entries today"
+        "text": "3 critical CVEs published"
       },
       {
         "level": "WARN",
-        "text": "3 high-severity advisories"
+        "text": "14 high-severity advisories"
       },
       {
         "level": "INFO",
@@ -33,28 +29,28 @@
       "num": "01",
       "title": "Threat Intelligence",
       "description": "Daily roundup of active campaigns, IOCs, and TTPs from open-source and partner feeds — distilled to what your team needs to act on.",
-      "today_metric": "3 new KEV entries today"
+      "today_metric": "0 new KEV entries today"
     },
     {
       "id": "daily_brief",
       "num": "02",
       "title": "06:00 Daily Brief",
       "description": "One email. Five minutes. Read with your evening coffee — be ahead of tomorrow. Plain text. No tracking pixels. No marketing.",
-      "today_metric": "Brief sent: 2026.11.27"
+      "today_metric": "Brief sent: 2026.11.28"
     },
     {
       "id": "playbooks",
       "num": "03",
       "title": "Defensive Playbooks",
       "description": "Weekly deep-dives on detection engineering, incident response, and hardening guides — written for practitioners, by practitioners.",
-      "today_metric": "1 critical-severity playbook queued"
+      "today_metric": "3 critical-severity playbooks queued"
     },
     {
       "id": "post_mortems",
       "num": "04",
       "title": "Breach Post-Mortems",
       "description": "When something breaks, we tell you why — with timeline, attack chain, and the lessons your security program can apply tomorrow.",
-      "today_metric": "48 active exploits in last 30d"
+      "today_metric": "46 active exploits in last 30d"
     },
     {
       "id": "cve_watch",
@@ -100,31 +96,31 @@
       "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716"
     },
     {
-      "id": "CVE-2026-106125",
+      "id": "CVE-2026-138004",
       "tag": "CRITICAL",
       "tag_class": "crit",
       "date": "2026.11.27",
-      "title": "CVE-2026-106125 — CRITICAL (CVSS 9.8)",
-      "excerpt": "The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 8.7 via the 'callback' parameter of the sneeit_compact_menu_mega_content AJAX action. The handler…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106125"
+      "title": "CVE-2026-138004 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01. Affected is the function soapcgi_main of the file /soap.cgi of the component UPnP Igd Control Endpoint. Such manipulation of the argument service…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004"
     },
     {
-      "id": "CVE-2026-113774",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
+      "id": "CVE-2026-138005",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
+      "date": "2026.11.28",
+      "title": "CVE-2026-138005 — CRITICAL (CVSS 10.0)",
+      "excerpt": "A vulnerability was detected in TRENDnet TEW-751DR 1.03B01. Affected by this vulnerability is the function gena.php::GENA_notify_init of the file htdocs/upnpinc/gena.php of the component UPnP Event Handler. Performing a manipulation of…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138005"
+    },
+    {
+      "id": "CVE-2026-138003",
+      "tag": "CRITICAL",
+      "tag_class": "crit",
       "date": "2026.11.27",
-      "title": "CVE-2026-113774 — HIGH (CVSS 8.8)",
-      "excerpt": "The Schema & Structured Data for WP & AMP plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 1.68. This is due to deserialization of untrusted input via the admin export…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113774"
-    },
-    {
-      "id": "CVE-2026-137660",
-      "tag": "ANALYSIS",
-      "tag_class": "warn",
-      "date": "2026.11.26",
-      "title": "CVE-2026-137660 — HIGH (CVSS 7.3)",
-      "excerpt": "A vulnerability has been found in stylefeng Guns up to 2.2. Affected by this issue is the function TokenAndPermissionInterceptor.preHandle of the file TokenAndPermissionInterceptor.java of the component JWT Signing. Such manipulation…",
-      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137660"
+      "title": "CVE-2026-138003 — CRITICAL (CVSS 9.0)",
+      "excerpt": "A weakness has been identified in TRENDnet TEW-751DR 1.03B01. This impacts the function FUN_0040ed90 of the file wfadev.cgi of the component UPnP/WFA. This manipulation of the argument SOAPAction causes stack-based buffer overflow. The…",
+      "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138003"
     }
   ]
 }
